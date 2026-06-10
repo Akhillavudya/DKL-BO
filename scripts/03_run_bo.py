@@ -117,7 +117,8 @@ def main(cfg: DictConfig) -> None:
     results_dir = Path(cfg.results_dir)
     results_dir.mkdir(parents=True, exist_ok=True)
 
-    bo_path   = results_dir / f"bo_ucb_beta{cfg.bo.beta}_results.csv"
+    surrogate_tag = "" if cfg.surrogate.surrogate_type == "exact" else f"_{cfg.surrogate.surrogate_type}"
+    bo_path   = results_dir / f"bo_ucb_beta{cfg.bo.beta}{surrogate_tag}_results.csv"
     rand_path = results_dir / "bo_random_results.csv"
 
     bo_results.to_csv(bo_path,   index=False)

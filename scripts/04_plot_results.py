@@ -524,6 +524,135 @@ else:
     print("  python scripts/03_run_bo.py data.db_path=data/raw/c2db.db bo.beta=1.0")
     print("  python scripts/03_run_bo.py data.db_path=data/raw/c2db.db bo.beta=2.0")
 
+# ═══════════════════════════════════════════════════════════════════════════
+# SURROGATE COMPARISON PLOTS (13–14)
+# These only run when SVGP result file exists alongside ExactGP result
+# Run: python scripts/03_run_bo.py data.db_path=... surrogate=gp_svgp
+# ═══════════════════════════════════════════════════════════════════════════
+
+exact_path = Path("results/bo_ucb_beta0.2_results.csv")
+svgp_path  = Path("results/bo_ucb_beta0.2_svgp_results.csv")
+
+if exact_path.exists() and svgp_path.exists():
+    print("\nSVGP result found — generating surrogate comparison plots 13–14…")
+
+    exact_df = pd.read_csv(exact_path)
+    svgp_df  = pd.read_csv(svgp_path)
+
+    C_EXACT = "#2563EB"   # blue  — ExactGP
+    C_SVGP  = "#9333EA"   # purple — SVGP
+
+    # ── Plot 13: Best gap + top-10% side by side ─────────────────────────────
+    fig, (ax_l, ax_r) = plt.subplots(1, 2, figsize=(14, 5))
+    fig.suptitle("Surrogate Comparison — ExactGP vs SVGP (β=0.2, 100 cycles)",
+                 fontsize=14, fontweight="bold")
+
+    # Left: best gap over cycles
+    ax_l.plot(exact_df["cycle"], exact_df["best_so_far"],
+              color=C_EXACT, lw=2.5, label="ExactGP (default)")
+    ax_l.plot(svgp_df["cycle"],  svgp_df["best_so_far"],
+              color=C_SVGP,  lw=2.5, label="SVGP (sparse)")
+    ax_l.plot(rand["cycle"], rand["best_so_far"],
+              color=C_RAND, lw=1.8, linestyle="--", label="Random baseline")
+    ax_l.axhline(10.79, color="black", lw=1, ls=":", alpha=0.4)
+    ax_l.axhline(7.02,  color="gray",  lw=1, ls=":", alpha=0.5,
+                 label="Top-50 threshold (7.02 eV)")
+    ax_l.set_xlabel("BO Cycle", fontsize=12)
+    ax_l.set_ylabel("Best band gap found so far (eV)", fontsize=12)
+    ax_l.set_title("Best Material Discovered", fontsize=12, fontweight="bold")
+    ax_l.legend(fontsize=10)
+    ax_l.grid(alpha=0.3)
+    ax_l.set_xlim(0, 105)
+    ax_l.set_ylim(4, 11.5)
+    ax_l.set_facecolor("#F8FAFC")
+
+    # Right: cumulative top-10% hits
+    ax_r.plot(exact_df["cycle"], exact_df["cumul_top10pct"],
+              color=C_EXACT, lw=2.5, label="ExactGP (default)")
+    ax_r.plot(svgp_df["cycle"],  svgp_df["cumul_top10pct"],
+              color=C_SVGP,  lw=2.5, label="SVGP (sparse)")
+    ax_r.plot(rand["cycle"], rand["cumul_top10pct"],
+              color=C_RAND, lw=1.8, linestyle="--", label="Random baseline")
+    ax_r.plot(cycles, cycles * 0.10, color="gray", lw=1.2, ls=":", alpha=0.6,
+              label="Expected random (10%)")
+    ax_r.set_xlabel("BO Cycle", fontsize=12)
+    ax_r.set_ylabel("Cumulative top-10% hits", fontsize=12)
+    ax_r.set_title("Search Efficiency", fontsize=12, fontweight="bold")
+    ax_r.legend(fontsize=10)
+    ax_r.grid(alpha=0.3)
+    ax_r.set_xlim(0, 105)
+    ax_r.set_facecolor("#F8FAFC")
+
+    save(fig, "13_surrogate_search_comparison.png")
+
+    # ── Plot 14: Final metrics + speed bar chart ──────────────────────────────
+    fig, axes = plt.subplots(1, 3, figsize=(14, 5))
+    fig.suptitle("Surrogate Comparison — Final Results After 100 Cycles",
+                 fontsize=14, fontweight="bold")
+
+    labels    = ["ExactGP", "SVGP", "Random"]
+    colors_14 = [C_EXACT, C_SVGP, C_RAND]
+
+    # Best gap
+    best_gaps_14 = [
+        exact_df["best_so_far"].iloc[-1],
+        svgp_df["best_so_far"].iloc[-1],
+        rand["best_so_far"].iloc[-1],
+    ]
+    bars = axes[0].bar(labels, best_gaps_14, color=colors_14, width=0.5,
+                       edgecolor="white", linewidth=1.5)
+    for bar, val in zip(bars, best_gaps_14):
+        axes[0].text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.05,
+                     f"{val:.2f}", ha="center", va="bottom",
+                     fontsize=11, fontweight="bold")
+    axes[0].axhline(10.79, color="black", lw=1, ls=":", alpha=0.4)
+    axes[0].set_ylabel("Best band gap found (eV)", fontsize=11)
+    axes[0].set_title("Best Material Found", fontsize=12, fontweight="bold")
+    axes[0].set_ylim(0, 12)
+    axes[0].grid(axis="y", alpha=0.3)
+    axes[0].set_facecolor("#F8FAFC")
+
+    # Top-10% hits
+    top10_14 = [
+        int(exact_df["cumul_top10pct"].iloc[-1]),
+        int(svgp_df["cumul_top10pct"].iloc[-1]),
+        int(rand["cumul_top10pct"].iloc[-1]),
+    ]
+    bars2 = axes[1].bar(labels, top10_14, color=colors_14, width=0.5,
+                        edgecolor="white", linewidth=1.5)
+    for bar, val in zip(bars2, top10_14):
+        axes[1].text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.3,
+                     str(val), ha="center", va="bottom",
+                     fontsize=11, fontweight="bold")
+    axes[1].set_ylabel("Cumulative top-10% hits", fontsize=11)
+    axes[1].set_title("Search Efficiency", fontsize=12, fontweight="bold")
+    axes[1].grid(axis="y", alpha=0.3)
+    axes[1].set_facecolor("#F8FAFC")
+
+    # Avg training time per cycle (from train_time_s column)
+    avg_train_exact = exact_df["train_time_s"].mean()
+    avg_train_svgp  = svgp_df["train_time_s"].mean()
+    speed_labels  = ["ExactGP", "SVGP"]
+    speed_vals    = [avg_train_exact, avg_train_svgp]
+    speed_colors  = [C_EXACT, C_SVGP]
+    bars3 = axes[2].bar(speed_labels, speed_vals, color=speed_colors, width=0.4,
+                        edgecolor="white", linewidth=1.5)
+    for bar, val in zip(bars3, speed_vals):
+        axes[2].text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.002,
+                     f"{val:.3f}s", ha="center", va="bottom",
+                     fontsize=11, fontweight="bold")
+    axes[2].set_ylabel("Avg training time per cycle (s)", fontsize=11)
+    axes[2].set_title("Speed Per Cycle", fontsize=12, fontweight="bold")
+    axes[2].grid(axis="y", alpha=0.3)
+    axes[2].set_facecolor("#F8FAFC")
+
+    save(fig, "14_surrogate_final_comparison.png")
+    print("Surrogate comparison plots 13–14 saved.")
+
+else:
+    print("\nNo SVGP result file found — skipping plots 13–14.")
+    print("Run: python scripts/03_run_bo.py data.db_path=data/raw/c2db.db surrogate=gp_svgp")
+
 print()
 print("Files:")
 for p in sorted(PLOTS_DIR.iterdir()):
