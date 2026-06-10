@@ -1,0 +1,10 @@
+# Primary target: HSE06 band gap (~8000 labelled materials in C2DB)
+db_path: ???          # override via CLI: data.db_path=/path/to/c2db.db
+target: gap_hse
+gap_min: 0.01         # semiconductor filter: removes metals (zero-gap spike)
+radius: 8.0           # neighbour search radius in Angstroms
+vacuum_cutoff: 4.0    # max z-displacement for a bond — blocks cross-vacuum edges
+max_neighbors: 12     # max bonds per atom (keeps nearest neighbours only)
+val_frac: 0.1
+test_frac: 0.1
+cache_dir: data/cache/

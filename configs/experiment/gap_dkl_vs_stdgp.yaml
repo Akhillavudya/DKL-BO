@@ -1,0 +1,11 @@
+# @package _global_
+# Experiment: DKL-BO vs random / std-GP / greedy over many seeds
+defaults:
+  - override /data: c2db_gap
+  - override /model: cgcnn
+  - override /bo: ucb
+  - _self_
+
+experiment_name: gap_dkl_vs_stdgp
+n_seeds: 30
+baselines: [random, std_gp, greedy]   # [P1] baselines: all on identical seeds

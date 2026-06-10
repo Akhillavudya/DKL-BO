@@ -1,0 +1,9 @@
+# Sparse target: GW band gap (~200 labelled materials) — needs Eform pre-training
+# @package _global_
+defaults:
+  - /data: c2db_gap
+
+data:
+  target: gap_gw
+  gap_min: 0.01
+  cache_dir: data/cache_gw/

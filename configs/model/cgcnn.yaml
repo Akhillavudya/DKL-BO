@@ -1,0 +1,11 @@
+# CGCNN encoder hyperparameters — from [P1] Table 1
+atom_dim: 90        # one-hot over elements 1–90 (H→Th)
+bond_dim: 10        # Gaussian basis expansion of bond distance
+hidden_dim: 32      # post-conv node embedding dim
+n_conv: 3           # CGCNN convolution layers
+n_fc: 1             # fully-connected layers after pooling
+pooling: attention  # attention not average: handles variable unit-cell sizes in C2DB
+
+# Training settings (Phase 2)
+encoder_lr: 0.001    # smaller LR for encoder — prevents mode collapse ([P2])
+batch_size: 64       # DataLoader batch size for encoding

@@ -1,0 +1,8 @@
+# Sparse Variational GP — [P2] scaling fix; O(N·M^2) memory cap regardless of N
+# Drop-in replacement for gp_exact via surrogate ABC
+surrogate_type: svgp
+kernel: matern52
+n_inducing: 128   # inducing point count M; more = better approx, more memory
+noise_init: 0.01
+lr: 0.01
+n_train_epochs: 200   # more epochs needed to learn inducing point positions

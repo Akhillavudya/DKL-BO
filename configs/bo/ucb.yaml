@@ -1,0 +1,15 @@
+# UCB acquisition: score = mean + beta * std
+acquisition: ucb
+beta: 0.2             # exploration weight; sweep {0.5, 1, 2, 3} per [P1] Section 2
+
+# Initial labelling
+n_init: 10            # random materials labelled before any BO cycle
+
+# Loop settings
+n_cycles: 100         # number of BO acquisitions after warm-start
+retrain_every_k: 5    # full DKL retrain every K cycles; GP-only refit in between
+
+# Training epochs per cycle (smaller than Phase 2 — retrains many times)
+n_joint_epochs: 50        # joint encoder+GP training epochs per full retrain
+n_pretrain_epochs: 20     # GP warmup epochs before joint training
+gp_refit_epochs: 50       # GP-only refit epochs between full retrains

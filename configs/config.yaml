@@ -1,0 +1,9 @@
+defaults:
+  - data: c2db_gap
+  - model: cgcnn
+  - surrogate: gp_exact
+  - bo: ucb
+  - _self_
+
+results_dir: results/
+seed: 42

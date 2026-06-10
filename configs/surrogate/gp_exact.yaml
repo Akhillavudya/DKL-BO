@@ -1,0 +1,8 @@
+# Exact GP (Matérn-5/2) — gold standard, use when N_labelled < ~1000
+# [P1] architecture; O(N^3) time/O(N^2) memory — watch for OOM above ~1k points
+surrogate_type: exact
+kernel: matern52
+noise_init: 0.01
+lr: 0.01          # Adam LR for GP kernel parameters
+n_train_epochs: 100
+patience: 20      # early stopping: stop if MLL doesn't improve for 20 epochs

@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dklbo"
+version = "0.1.0"
+description = "Deep Kernel Learning + Bayesian Optimisation for 2D band-gap discovery (C2DB)"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.0",
+    "torch-geometric>=2.4",
+    "ase>=3.22",
+    "pymatgen>=2024.1",
+    "gpytorch>=1.11",
+    "botorch>=0.9",
+    "pandas>=2.0",
+    "pyarrow>=14.0",
+    "scikit-learn>=1.3",
+    "hydra-core>=1.3",
+    "omegaconf>=2.3",
+    "lmdb>=1.4",
+    "matplotlib>=3.7",
+    "scipy>=1.11",
+    "tqdm>=4.66",
+    "psutil>=5.9",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v"
