@@ -12,6 +12,12 @@ Float precision:
   GP runs in float64 (stable matrix inversions — [P1/P2] practice)
   Conversion: embeddings.double() at the boundary
 
+Embedding standardization (E1):
+  When standardize=True, embeddings are zero-centred and unit-scaled using
+  statistics from the labelled set.  The same scaler is applied to pool
+  embeddings so the GP sees consistent input ranges.  This corrects the
+  all-positive softplus output distribution that distorts an isotropic kernel.
+
 Embedding cache (used in BO loop, Phase 3):
   Between GP-only refits (retrain_every_k > 1), the encoder weights
   don't change so we cache embeddings and skip re-encoding.
@@ -37,11 +43,13 @@ class DKLModel:
 
     Parameters
     ----------
-    encoder   : CGCNNEncoder
-    surrogate : BaseSurrogate (ExactGPSurrogate or SVGPSurrogate)
-    encoder_lr: smaller LR for the encoder (prevents mode collapse)
-    gp_lr     : larger LR for GP hyperparameters
-    device    : 'cuda' | 'cpu' | 'auto'
+    encoder      : CGCNNEncoder
+    surrogate    : BaseSurrogate (ExactGPSurrogate or SVGPSurrogate)
+    encoder_lr   : smaller LR for the encoder (prevents mode collapse)
+    gp_lr        : larger LR for GP hyperparameters
+    device       : 'cuda' | 'cpu' | 'auto'
+    standardize  : E1 — if True, standardize embeddings to zero-mean/unit-var
+                   before passing to the GP (scaler fit on labelled embeddings)
     """
 
     def __init__(
@@ -51,6 +59,7 @@ class DKLModel:
         encoder_lr: float = 0.001,
         gp_lr: float = 0.01,
         device: str = "auto",
+        standardize: bool = False,
     ) -> None:
         if device == "auto":
             device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -60,8 +69,28 @@ class DKLModel:
         self.surrogate = surrogate.to(self.device)
         self.encoder_lr = encoder_lr
         self.gp_lr = gp_lr
+        self.standardize = standardize
+
+        # E1: scaler params — fit on labelled embeddings, applied to pool
+        self._emb_mean: Tensor | None = None  # [D]
+        self._emb_std:  Tensor | None = None  # [D]
 
         self._embedding_cache: Tensor | None = None  # [N_pool, D], used in BO loop
+
+    # ------------------------------------------------------------------
+    # E1: Embedding standardization helpers
+    # ------------------------------------------------------------------
+
+    def _fit_scaler(self, emb: Tensor) -> None:
+        """Compute mean and std from labelled embeddings (fit step)."""
+        self._emb_mean = emb.mean(dim=0)
+        self._emb_std  = emb.std(dim=0).clamp(min=1e-6)  # avoid div-by-zero
+
+    def _scale(self, emb: Tensor) -> Tensor:
+        """Apply the fitted scaler. No-op when standardize=False or not yet fit."""
+        if not self.standardize or self._emb_mean is None:
+            return emb
+        return (emb - self._emb_mean) / self._emb_std
 
     # ------------------------------------------------------------------
     # Encoding
@@ -167,7 +196,9 @@ class DKLModel:
         final_emb, final_y = self.encode(
             DataLoader(_SimpleGraphList(train_graphs), batch_size=512)
         )
-        self.surrogate.fit(final_emb, final_y, n_epochs=100)
+        # E1: fit scaler on labelled embeddings, then standardize before GP
+        self._fit_scaler(final_emb)
+        self.surrogate.fit(self._scale(final_emb), final_y, n_epochs=100)
 
         return {"losses": losses, "time_s": elapsed}
 
@@ -197,7 +228,7 @@ class DKLModel:
     def predict(self, loader: DataLoader) -> tuple[Tensor, Tensor]:
         """Encode graphs and predict (mean, std). Used for offline eval."""
         emb, _ = self.encode(loader)
-        return self.surrogate.predict(emb)
+        return self.surrogate.predict(self._scale(emb))
 
     # ------------------------------------------------------------------
     # Embedding cache (used in Phase 3 BO loop)

@@ -117,6 +117,7 @@ def main(cfg: DictConfig) -> None:
         encoder_lr=cfg.model.get("encoder_lr", 0.001),
         gp_lr=gp_cfg.get("lr", 0.01),
         device=device,
+        standardize=cfg.model.get("standardize_embeddings", False),
     )
 
     logger.info(f"Model: CGCNN encoder + {surrogate_name}")
@@ -144,7 +145,8 @@ def main(cfg: DictConfig) -> None:
     # ------------------------------------------------------------------ #
     logger.info("Evaluating on validation split...")
     val_emb, val_y = dkl.encode(val_loader)
-    val_mean, val_std = surrogate.predict(val_emb)
+    # Use dkl.predict() so the E1 scaler (if enabled) is applied consistently
+    val_mean, val_std = dkl.surrogate.predict(dkl._scale(val_emb))
     acc_val = compute_accuracy_metrics(val_y, val_mean)
     cal_val = compute_calibration_metrics(val_y, val_mean, val_std)
     print_metrics_table(acc_val, cal_val, split="val", surrogate=surrogate_name)
@@ -154,7 +156,7 @@ def main(cfg: DictConfig) -> None:
     # ------------------------------------------------------------------ #
     logger.info("Evaluating on test split...")
     test_emb, test_y = dkl.encode(test_loader)
-    test_mean, test_std = surrogate.predict(test_emb)
+    test_mean, test_std = dkl.surrogate.predict(dkl._scale(test_emb))
     acc_test = compute_accuracy_metrics(test_y, test_mean)
     cal_test = compute_calibration_metrics(test_y, test_mean, test_std)
     print_metrics_table(acc_test, cal_test, split="test", surrogate=surrogate_name)

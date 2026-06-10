@@ -71,12 +71,23 @@ class BaseSurrogate(ABC):
 
 
 class _ExactGPModel(ExactGP):
-    """The inner GPyTorch model — Matérn-5/2 kernel as in [P1]."""
+    """The inner GPyTorch model — Matérn-5/2 kernel as in [P1].
 
-    def __init__(self, train_x: Tensor, train_y: Tensor, likelihood: GaussianLikelihood):
+    E1: supports ARD (one lengthscale per embedding dimension) via ard_num_dims.
+    With ard_num_dims=None the kernel falls back to a single shared lengthscale
+    (original baseline behaviour).
+    """
+
+    def __init__(
+        self,
+        train_x: Tensor,
+        train_y: Tensor,
+        likelihood: GaussianLikelihood,
+        ard_num_dims: int | None = None,
+    ):
         super().__init__(train_x, train_y, likelihood)
         self.mean_module = ConstantMean()
-        self.covar_module = ScaleKernel(MaternKernel(nu=2.5))
+        self.covar_module = ScaleKernel(MaternKernel(nu=2.5, ard_num_dims=ard_num_dims))
 
     def forward(self, x: Tensor) -> MultivariateNormal:
         return MultivariateNormal(self.mean_module(x), self.covar_module(x))
@@ -85,31 +96,72 @@ class _ExactGPModel(ExactGP):
 class ExactGPSurrogate(BaseSurrogate):
     """Exact GP surrogate — gold standard for N < ~1000 labelled points.
 
-    After joint DKL training, use .fit() to update the GP on the full
-    train embeddings.  Between BO cycles, only .fit() needs to run (cheap)
-    when K > 1 (retrain_every_k from configs/bo/ucb.yaml).
+    E1 additions:
+      ard       — if True, one lengthscale per embedding dim (ARD Matérn)
+      warm_start — if True, reuse previous kernel/noise hyperparameters on
+                   every refit instead of re-initialising from defaults.
+                   This avoids hyperparameter amnesia across BO cycles.
     """
 
-    def __init__(self, lr: float = 0.01, n_epochs: int = 100, patience: int = 20):
+    def __init__(
+        self,
+        lr: float = 0.01,
+        n_epochs: int = 100,
+        patience: int = 20,
+        ard: bool = False,
+        warm_start: bool = True,
+    ):
         self.lr = lr
         self.n_epochs = n_epochs
         self.patience = patience
+        self.ard = ard
+        self.warm_start = warm_start
         self.model: _ExactGPModel | None = None
         self.likelihood: GaussianLikelihood | None = None
         self._device = torch.device("cpu")
+        self._ard_num_dims: int | None = None  # set on first fit
 
     # ------------------------------------------------------------------
     # BaseSurrogate interface
     # ------------------------------------------------------------------
 
     def fit(self, X: Tensor, y: Tensor, n_epochs: int | None = None) -> List[float]:
-        """Fit (or refit) the GP on embedding vectors X and band-gap targets y."""
+        """Fit (or refit) the GP on embedding vectors X and band-gap targets y.
+
+        On the first call, always builds a fresh model.
+        On subsequent calls with warm_start=True, reuses the previous
+        model's state_dict so hyperparameters continue from where they left off.
+        """
         n_epochs = n_epochs or self.n_epochs
         X = X.double().to(self._device)
         y = y.double().to(self._device)
 
-        self.likelihood = GaussianLikelihood().double().to(self._device)
-        self.model = _ExactGPModel(X, y, self.likelihood).double().to(self._device)
+        ard_dims = X.size(-1) if self.ard else None
+
+        # Decide whether to warm-start or build fresh
+        can_warm_start = (
+            self.warm_start
+            and self.model is not None
+            and self._ard_num_dims == ard_dims   # dims must match
+        )
+
+        if can_warm_start:
+            # Reuse previous hyperparameters: only update train data
+            prev_model_state = self.model.state_dict()
+            prev_like_state  = self.likelihood.state_dict()
+            self.likelihood = GaussianLikelihood().double().to(self._device)
+            self.model = _ExactGPModel(
+                X, y, self.likelihood, ard_num_dims=ard_dims
+            ).double().to(self._device)
+            self.model.load_state_dict(prev_model_state)
+            self.likelihood.load_state_dict(prev_like_state)
+        else:
+            # Fresh build (first call, or dims changed)
+            self.likelihood = GaussianLikelihood().double().to(self._device)
+            self.model = _ExactGPModel(
+                X, y, self.likelihood, ard_num_dims=ard_dims
+            ).double().to(self._device)
+            self._ard_num_dims = ard_dims
 
         self.model.train()
         self.likelihood.train()
@@ -292,4 +344,6 @@ def build_surrogate(cfg) -> BaseSurrogate:
         lr=cfg.lr,
         n_epochs=cfg.n_train_epochs,
         patience=getattr(cfg, "patience", 20),
+        ard=getattr(cfg, "ard", False),
+        warm_start=getattr(cfg, "warm_start", True),
     )

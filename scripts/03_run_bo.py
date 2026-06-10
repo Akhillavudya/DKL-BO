@@ -83,11 +83,12 @@ def main(cfg: DictConfig) -> None:
     )
     surrogate = build_surrogate(cfg.surrogate)
     dkl = DKLModel(
-        encoder   = encoder,
-        surrogate = surrogate,
-        encoder_lr= float(cfg.model.encoder_lr),
-        gp_lr     = float(cfg.surrogate.lr),
-        device    = device,
+        encoder      = encoder,
+        surrogate    = surrogate,
+        encoder_lr   = float(cfg.model.encoder_lr),
+        gp_lr        = float(cfg.surrogate.lr),
+        device       = device,
+        standardize  = cfg.model.get("standardize_embeddings", False),
     )
 
     n_params = sum(p.numel() for p in encoder.parameters())

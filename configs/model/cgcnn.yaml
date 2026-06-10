@@ -9,3 +9,4 @@ pooling: attention  # attention not average: handles variable unit-cell sizes in
 # Training settings (Phase 2)
 encoder_lr: 0.001    # smaller LR for encoder — prevents mode collapse ([P2])
 batch_size: 64       # DataLoader batch size for encoding
+standardize_embeddings: true  # E1: zero-mean/unit-var on labelled embeddings before GP

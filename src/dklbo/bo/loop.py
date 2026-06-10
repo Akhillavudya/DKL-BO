@@ -160,7 +160,11 @@ class BOLoop:
                         [self.oracle[u] for u in labelled_uids],
                         dtype=torch.float32,
                     )
-                    self.dkl.surrogate.fit(labelled_embs, train_y, n_epochs=n_refit)
+                    # E1: re-fit scaler on updated labelled set, then standardize
+                    self.dkl._fit_scaler(labelled_embs)
+                    self.dkl.surrogate.fit(
+                        self.dkl._scale(labelled_embs), train_y, n_epochs=n_refit
+                    )
                     logger.info(
                         f"Cycle {cycle + 1:3d}: GP refit  "
                         f"({len(labelled_uids)} labelled)"
@@ -182,7 +186,8 @@ class BOLoop:
             # ── Predict & score ───────────────────────────────────────
             t_pred = time.perf_counter()
             self.dkl.surrogate.eval_mode()
-            mean, std = self.dkl.surrogate.predict(pool_embs)
+            # E1: apply scaler to pool embeddings before GP predict
+            mean, std = self.dkl.surrogate.predict(self.dkl._scale(pool_embs))
             scores    = acq_fn(mean, std, beta=float(self.cfg.beta))
             predict_time = time.perf_counter() - t_pred
 
