@@ -341,6 +341,189 @@ save(fig, "08_summary_dashboard.png")
 
 print()
 print("All 8 plots saved to results/plots/")
+
+# ═══════════════════════════════════════════════════════════════════════════
+# BETA SWEEP COMPARISON PLOTS (09–12)
+# These only run when multiple beta result files exist in results/
+# Run: python scripts/03_run_bo.py data.db_path=... bo.beta=0.0
+#      python scripts/03_run_bo.py data.db_path=... bo.beta=0.5  etc.
+# ═══════════════════════════════════════════════════════════════════════════
+
+BETA_COLORS = {
+    0.0: "#7C3AED",   # purple  — pure exploitation
+    0.2: "#2563EB",   # blue    — our default
+    0.5: "#0891B2",   # cyan
+    1.0: "#16A34A",   # green
+    2.0: "#EA580C",   # orange  — heavy exploration
+}
+
+# Discover which beta CSVs are present
+beta_files = {}
+for beta_val, color in BETA_COLORS.items():
+    path = Path(f"results/bo_ucb_beta{beta_val}_results.csv")
+    if path.exists():
+        beta_files[beta_val] = (pd.read_csv(path), color)
+
+if len(beta_files) >= 2:
+    print("\nBeta sweep files found — generating comparison plots 09–12…")
+
+    # ── Plot 09: Best gap over cycles for all betas ──────────────────────────
+    fig, ax = plt.subplots(figsize=(11, 5))
+
+    for beta_val, (df, color) in sorted(beta_files.items()):
+        lw   = 3.0 if beta_val == 0.2 else 1.8
+        lbl  = f"β={beta_val}" + (" (default)" if beta_val == 0.2 else "")
+        ax.plot(df["cycle"], df["best_so_far"], color=color, lw=lw, label=lbl)
+
+    ax.plot(rand["cycle"], rand["best_so_far"], color=C_RAND, lw=1.8,
+            linestyle="--", label="Random baseline")
+
+    ax.axhline(10.79, color="black", lw=1, ls=":", alpha=0.4, label="Dataset max (10.79 eV)")
+    ax.axhline(7.02,  color="gray",  lw=1, ls=":", alpha=0.5, label="Top-50 threshold (7.02 eV)")
+
+    ax.set_xlabel("BO Cycle (number of experiments)", fontsize=12)
+    ax.set_ylabel("Best band gap found so far (eV)", fontsize=12)
+    ax.set_title("Beta Sweep — Best Material Discovered vs Experiments",
+                 fontsize=13, fontweight="bold")
+    ax.legend(fontsize=10, loc="upper left")
+    ax.grid(alpha=0.3)
+    ax.set_xlim(0, 105)
+    ax.set_ylim(4, 11.5)
+    ax.set_facecolor("#F8FAFC")
+    save(fig, "09_beta_best_gap_comparison.png")
+
+    # ── Plot 10: Cumulative top-10% hits for all betas ───────────────────────
+    fig, ax = plt.subplots(figsize=(11, 5))
+
+    for beta_val, (df, color) in sorted(beta_files.items()):
+        lw  = 3.0 if beta_val == 0.2 else 1.8
+        lbl = f"β={beta_val}" + (" (default)" if beta_val == 0.2 else "")
+        ax.plot(df["cycle"], df["cumul_top10pct"], color=color, lw=lw, label=lbl)
+
+    ax.plot(rand["cycle"], rand["cumul_top10pct"], color=C_RAND, lw=1.8,
+            linestyle="--", label="Random baseline")
+    ax.plot(cycles, cycles * 0.10, color="gray", lw=1.2, ls=":", alpha=0.6,
+            label="Expected random (10%)")
+
+    ax.set_xlabel("BO Cycle (number of experiments)", fontsize=12)
+    ax.set_ylabel("Cumulative top-10% materials found", fontsize=12)
+    ax.set_title("Beta Sweep — Search Efficiency Comparison",
+                 fontsize=13, fontweight="bold")
+    ax.legend(fontsize=10)
+    ax.grid(alpha=0.3)
+    ax.set_xlim(0, 105)
+    ax.set_facecolor("#F8FAFC")
+    save(fig, "10_beta_top10pct_comparison.png")
+
+    # ── Plot 11: Final results bar chart per beta ────────────────────────────
+    fig, (ax_l, ax_r) = plt.subplots(1, 2, figsize=(13, 5))
+    fig.suptitle("Beta Sweep — Final Results After 100 Cycles",
+                 fontsize=14, fontweight="bold")
+
+    sorted_betas  = sorted(beta_files.keys())
+    bar_colors    = [beta_files[b][1] for b in sorted_betas]
+    best_gaps     = [beta_files[b][0]["best_so_far"].iloc[-1]  for b in sorted_betas]
+    top10_hits    = [beta_files[b][0]["cumul_top10pct"].iloc[-1] for b in sorted_betas]
+    top50_hits    = [beta_files[b][0]["cumul_top50"].iloc[-1]  for b in sorted_betas]
+    x_labels      = [f"β={b}" for b in sorted_betas]
+
+    # Left: best gap
+    bars = ax_l.bar(x_labels, best_gaps, color=bar_colors, width=0.55,
+                    edgecolor="white", linewidth=1.5)
+    ax_l.axhline(rand["best_so_far"].iloc[-1], color=C_RAND, lw=1.5,
+                 ls="--", label=f"Random ({rand['best_so_far'].iloc[-1]:.2f} eV)")
+    ax_l.axhline(10.79, color="black", lw=1, ls=":", alpha=0.4, label="Dataset max")
+    for bar, val in zip(bars, best_gaps):
+        ax_l.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.05,
+                  f"{val:.2f}", ha="center", va="bottom",
+                  fontsize=10, fontweight="bold")
+    ax_l.set_ylabel("Best band gap found (eV)", fontsize=11)
+    ax_l.set_title("Best Material Found", fontsize=12, fontweight="bold")
+    ax_l.legend(fontsize=9)
+    ax_l.set_ylim(0, 12)
+    ax_l.grid(axis="y", alpha=0.3)
+    ax_l.set_facecolor("#F8FAFC")
+
+    # Right: top-10% hits
+    bars2 = ax_r.bar(x_labels, top10_hits, color=bar_colors, width=0.55,
+                     edgecolor="white", linewidth=1.5)
+    ax_r.axhline(rand["cumul_top10pct"].iloc[-1], color=C_RAND, lw=1.5,
+                 ls="--", label=f"Random ({int(rand['cumul_top10pct'].iloc[-1])} hits)")
+    for bar, val in zip(bars2, top10_hits):
+        ax_r.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.3,
+                  str(int(val)), ha="center", va="bottom",
+                  fontsize=10, fontweight="bold")
+    ax_r.set_ylabel("Cumulative top-10% materials found", fontsize=11)
+    ax_r.set_title("Search Efficiency (Top-10% Hits)", fontsize=12, fontweight="bold")
+    ax_r.legend(fontsize=9)
+    ax_r.grid(axis="y", alpha=0.3)
+    ax_r.set_facecolor("#F8FAFC")
+
+    save(fig, "11_beta_final_results_bars.png")
+
+    # ── Plot 12: Beta sweep summary table ────────────────────────────────────
+    fig, ax = plt.subplots(figsize=(12, 4))
+    ax.axis("off")
+    fig.suptitle("Beta Sweep — Complete Results Summary",
+                 fontsize=14, fontweight="bold", y=1.02)
+
+    rand_best   = rand["best_so_far"].iloc[-1]
+    rand_top10  = int(rand["cumul_top10pct"].iloc[-1])
+    rand_top50  = int(rand["cumul_top50"].iloc[-1])
+
+    col_labels = ["β value", "Best gap (eV)", "vs Random", "Top-10% hits",
+                  "Efficiency vs random", "Top-50 hits"]
+    table_data = []
+    for b in sorted_betas:
+        df_b    = beta_files[b][0]
+        bg      = df_b["best_so_far"].iloc[-1]
+        t10     = int(df_b["cumul_top10pct"].iloc[-1])
+        t50     = int(df_b["cumul_top50"].iloc[-1])
+        eff     = t10 / rand_top10 if rand_top10 > 0 else float("inf")
+        vs_rand = f"+{bg - rand_best:.2f} eV" if bg >= rand_best else f"{bg - rand_best:.2f} eV"
+        table_data.append([f"β={b}", f"{bg:.2f}", vs_rand,
+                            str(t10), f"{eff:.1f}×", str(t50)])
+
+    # Add random row at the end
+    table_data.append(["Random (baseline)", f"{rand_best:.2f}", "—",
+                        str(rand_top10), "1.0×", str(rand_top50)])
+
+    tbl = ax.table(cellText=table_data, colLabels=col_labels,
+                   loc="center", cellLoc="center")
+    tbl.auto_set_font_size(False)
+    tbl.set_fontsize(11)
+    tbl.scale(1.2, 2.0)
+
+    # Colour the header row
+    for j in range(len(col_labels)):
+        tbl[0, j].set_facecolor("#1E3A5F")
+        tbl[0, j].set_text_props(color="white", fontweight="bold")
+
+    # Colour each beta row to match its line colour, last row is random
+    for i, b in enumerate(sorted_betas):
+        hex_col = beta_files[b][1]
+        for j in range(len(col_labels)):
+            tbl[i + 1, j].set_facecolor(hex_col + "30")  # 30 = ~19% opacity
+
+    # Random row
+    for j in range(len(col_labels)):
+        tbl[len(sorted_betas) + 1, j].set_facecolor("#DC262620")
+
+    save(fig, "12_beta_sweep_summary_table.png")
+
+    print("Beta comparison plots 09–12 saved.")
+
+else:
+    if len(beta_files) == 1:
+        print(f"\nOnly 1 beta file found ({list(beta_files.keys())[0]}).")
+    else:
+        print("\nNo beta sweep files found.")
+    print("Run experiments with different beta values to generate plots 09–12:")
+    print("  python scripts/03_run_bo.py data.db_path=data/raw/c2db.db bo.beta=0.0")
+    print("  python scripts/03_run_bo.py data.db_path=data/raw/c2db.db bo.beta=0.5")
+    print("  python scripts/03_run_bo.py data.db_path=data/raw/c2db.db bo.beta=1.0")
+    print("  python scripts/03_run_bo.py data.db_path=data/raw/c2db.db bo.beta=2.0")
+
 print()
 print("Files:")
 for p in sorted(PLOTS_DIR.iterdir()):
