@@ -130,6 +130,7 @@ class DKLModel:
         train_graphs: List,
         n_epochs: int = 100,
         gp_pretrain_epochs: int = 50,
+        gp_final_epochs: int = 300,
     ) -> dict:
         """Joint DKL training on all training graphs.
 
@@ -198,7 +199,7 @@ class DKLModel:
         )
         # E1: fit scaler on labelled embeddings, then standardize before GP
         self._fit_scaler(final_emb)
-        self.surrogate.fit(self._scale(final_emb), final_y, n_epochs=100)
+        self.surrogate.fit(self._scale(final_emb), final_y, n_epochs=gp_final_epochs)
 
         return {"losses": losses, "time_s": elapsed}
 

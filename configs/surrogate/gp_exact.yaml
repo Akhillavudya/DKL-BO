@@ -4,6 +4,6 @@ surrogate_type: exact
 kernel: matern52
 noise_init: 0.01
 lr: 0.01          # Adam LR for GP kernel parameters
-n_train_epochs: 100
-patience: 20      # early stopping: stop if MLL doesn't improve for 20 epochs
+n_train_epochs: 300
+patience: 50      # early stopping: stop if MLL doesn't improve for 50 epochs
 ard: true         # E1: per-dimension lengthscale (ard_num_dims = encoder hidden_dim)

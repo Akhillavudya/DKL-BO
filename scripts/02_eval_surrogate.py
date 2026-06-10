@@ -136,6 +136,7 @@ def main(cfg: DictConfig) -> None:
         train_graphs=train_graphs,
         n_epochs=gp_cfg.get("n_train_epochs", 100),
         gp_pretrain_epochs=50,
+        gp_final_epochs=gp_cfg.get("n_train_epochs", 300),
     )
     train_time = time.perf_counter() - t_train
     logger.info(f"Training wall-clock: {train_time:.1f}s  ({train_time/60:.1f} min)")
