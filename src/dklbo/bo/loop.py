@@ -79,9 +79,11 @@ class BOLoop:
         meta_df: pd.DataFrame,
         cfg,
         seed: int = 42,
+        std_scale: float = 1.0,
     ) -> None:
-        self.dkl    = dkl
-        self.cache  = cache
+        self.dkl       = dkl
+        self.cache     = cache
+        self.std_scale = std_scale  # E2: temperature-scaling factor τ; 1.0 = no recal
         self.oracle: Dict[str, float] = dict(zip(meta_df["uid"], meta_df["target"]))
         self.all_uids: List[str]      = meta_df["uid"].tolist()
         self.cfg    = cfg
@@ -188,7 +190,9 @@ class BOLoop:
             self.dkl.surrogate.eval_mode()
             # E1: apply scaler to pool embeddings before GP predict
             mean, std = self.dkl.surrogate.predict(self.dkl._scale(pool_embs))
-            scores    = acq_fn(mean, std, beta=float(self.cfg.beta))
+            # E2: apply temperature-scaling recalibration (τ=1.0 is a no-op)
+            std_cal = std * self.std_scale
+            scores  = acq_fn(mean, std_cal, beta=float(self.cfg.beta))
             predict_time = time.perf_counter() - t_pred
 
             # ── Select & label ────────────────────────────────────────

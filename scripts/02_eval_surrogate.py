@@ -23,6 +23,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
+import json
+
 import hydra
 import pandas as pd
 import torch
@@ -33,6 +35,11 @@ from dklbo.data.cache import GraphCache, config_hash
 from dklbo.data.dataset import GraphDataset
 from dklbo.eval.metrics_accuracy import compute_accuracy_metrics
 from dklbo.eval.metrics_calibration import compute_calibration_metrics, print_metrics_table
+from dklbo.eval.recalibration import (
+    fit_temperature,
+    recalibration_report,
+    print_recalibration_report,
+)
 from dklbo.models.cgcnn_encoder import CGCNNEncoder
 from dklbo.models.dkl import DKLModel
 from dklbo.models.surrogate import build_surrogate
@@ -153,6 +160,25 @@ def main(cfg: DictConfig) -> None:
     print_metrics_table(acc_val, cal_val, split="val", surrogate=surrogate_name)
 
     # ------------------------------------------------------------------ #
+    # E2: Fit recalibration on val set
+    # ------------------------------------------------------------------ #
+    do_recal = gp_cfg.get("recalibrate", False)
+    tau = 1.0
+    if do_recal:
+        logger.info("Fitting temperature recalibration on val split...")
+        tau = fit_temperature(val_y, val_mean, val_std)
+        report = recalibration_report(val_y, val_mean, val_std, tau)
+        print_recalibration_report(report)
+
+        recal_path = Path(cfg.results_dir) / "recalibration_params.json"
+        recal_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(recal_path, "w") as fh:
+            json.dump({"tau": tau, "surrogate": surrogate_name}, fh, indent=2)
+        logger.info(f"Recalibration params saved → {recal_path}")
+    else:
+        logger.info("Recalibration disabled (set surrogate.recalibrate=true to enable)")
+
+    # ------------------------------------------------------------------ #
     # Evaluate on test split (final)
     # ------------------------------------------------------------------ #
     logger.info("Evaluating on test split...")
@@ -161,6 +187,12 @@ def main(cfg: DictConfig) -> None:
     acc_test = compute_accuracy_metrics(test_y, test_mean)
     cal_test = compute_calibration_metrics(test_y, test_mean, test_std)
     print_metrics_table(acc_test, cal_test, split="test", surrogate=surrogate_name)
+
+    if do_recal and tau != 1.0:
+        logger.info("Test calibration after temperature recalibration:")
+        test_std_cal = test_std * tau
+        cal_test_recal = compute_calibration_metrics(test_y, test_mean, test_std_cal)
+        print_metrics_table(acc_test, cal_test_recal, split="test (recalibrated)", surrogate=surrogate_name)
 
     # ------------------------------------------------------------------ #
     # Save metrics to CSV

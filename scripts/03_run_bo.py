@@ -18,6 +18,7 @@ The BO simulation starts with no prior knowledge — labels are revealed
 one at a time by the oracle (metadata.parquet target column).
 """
 
+import json
 import logging
 import sys
 from pathlib import Path
@@ -94,6 +95,20 @@ def main(cfg: DictConfig) -> None:
     n_params = sum(p.numel() for p in encoder.parameters())
     logger.info(f"Encoder parameters: {n_params:,}  |  Surrogate: {type(surrogate).__name__}")
 
+    # ── E2: Load recalibration temperature τ (if enabled) ─────────────
+    std_scale = 1.0
+    if cfg.surrogate.get("recalibrate", False):
+        recal_path = Path(cfg.results_dir) / "recalibration_params.json"
+        if recal_path.exists():
+            with open(recal_path) as fh:
+                std_scale = float(json.load(fh).get("tau", 1.0))
+            logger.info(f"Recalibration: τ = {std_scale:.4f} loaded from {recal_path}")
+        else:
+            logger.warning(
+                f"recalibrate=true but {recal_path} not found. "
+                "Run 02_eval_surrogate.py first to fit τ. Using τ=1.0."
+            )
+
     # ── Run DKL-BO loop ────────────────────────────────────────────────
     logger.info("=" * 60)
     logger.info(
@@ -103,7 +118,8 @@ def main(cfg: DictConfig) -> None:
     )
     logger.info("=" * 60)
 
-    bo_loop    = BOLoop(dkl=dkl, cache=cache, meta_df=df, cfg=cfg.bo, seed=cfg.seed)
+    bo_loop    = BOLoop(dkl=dkl, cache=cache, meta_df=df, cfg=cfg.bo, seed=cfg.seed,
+                       std_scale=std_scale)
     bo_results = bo_loop.run()
 
     # ── Run random baseline ────────────────────────────────────────────
