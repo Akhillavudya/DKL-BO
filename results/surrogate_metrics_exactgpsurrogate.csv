@@ -1,3 +1,3 @@
 surrogate,split,seed,train_time_s,mae,rmse,r2,nll,ence,miscal_area,spearman_rho,coverage_95
-ExactGPSurrogate,val,42,84.65,0.4987,0.7115,0.588,1.1489,0.3015,0.0832,0.1428,0.9012
-ExactGPSurrogate,test,42,84.65,0.8821,1.1552,0.4461,1.6546,0.3481,0.086,0.2553,0.9
+ExactGPSurrogate,val,42,87.91,0.4828,0.6763,0.6278,0.9786,0.2017,0.0844,0.255,0.9444
+ExactGPSurrogate,test,42,87.91,0.9778,1.2423,0.3594,1.7548,0.5354,0.1219,0.0912,0.7667
