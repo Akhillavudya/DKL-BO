@@ -10,3 +10,5 @@ pooling: attention  # attention not average: handles variable unit-cell sizes in
 encoder_lr: 0.001    # smaller LR for encoder — prevents mode collapse ([P2])
 batch_size: 64       # DataLoader batch size for encoding
 standardize_embeddings: true  # E1: zero-mean/unit-var on labelled embeddings before GP
+spectral_norm: true           # E4: constrain encoder Lipschitz constant → prevents feature collapse
+sn_coeff: 1.0                 # E4: per-layer Lipschitz bound (sweep: 0.95, 1.0, 1.5, 3.0)

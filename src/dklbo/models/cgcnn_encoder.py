@@ -59,6 +59,14 @@ class CGCNNEncoder(nn.Module):
           → output [B, hidden_dim]
 
     The output is the embedding the GP receives.
+
+    E4 — Spectral Normalization
+    ---------------------------
+    When spectral_norm=True, every Linear layer is wrapped with
+    torch.nn.utils.parametrizations.spectral_norm.  This constrains each
+    layer's Lipschitz constant to ≤ sn_coeff, keeping the encoder
+    distance-preserving and preventing feature collapse that causes GP
+    overconfidence on OOD materials.
     """
 
     def __init__(
@@ -69,6 +77,8 @@ class CGCNNEncoder(nn.Module):
         n_conv: int = 3,
         n_fc: int = 1,
         pooling: str = "attention",
+        spectral_norm: bool = False,
+        sn_coeff: float = 1.0,
     ) -> None:
         super().__init__()
         self.embed = nn.Linear(atom_dim, hidden_dim)
@@ -82,6 +92,35 @@ class CGCNNEncoder(nn.Module):
             [nn.Linear(hidden_dim, hidden_dim) for _ in range(n_fc)]
         )
         self.out_dim = hidden_dim
+
+        if spectral_norm:
+            self._apply_spectral_norm(sn_coeff)
+
+    def _apply_spectral_norm(self, coeff: float = 1.0) -> None:
+        """Wrap every Linear layer with spectral norm + optional coefficient scaling.
+
+        spectral_norm constrains ||W||_2 ≤ 1.  The coeff multiplies every
+        layer output so the effective Lipschitz bound per layer is coeff.
+        coeff=1.0 → strict 1-Lipschitz per layer (most conservative).
+        coeff>1.0 → looser constraint, more encoder expressivity.
+        """
+        from torch.nn.utils.parametrizations import spectral_norm as _sn
+
+        def _wrap(module: nn.Linear) -> None:
+            _sn(module)
+            if coeff != 1.0:
+                module.register_forward_hook(
+                    lambda m, inp, out: out * coeff
+                )
+
+        _wrap(self.embed)
+        for conv in self.convs:
+            _wrap(conv.lin_gate)
+            _wrap(conv.lin_msg)
+        if hasattr(self, "attn_lin"):
+            _wrap(self.attn_lin)
+        for fc in self.fc_layers:
+            _wrap(fc)
 
     def forward(
         self,

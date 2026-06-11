@@ -110,6 +110,8 @@ def main(cfg: DictConfig) -> None:
         n_conv=cfg.model.n_conv,
         n_fc=cfg.model.n_fc,
         pooling=cfg.model.pooling,
+        spectral_norm=cfg.model.get("spectral_norm", False),
+        sn_coeff=float(cfg.model.get("sn_coeff", 1.0)),
     )
 
     # Access surrogate config — try dedicated surrogate key, fallback to model

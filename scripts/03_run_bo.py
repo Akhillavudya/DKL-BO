@@ -75,12 +75,14 @@ def main(cfg: DictConfig) -> None:
     # ── Build fresh DKL model ──────────────────────────────────────────
     # Start from random weights — BO simulation has no prior knowledge.
     encoder = CGCNNEncoder(
-        atom_dim  = cfg.model.atom_dim,
-        bond_dim  = cfg.model.bond_dim,
-        hidden_dim= cfg.model.hidden_dim,
-        n_conv    = cfg.model.n_conv,
-        n_fc      = cfg.model.n_fc,
-        pooling   = cfg.model.pooling,
+        atom_dim      = cfg.model.atom_dim,
+        bond_dim      = cfg.model.bond_dim,
+        hidden_dim    = cfg.model.hidden_dim,
+        n_conv        = cfg.model.n_conv,
+        n_fc          = cfg.model.n_fc,
+        pooling       = cfg.model.pooling,
+        spectral_norm = cfg.model.get("spectral_norm", False),
+        sn_coeff      = float(cfg.model.get("sn_coeff", 1.0)),
     )
     surrogate = build_surrogate(cfg.surrogate)
     dkl = DKLModel(
