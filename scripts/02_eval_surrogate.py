@@ -151,6 +151,17 @@ def main(cfg: DictConfig) -> None:
     logger.info(f"Training wall-clock: {train_time:.1f}s  ({train_time/60:.1f} min)")
 
     # ------------------------------------------------------------------ #
+    # Evaluate on train split
+    # ------------------------------------------------------------------ #
+    logger.info("Evaluating on train split...")
+    train_loader_eval = make_loader("train", shuffle=False)
+    train_emb, train_y = dkl.encode(train_loader_eval)
+    train_mean, train_std = dkl.surrogate.predict(dkl._scale(train_emb))
+    acc_train = compute_accuracy_metrics(train_y, train_mean)
+    cal_train = compute_calibration_metrics(train_y, train_mean, train_std)
+    print_metrics_table(acc_train, cal_train, split="train", surrogate=surrogate_name)
+
+    # ------------------------------------------------------------------ #
     # Evaluate on val split (sanity check)
     # ------------------------------------------------------------------ #
     logger.info("Evaluating on validation split...")
@@ -204,7 +215,7 @@ def main(cfg: DictConfig) -> None:
     metrics_path = results_dir / f"surrogate_metrics_{surrogate_name.lower()}.csv"
 
     rows = []
-    for split, acc, cal in [("val", acc_val, cal_val), ("test", acc_test, cal_test)]:
+    for split, acc, cal in [("train", acc_train, cal_train), ("val", acc_val, cal_val), ("test", acc_test, cal_test)]:
         rows.append({
             "surrogate": surrogate_name,
             "split": split,

@@ -1,0 +1,18 @@
+# Expected Improvement acquisition — used for the GP-BO vs DKL-BO benchmark.
+# Parameter-free (no beta), so both methods compete on an identical acquisition.
+acquisition: ei
+beta: 0.0             # unused by EI; kept so the loop's call site stays uniform
+xi: 0.01             # small jitter that discourages pure exploitation
+direction: max       # max | min — overridden per task by the benchmark runner
+
+# Initial labelling
+n_init: 10           # random materials labelled before any BO cycle
+
+# Loop settings
+n_cycles: 100        # number of acquisitions after warm-start
+retrain_every_k: 5   # full DKL retrain every K cycles; GP-only refit in between
+
+# Training epochs per cycle
+n_joint_epochs: 50        # joint encoder+GP epochs per full retrain
+n_pretrain_epochs: 20     # GP warmup epochs before joint training
+gp_refit_epochs: 50       # GP-only refit epochs between full retrains

@@ -1,0 +1,18 @@
+# Benchmark target: electron effective mass at the conduction-band minimum.
+# NOTE: the original brief said `emass_cb_1`; that column does not exist in this
+# C2DB dump — the real column is `emass_cbm`.
+#
+# Graphs are structure-only, so this task REUSES the existing band-gap LMDB cache
+# (graph_cache_target=gap_hse) rather than rebuilding graphs. Only the metadata /
+# split file differs.
+db_path: ???          # override via CLI: data.db_path=/path/to/c2db.db
+target: emass_cbm
+graph_cache_target: gap_hse   # which cache to open for graphs (structure-only)
+meta_file: metadata_emass.parquet
+gap_min: 0.01         # semiconductor filter applied on gap_hse (emass needs a gap)
+radius: 8.0
+vacuum_cutoff: 4.0
+max_neighbors: 12
+val_frac: 0.1
+test_frac: 0.1
+cache_dir: data/cache/

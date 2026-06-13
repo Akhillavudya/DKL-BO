@@ -1,0 +1,33 @@
+# Benchmark matrix: Standard GP-BO vs DKL-BO vs Random.
+# Loaded directly by scripts/07_run_benchmark.py (not via Hydra defaults) so the
+# task list stays explicit and easy to edit. Loop/model settings come from the
+# Hydra config (bo=ei, model=cgcnn, surrogate=gp_exact, data=...).
+
+seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+methods: [dkl, std_gp, random]
+
+# Each task pairs a target universe (metadata + descriptors) with a direction.
+# "max"/"min" use the sign trick in the BO loops. Graphs are structure-only and
+# always read from the band-gap cache (graph_cache_target in the data config).
+tasks:
+  - name: gap_max
+    meta_file: metadata.parquet
+    descriptors: descriptors_gap.parquet
+    direction: max
+  - name: gap_min
+    meta_file: metadata.parquet
+    descriptors: descriptors_gap.parquet
+    direction: min
+  - name: emass_min
+    meta_file: metadata_emass.parquet
+    descriptors: descriptors_emass.parquet
+    direction: min
+  - name: emass_max
+    meta_file: metadata_emass.parquet
+    descriptors: descriptors_emass.parquet
+    direction: max
+
+# Standard-GP options
+std_gp:
+  ard: true          # one lengthscale per descriptor dim — helps with ~43 mixed-scale features
+  gp_epochs: 100

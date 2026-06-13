@@ -59,38 +59,54 @@ ax.grid(alpha=0.3)
 save(fig, "01_training_loss.png")
 
 # ═══════════════════════════════════════════════════════════════════════════
-# PLOT 2 — Phase 2 accuracy metrics bar chart
+# PLOT 2 — Phase 2 accuracy metrics bar chart (Train / Val / Test)
 # ═══════════════════════════════════════════════════════════════════════════
-fig, axes = plt.subplots(1, 3, figsize=(12, 5))
-fig.suptitle("Phase 2 — Model Accuracy Metrics", fontsize=14, fontweight="bold")
+fig, axes = plt.subplots(1, 3, figsize=(13, 5))
+fig.suptitle("Phase 2 — Model Accuracy Metrics (Train / Val / Test)", fontsize=14, fontweight="bold")
 
 metrics_labels = ["MAE (eV)", "RMSE (eV)", "R²"]
-val_vals  = [p2[p2.split=="val"].iloc[0].mae,
-             p2[p2.split=="val"].iloc[0].rmse,
-             p2[p2.split=="val"].iloc[0].r2]
-test_vals = [p2[p2.split=="test"].iloc[0].mae,
-             p2[p2.split=="test"].iloc[0].rmse,
-             p2[p2.split=="test"].iloc[0].r2]
-targets   = [0.45, 0.65, 0.70]   # approximate literature targets
+
+has_train = "train" in p2["split"].values
+if has_train:
+    train_row = p2[p2.split == "train"].iloc[0]
+    train_vals = [train_row.mae, train_row.rmse, train_row.r2]
+val_row  = p2[p2.split == "val"].iloc[0]
+test_row = p2[p2.split == "test"].iloc[0]
+val_vals  = [val_row.mae,  val_row.rmse,  val_row.r2]
+test_vals = [test_row.mae, test_row.rmse, test_row.r2]
+
+targets       = [0.45, 0.65, 0.70]
 target_labels = ["Target ≤0.45", "Target ≤0.65", "Target ≥0.70"]
 
-colors_val  = ["#2563EB", "#2563EB", "#2563EB"]
-colors_test = ["#93C5FD", "#93C5FD", "#93C5FD"]
+C_TRAIN = "#1D4ED8"   # dark blue  — train
+C_VAL   = "#60A5FA"   # mid blue   — val
+C_TEST  = "#BFDBFE"   # light blue — test
 
-for i, (ax, label, vv, tv, tgt, tgt_label) in enumerate(
-        zip(axes, metrics_labels, val_vals, test_vals, targets, target_labels)):
-    bars = ax.bar(["Val", "Test"], [vv, tv],
-                  color=[C_BO, "#93C5FD"], width=0.5, edgecolor="white", linewidth=1.5)
-    # target line
+for i, (ax, label, tgt, tgt_label) in enumerate(
+        zip(axes, metrics_labels, targets, target_labels)):
+    if has_train:
+        bar_labels = ["Train", "Val", "Test"]
+        bar_vals   = [train_vals[i], val_vals[i], test_vals[i]]
+        bar_colors = [C_TRAIN, C_VAL, C_TEST]
+    else:
+        bar_labels = ["Val", "Test"]
+        bar_vals   = [val_vals[i], test_vals[i]]
+        bar_colors = [C_VAL, C_TEST]
+
+    bars = ax.bar(bar_labels, bar_vals, color=bar_colors, width=0.5,
+                  edgecolor="white", linewidth=1.5)
+
     if label == "R²":
         ax.axhline(tgt, color=C_GOOD, lw=1.5, ls="--", label=tgt_label)
-        ax.set_ylim(0, 1.0)
+        ax.set_ylim(0, 1.05)
     else:
         ax.axhline(tgt, color=C_GOOD, lw=1.5, ls="--", label=tgt_label)
-        ax.set_ylim(0, max(vv, tv) * 1.4)
-    for bar, val in zip(bars, [vv, tv]):
-        ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.01,
+        ax.set_ylim(0, max(bar_vals) * 1.4)
+
+    for bar, val in zip(bars, bar_vals):
+        ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 0.01,
                 f"{val:.3f}", ha="center", va="bottom", fontsize=11, fontweight="bold")
+
     ax.set_title(label, fontsize=12)
     ax.legend(fontsize=9)
     ax.grid(axis="y", alpha=0.3)

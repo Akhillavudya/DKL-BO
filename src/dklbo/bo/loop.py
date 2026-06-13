@@ -80,6 +80,7 @@ class BOLoop:
         cfg,
         seed: int = 42,
         std_scale: float = 1.0,
+        direction: str = "max",
     ) -> None:
         self.dkl       = dkl
         self.cache     = cache
@@ -89,16 +90,28 @@ class BOLoop:
         self.cfg    = cfg
         self.seed   = seed
 
-        # Precompute top-k thresholds once (used every cycle for metrics)
-        sorted_vals = sorted(self.oracle.values(), reverse=True)
-        n = len(sorted_vals)
-        self.top50_threshold    = sorted_vals[min(49, n - 1)]
-        self.top10pct_threshold = sorted_vals[max(0, int(0.1 * n) - 1)]
+        # Optimisation direction. The GP is always trained to maximise an
+        # *internal* target y_internal = sign * y_true, so all acquisition /
+        # argmax / top-k logic stays in the maximise convention. Reporting is
+        # converted back to original units (best_so_far = sign * best_internal).
+        if direction not in ("max", "min"):
+            raise ValueError(f"direction must be 'max' or 'min', got {direction!r}")
+        self.direction = direction
+        self.sign = 1.0 if direction == "max" else -1.0
+
+        # Precompute top-k thresholds once (used every cycle for metrics).
+        # "Best" always means largest internal value, so for a min task the
+        # top-50 are the 50 *lowest* original values.
+        internal_vals = sorted((self.sign * v for v in self.oracle.values()),
+                               reverse=True)
+        n = len(internal_vals)
+        self.top50_threshold    = internal_vals[min(49, n - 1)]
+        self.top10pct_threshold = internal_vals[max(0, int(0.1 * n) - 1)]
 
         logger.info(
-            f"BOLoop: {n} materials  |  "
-            f"top-50 threshold={self.top50_threshold:.2f} eV  "
-            f"top-10% threshold={self.top10pct_threshold:.2f} eV"
+            f"BOLoop: {n} materials  |  direction={direction}  |  "
+            f"top-50 internal threshold={self.top50_threshold:.2f}  "
+            f"top-10% internal threshold={self.top10pct_threshold:.2f}"
         )
 
     # ------------------------------------------------------------------
@@ -111,6 +124,7 @@ class BOLoop:
         random.seed(self.seed)
 
         acq_fn   = get_acquisition(self.cfg.acquisition)
+        xi       = float(self.cfg.get("xi", 0.01))   # EI exploration jitter
         n_joint  = int(self.cfg.get("n_joint_epochs",    50))
         n_pre    = int(self.cfg.get("n_pretrain_epochs", 20))
         n_refit  = int(self.cfg.get("gp_refit_epochs",   50))
@@ -121,10 +135,12 @@ class BOLoop:
         pool_uids:     List[str] = [u for u in self.all_uids
                                     if u not in set(labelled_uids)]
 
-        best_so_far = max(self.oracle[u] for u in labelled_uids)
+        # Track the incumbent in internal (signed) space; report in original units.
+        best_internal = max(self.sign * self.oracle[u] for u in labelled_uids)
+        best_so_far   = self.sign * best_internal
         logger.info(
             f"Init: {self.cfg.n_init} random labels  |  "
-            f"best gap = {best_so_far:.3f} eV"
+            f"best ({self.direction}) = {best_so_far:.3f}"
         )
 
         # Caches — invalidated whenever the encoder is retrained
@@ -147,10 +163,15 @@ class BOLoop:
                     f"({len(labelled_uids)} labelled)"
                 )
                 labelled_graphs = [self.cache[uid] for uid in labelled_uids]
+                train_y_internal = torch.tensor(
+                    [self.sign * self.oracle[u] for u in labelled_uids],
+                    dtype=torch.float32,
+                )
                 self.dkl.fit(
                     train_graphs      = labelled_graphs,
                     n_epochs          = n_joint,
                     gp_pretrain_epochs= n_pre,
+                    train_y           = train_y_internal,
                 )
                 pool_embs     = None   # encoder changed → invalidate
                 labelled_embs = None
@@ -159,7 +180,7 @@ class BOLoop:
                 # GP-only refit (encoder unchanged → cached embeddings still valid)
                 if labelled_embs is not None:
                     train_y = torch.tensor(
-                        [self.oracle[u] for u in labelled_uids],
+                        [self.sign * self.oracle[u] for u in labelled_uids],
                         dtype=torch.float32,
                     )
                     # E1: re-fit scaler on updated labelled set, then standardize
@@ -192,19 +213,23 @@ class BOLoop:
             mean, std = self.dkl.surrogate.predict(self.dkl._scale(pool_embs))
             # E2: apply temperature-scaling recalibration (τ=1.0 is a no-op)
             std_cal = std * self.std_scale
-            scores  = acq_fn(mean, std_cal, beta=float(self.cfg.beta))
+            # mean/std are in internal (signed) space; best_f is the internal incumbent.
+            scores  = acq_fn(mean, std_cal, beta=float(self.cfg.beta),
+                             best_f=best_internal, xi=xi)
             predict_time = time.perf_counter() - t_pred
 
             # ── Select & label ────────────────────────────────────────
             best_idx     = int(scores.argmax().item())
             selected_uid = pool_uids[best_idx]
-            true_gap     = self.oracle[selected_uid]
+            true_gap     = self.oracle[selected_uid]          # original units
+            internal_gap = self.sign * true_gap
 
-            if true_gap > best_so_far:
-                best_so_far = true_gap
+            if internal_gap > best_internal:
+                best_internal = internal_gap
+            best_so_far = self.sign * best_internal           # back to original units
 
-            is_top50    = true_gap >= self.top50_threshold
-            is_top10pct = true_gap >= self.top10pct_threshold
+            is_top50    = internal_gap >= self.top50_threshold
+            is_top10pct = internal_gap >= self.top10pct_threshold
             cumul_top50    += int(is_top50)
             cumul_top10pct += int(is_top10pct)
 

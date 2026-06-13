@@ -131,6 +131,7 @@ class DKLModel:
         n_epochs: int = 100,
         gp_pretrain_epochs: int = 50,
         gp_final_epochs: int = 300,
+        train_y: Tensor | None = None,
     ) -> dict:
         """Joint DKL training on all training graphs.
 
@@ -139,6 +140,14 @@ class DKLModel:
         train_graphs      : list of PyG Data objects (all training materials)
         n_epochs          : joint training epochs (encoder + GP together)
         gp_pretrain_epochs: GP-only warmup before joint training starts
+        train_y           : optional [N] target override aligned to train_graphs
+                            order. When given, these labels replace the targets
+                            baked into the graphs. Required when the cached
+                            graphs carry a different property than the one being
+                            optimised (e.g. the effective-mass benchmark reuses
+                            the band-gap graph cache) or when a minimization task
+                            feeds a sign-flipped target. When None, the graphs'
+                            own `.y` is used (original behaviour).
 
         Returns
         -------
@@ -149,6 +158,11 @@ class DKLModel:
         # Build one big batch of ALL training graphs
         all_batch = Batch.from_data_list(train_graphs)
 
+        # Optional explicit targets (aligned to train_graphs order)
+        y_override = (
+            train_y.to(self.device).float() if train_y is not None else None
+        )
+
         # ---- Phase A: GP warmup (encoder frozen, fit GP on initial embeddings) ----
         logger.info(f"GP warmup: {gp_pretrain_epochs} epochs on initial embeddings")
         with torch.no_grad():
@@ -157,10 +171,10 @@ class DKLModel:
         init_loader = DataLoader(
             _SimpleGraphList(train_graphs), batch_size=len(train_graphs)
         )
-        init_emb, train_y = self.encode(init_loader)
+        init_emb, encoded_y = self.encode(init_loader)
         init_emb = init_emb.to(self.device)
-        train_y = train_y.to(self.device)
-        self.surrogate.fit(init_emb.cpu(), train_y.cpu(), n_epochs=gp_pretrain_epochs)
+        warmup_y = y_override if y_override is not None else encoded_y.to(self.device)
+        self.surrogate.fit(init_emb.cpu(), warmup_y.cpu(), n_epochs=gp_pretrain_epochs)
         self.surrogate.to(self.device)
         self.surrogate.train_mode()
 
@@ -182,6 +196,8 @@ class DKLModel:
             optimizer.zero_grad()
 
             emb, y = self._encode_with_grad(all_batch)  # float32, has grad
+            if y_override is not None:
+                y = y_override                          # use explicit targets
             loss = self.surrogate.joint_loss(emb, y)    # converts to float64 internally
             loss.backward()
             optimizer.step()
@@ -194,9 +210,10 @@ class DKLModel:
         logger.info(f"DKL training done in {elapsed:.1f}s")
 
         # Refit GP one final time on the trained encoder's embeddings
-        final_emb, final_y = self.encode(
+        final_emb, encoded_final_y = self.encode(
             DataLoader(_SimpleGraphList(train_graphs), batch_size=512)
         )
+        final_y = y_override.cpu() if y_override is not None else encoded_final_y
         # E1: fit scaler on labelled embeddings, then standardize before GP
         self._fit_scaler(final_emb)
         self.surrogate.fit(self._scale(final_emb), final_y, n_epochs=gp_final_epochs)

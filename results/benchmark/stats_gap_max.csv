@@ -1,0 +1,3 @@
+task,metric,n_seeds,dkl_mean,std_gp_mean,mean_diff_dkl_minus_stdgp,wilcoxon_p,rank_biserial,dkl_win_rate
+gap_max,regret_auc,10,2.5755723528676535,0.8629063119999891,1.7126660408676642,0.009765625,0.8909090909090909,0.2
+gap_max,final_best,10,8.740356935178754,10.791584270238179,-2.051227335059424,0.015625,-1.0,0.0

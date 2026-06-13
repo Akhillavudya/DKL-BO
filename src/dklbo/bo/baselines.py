@@ -31,16 +31,24 @@ class RandomBaseline:
     seed    : reproducibility seed — use the SAME seed as BOLoop for fair comparison
     """
 
-    def __init__(self, meta_df: pd.DataFrame, cfg, seed: int = 42) -> None:
+    def __init__(self, meta_df: pd.DataFrame, cfg, seed: int = 42,
+                 direction: str = "max") -> None:
         self.oracle: Dict[str, float] = dict(zip(meta_df["uid"], meta_df["target"]))
         self.all_uids: List[str]      = meta_df["uid"].tolist()
         self.cfg  = cfg
         self.seed = seed
 
-        sorted_vals = sorted(self.oracle.values(), reverse=True)
-        n = len(sorted_vals)
-        self.top50_threshold    = sorted_vals[min(49, n - 1)]
-        self.top10pct_threshold = sorted_vals[max(0, int(0.1 * n) - 1)]
+        # Same sign trick as BOLoop so top-k / best are defined identically.
+        if direction not in ("max", "min"):
+            raise ValueError(f"direction must be 'max' or 'min', got {direction!r}")
+        self.direction = direction
+        self.sign = 1.0 if direction == "max" else -1.0
+
+        internal_vals = sorted((self.sign * v for v in self.oracle.values()),
+                               reverse=True)
+        n = len(internal_vals)
+        self.top50_threshold    = internal_vals[min(49, n - 1)]
+        self.top10pct_threshold = internal_vals[max(0, int(0.1 * n) - 1)]
 
     def run(self) -> pd.DataFrame:
         """Run random baseline. Returns one-row-per-cycle DataFrame."""
@@ -51,7 +59,8 @@ class RandomBaseline:
         pool_uids:     List[str] = [u for u in self.all_uids
                                     if u not in set(labelled_uids)]
 
-        best_so_far    = max(self.oracle[u] for u in labelled_uids)
+        best_internal  = max(self.sign * self.oracle[u] for u in labelled_uids)
+        best_so_far    = self.sign * best_internal
         cumul_top50    = 0
         cumul_top10pct = 0
         records: List[CycleRecord] = []
@@ -65,12 +74,14 @@ class RandomBaseline:
             idx          = random.randrange(len(pool_uids))
             selected_uid = pool_uids[idx]
             true_gap     = self.oracle[selected_uid]
+            internal_gap = self.sign * true_gap
 
-            if true_gap > best_so_far:
-                best_so_far = true_gap
+            if internal_gap > best_internal:
+                best_internal = internal_gap
+            best_so_far = self.sign * best_internal
 
-            is_top50    = true_gap >= self.top50_threshold
-            is_top10pct = true_gap >= self.top10pct_threshold
+            is_top50    = internal_gap >= self.top50_threshold
+            is_top10pct = internal_gap >= self.top10pct_threshold
             cumul_top50    += int(is_top50)
             cumul_top10pct += int(is_top10pct)
 
