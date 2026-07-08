@@ -1,0 +1,521 @@
+Pool=766 | seeds=10 cycles=100 init=10 | acquisition=EI
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 5.635
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.681  top50=22  top10%=33
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 3.745
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.573  top50=20  top10%=28
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 4.709
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.681  top50=23  top10%=29
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 4.523
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.681  top50=26  top10%=39
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 3.271
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.681  top50=23  top10%=29
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 3.781
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.681  top50=15  top10%=21
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 5.612
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.681  top50=25  top10%=35
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 5.363
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.681  top50=23  top10%=31
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 5.386
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.681  top50=22  top10%=31
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 2.795
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.681  top50=14  top10%=18
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 5.635
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.681  top50=32  top10%=45
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 3.745
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.681  top50=33  top10%=44
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 4.709
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.681  top50=31  top10%=40
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 4.523
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.573  top50=32  top10%=42
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 3.271
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.681  top50=32  top10%=43
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 3.781
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.681  top50=29  top10%=40
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 5.612
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.573  top50=34  top10%=46
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 5.363
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.573  top50=30  top10%=41
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 5.386
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.681  top50=32  top10%=40
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 2.795
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.573  top50=35  top10%=43
+RandomBaseline: 10 init labels  |  best gap = 5.635 eV
+RandomBaseline done  |  best=8.573 eV  top50=7  top10%=12
+RandomBaseline: 10 init labels  |  best gap = 3.745 eV
+RandomBaseline done  |  best=6.553 eV  top50=4  top10%=9
+RandomBaseline: 10 init labels  |  best gap = 4.709 eV
+RandomBaseline done  |  best=7.022 eV  top50=5  top10%=10
+RandomBaseline: 10 init labels  |  best gap = 4.523 eV
+RandomBaseline done  |  best=7.351 eV  top50=8  top10%=9
+RandomBaseline: 10 init labels  |  best gap = 3.271 eV
+RandomBaseline done  |  best=7.587 eV  top50=8  top10%=13
+RandomBaseline: 10 init labels  |  best gap = 3.781 eV
+RandomBaseline done  |  best=7.022 eV  top50=4  top10%=8
+RandomBaseline: 10 init labels  |  best gap = 5.612 eV
+RandomBaseline done  |  best=7.022 eV  top50=8  top10%=10
+RandomBaseline: 10 init labels  |  best gap = 5.363 eV
+RandomBaseline done  |  best=8.573 eV  top50=5  top10%=5
+RandomBaseline: 10 init labels  |  best gap = 5.386 eV
+RandomBaseline done  |  best=6.616 eV  top50=4  top10%=8
+RandomBaseline: 10 init labels  |  best gap = 2.795 eV
+RandomBaseline done  |  best=7.004 eV  top50=11  top10%=14
+  [gap_max] done
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = 0.995
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=0.020  top50=18  top10%=34
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = 0.642
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=0.020  top50=23  top10%=31
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = 0.118
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=0.029  top50=17  top10%=25
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = 0.554
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=0.020  top50=24  top10%=37
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = 0.025
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=0.025  top50=21  top10%=33
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = 0.337
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=0.020  top50=18  top10%=25
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = 0.279
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=0.020  top50=18  top10%=25
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = 0.078
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=0.025  top50=24  top10%=31
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = 0.417
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=0.025  top50=14  top10%=20
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = 0.266
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=0.020  top50=17  top10%=26
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = 0.995
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=0.025  top50=16  top10%=20
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = 0.642
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=0.020  top50=20  top10%=30
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = 0.118
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=0.020  top50=19  top10%=24
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = 0.554
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=0.025  top50=17  top10%=24
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = 0.025
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=0.025  top50=18  top10%=28
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = 0.337
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=0.025  top50=18  top10%=26
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = 0.279
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=0.020  top50=26  top10%=33
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = 0.078
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=0.025  top50=19  top10%=27
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = 0.417
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=0.020  top50=23  top10%=31
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = 0.266
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=0.029  top50=22  top10%=28
+RandomBaseline: 10 init labels  |  best gap = 0.995 eV
+RandomBaseline done  |  best=0.108 eV  top50=4  top10%=10
+RandomBaseline: 10 init labels  |  best gap = 0.642 eV
+RandomBaseline done  |  best=0.025 eV  top50=8  top10%=11
+RandomBaseline: 10 init labels  |  best gap = 0.118 eV
+RandomBaseline done  |  best=0.118 eV  top50=4  top10%=8
+RandomBaseline: 10 init labels  |  best gap = 0.554 eV
+RandomBaseline done  |  best=0.025 eV  top50=10  top10%=13
+RandomBaseline: 10 init labels  |  best gap = 0.025 eV
+RandomBaseline done  |  best=0.025 eV  top50=7  top10%=15
+RandomBaseline: 10 init labels  |  best gap = 0.337 eV
+RandomBaseline done  |  best=0.020 eV  top50=5  top10%=11
+RandomBaseline: 10 init labels  |  best gap = 0.279 eV
+RandomBaseline done  |  best=0.029 eV  top50=5  top10%=11
+RandomBaseline: 10 init labels  |  best gap = 0.078 eV
+RandomBaseline done  |  best=0.025 eV  top50=8  top10%=11
+RandomBaseline: 10 init labels  |  best gap = 0.417 eV
+RandomBaseline done  |  best=0.078 eV  top50=9  top10%=10
+RandomBaseline: 10 init labels  |  best gap = 0.266 eV
+RandomBaseline done  |  best=0.266 eV  top50=4  top10%=5
+  [gap_min] done
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = -0.307
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=-1.988  top50=25  top10%=30
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = -0.384
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=-1.498  top50=13  top10%=18
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = -0.547
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=-1.120  top50=11  top10%=17
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = -1.508
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=-2.799  top50=21  top10%=23
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = -0.562
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=-1.508  top50=20  top10%=27
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = -0.804
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=-1.988  top50=16  top10%=17
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = -1.220
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=-1.988  top50=17  top10%=27
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = -1.470
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=-1.508  top50=13  top10%=22
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = -1.281
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=-2.799  top50=8  top10%=13
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = -0.297
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=-2.799  top50=21  top10%=24
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = -0.307
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=-1.470  top50=10  top10%=16
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = -0.384
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=-1.498  top50=18  top10%=23
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = -0.547
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=-1.988  top50=24  top10%=28
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = -1.508
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=-2.799  top50=25  top10%=31
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = -0.562
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=-1.508  top50=21  top10%=28
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = -0.804
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=-1.508  top50=19  top10%=22
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = -1.220
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=-1.498  top50=22  top10%=25
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = -1.470
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=-1.470  top50=11  top10%=16
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = -1.281
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=-1.988  top50=27  top10%=34
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=min
+Init: 10 random labels  |  best (min) = -0.297
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=-1.412  top50=12  top10%=18
+RandomBaseline: 10 init labels  |  best gap = -0.307 eV
+RandomBaseline done  |  best=-1.508 eV  top50=8  top10%=12
+RandomBaseline: 10 init labels  |  best gap = -0.384 eV
+RandomBaseline done  |  best=-1.988 eV  top50=8  top10%=11
+RandomBaseline: 10 init labels  |  best gap = -0.547 eV
+RandomBaseline done  |  best=-1.498 eV  top50=7  top10%=9
+RandomBaseline: 10 init labels  |  best gap = -1.508 eV
+RandomBaseline done  |  best=-1.508 eV  top50=10  top10%=14
+RandomBaseline: 10 init labels  |  best gap = -0.562 eV
+RandomBaseline done  |  best=-1.412 eV  top50=6  top10%=8
+RandomBaseline: 10 init labels  |  best gap = -0.804 eV
+RandomBaseline done  |  best=-1.239 eV  top50=4  top10%=5
+RandomBaseline: 10 init labels  |  best gap = -1.220 eV
+RandomBaseline done  |  best=-1.508 eV  top50=9  top10%=11
+RandomBaseline: 10 init labels  |  best gap = -1.470 eV
+RandomBaseline done  |  best=-1.470 eV  top50=13  top10%=15
+RandomBaseline: 10 init labels  |  best gap = -1.281 eV
+RandomBaseline done  |  best=-1.281 eV  top50=8  top10%=10
+RandomBaseline: 10 init labels  |  best gap = -0.297 eV
+RandomBaseline done  |  best=-1.102 eV  top50=4  top10%=10
+  [emass_min] done
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 1.193
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=1.579  top50=11  top10%=19
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 0.592
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=1.579  top50=15  top10%=18
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 1.113
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=1.469  top50=27  top10%=32
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 1.036
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=1.579  top50=10  top10%=16
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 1.324
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=2.134  top50=16  top10%=23
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 0.592
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=1.579  top50=32  top10%=36
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 0.826
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=2.134  top50=10  top10%=14
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 0.491
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=1.579  top50=19  top10%=24
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 1.162
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=1.193  top50=3  top10%=7
+FeatureBOLoop: 766 materials × 43 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 1.236
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=2.134  top50=19  top10%=21
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 1.193
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=1.193  top50=1  top10%=8
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 0.592
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=1.309  top50=13  top10%=17
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 1.113
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=1.274  top50=12  top10%=13
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 1.036
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=1.579  top50=15  top10%=22
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 1.324
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=2.134  top50=3  top10%=4
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 0.592
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=1.236  top50=11  top10%=14
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 0.826
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=1.309  top50=15  top10%=19
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 0.491
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=1.579  top50=22  top10%=28
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 1.162
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=1.469  top50=17  top10%=21
+FeatureBOLoop: 766 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 1.236
+/home/roy/Desktop/DKL-BO/venv/lib/python3.13/site-packages/torch/_compile.py:54: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=1.469  top50=17  top10%=22
+RandomBaseline: 10 init labels  |  best gap = 1.193 eV
+RandomBaseline done  |  best=1.579 eV  top50=11  top10%=15
+RandomBaseline: 10 init labels  |  best gap = 0.592 eV
+RandomBaseline done  |  best=1.579 eV  top50=5  top10%=10
+RandomBaseline: 10 init labels  |  best gap = 1.113 eV
+RandomBaseline done  |  best=1.217 eV  top50=6  top10%=9
+RandomBaseline: 10 init labels  |  best gap = 1.036 eV
+RandomBaseline done  |  best=2.134 eV  top50=8  top10%=11
+RandomBaseline: 10 init labels  |  best gap = 1.324 eV
+RandomBaseline done  |  best=1.324 eV  top50=6  top10%=8
+RandomBaseline: 10 init labels  |  best gap = 0.592 eV
+RandomBaseline done  |  best=2.134 eV  top50=4  top10%=10
+RandomBaseline: 10 init labels  |  best gap = 0.826 eV
+RandomBaseline done  |  best=1.113 eV  top50=7  top10%=12
+RandomBaseline: 10 init labels  |  best gap = 0.491 eV
+RandomBaseline done  |  best=1.154 eV  top50=4  top10%=7
+RandomBaseline: 10 init labels  |  best gap = 1.162 eV
+RandomBaseline done  |  best=1.579 eV  top50=3  top10%=7
+RandomBaseline: 10 init labels  |  best gap = 1.236 eV
+RandomBaseline done  |  best=1.309 eV  top50=7  top10%=11
+  [emass_max] done
+Runs written=120 skipped=0. Summarizing…
+
+================================================================
+PHASE 3 — BO contest (mean over seeds). best = best value found
+(emass tasks: 'best' is in log10 units; top-k counts are scale-free)
+================================================================
+
+  gap_max
+    method   |     best   top50  top10%
+    ------------------------------------
+    std_gp   |    8.671    21.3    29.4
+    dkl      |    8.638    32.0    42.4
+    random   |    7.332     6.4     9.8
+
+  gap_min
+    method   |     best   top50  top10%
+    ------------------------------------
+    std_gp   |    0.022    19.4    28.7
+    dkl      |    0.023    19.8    27.1
+    random   |    0.072     6.4    10.5
+
+  emass_min
+    method   |     best   top50  top10%
+    ------------------------------------
+    std_gp   |   -1.999    16.5    21.8
+    dkl      |   -1.714    18.9    24.1
+    random   |   -1.451     7.7    10.5
+
+  emass_max
+    method   |     best   top50  top10%
+    ------------------------------------
+    std_gp   |    1.696    16.2    21.0
+    dkl      |    1.455    12.6    16.8
+    random   |    1.512     6.1    10.0
+
+Saved → /home/roy/Desktop/DKL-BO/results/rebuild/bo_summary.csv

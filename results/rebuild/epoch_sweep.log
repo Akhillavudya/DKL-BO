@@ -1,0 +1,642 @@
+=== epoch sweep: gap, E={25,50,75,100,150,200,300,400}, 5 seeds ===
+train=1901 pool=766 | epochs=[25, 50, 75, 100, 150, 200, 300, 400] seeds=[0, 1, 2, 3, 4]
+GP warmup: 50 epochs on initial embeddings
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+Joint DKL training: 75 epochs
+  Epoch 20/75  loss=1.3357
+  Epoch 40/75  loss=1.2166
+  Epoch 60/75  loss=1.1306
+DKL training done in 7.3s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs75/seed0  train_MAE=0.111 pool_MAE=0.713
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 100 epochs
+  Epoch 20/100  loss=1.3358
+  Epoch 40/100  loss=1.2170
+  Epoch 60/100  loss=1.1316
+  Epoch 80/100  loss=1.0660
+  Epoch 100/100  loss=1.0134
+DKL training done in 8.7s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs100/seed0  train_MAE=0.106 pool_MAE=0.708
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 150 epochs
+  Epoch 20/150  loss=1.3357
+  Epoch 40/150  loss=1.2170
+  Epoch 60/150  loss=1.1314
+  Epoch 80/150  loss=1.0657
+  Epoch 100/150  loss=1.0137
+  Epoch 120/150  loss=0.9576
+  Epoch 140/150  loss=0.8855
+DKL training done in 12.2s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs150/seed0  train_MAE=0.097 pool_MAE=0.723
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 200 epochs
+  Epoch 20/200  loss=1.3357
+  Epoch 40/200  loss=1.2168
+  Epoch 60/200  loss=1.1314
+  Epoch 80/200  loss=1.0656
+  Epoch 100/200  loss=1.0135
+  Epoch 120/200  loss=0.9564
+  Epoch 140/200  loss=0.8856
+  Epoch 160/200  loss=0.8535
+  Epoch 180/200  loss=0.7974
+  Epoch 200/200  loss=0.7510
+DKL training done in 15.5s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs200/seed0  train_MAE=0.087 pool_MAE=0.719
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 300 epochs
+  Epoch 20/300  loss=1.3357
+  Epoch 40/300  loss=1.2169
+  Epoch 60/300  loss=1.1315
+  Epoch 80/300  loss=1.0657
+  Epoch 100/300  loss=1.0137
+  Epoch 120/300  loss=0.9535
+  Epoch 140/300  loss=0.8848
+  Epoch 160/300  loss=0.8570
+  Epoch 180/300  loss=0.7961
+  Epoch 200/300  loss=0.7521
+  Epoch 220/300  loss=0.7330
+  Epoch 240/300  loss=0.6684
+  Epoch 260/300  loss=0.6525
+  Epoch 280/300  loss=0.6489
+  Epoch 300/300  loss=0.6030
+DKL training done in 22.7s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs300/seed0  train_MAE=0.088 pool_MAE=0.680
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 400 epochs
+  Epoch 20/400  loss=1.3357
+  Epoch 40/400  loss=1.2167
+  Epoch 60/400  loss=1.1311
+  Epoch 80/400  loss=1.0652
+  Epoch 100/400  loss=1.0138
+  Epoch 120/400  loss=0.9606
+  Epoch 140/400  loss=0.8880
+  Epoch 160/400  loss=0.8561
+  Epoch 180/400  loss=0.7977
+  Epoch 200/400  loss=0.7590
+  Epoch 220/400  loss=0.7196
+  Epoch 240/400  loss=0.6696
+  Epoch 260/400  loss=0.6540
+  Epoch 280/400  loss=0.6255
+  Epoch 300/400  loss=0.6228
+  Epoch 320/400  loss=0.5758
+  Epoch 340/400  loss=0.6074
+  Epoch 360/400  loss=0.6022
+  Epoch 380/400  loss=0.6231
+  Epoch 400/400  loss=0.6146
+DKL training done in 31.5s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs400/seed0  train_MAE=0.072 pool_MAE=0.702
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  std_gp/seed1  pool_MAE=0.745
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 25 epochs
+  Epoch 20/25  loss=1.3490
+DKL training done in 3.7s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs25/seed1  train_MAE=0.128 pool_MAE=0.787
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.3490
+  Epoch 40/50  loss=1.2301
+DKL training done in 5.3s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs50/seed1  train_MAE=0.132 pool_MAE=0.722
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 75 epochs
+  Epoch 20/75  loss=1.3490
+  Epoch 40/75  loss=1.2301
+  Epoch 60/75  loss=1.1482
+DKL training done in 7.0s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs75/seed1  train_MAE=0.121 pool_MAE=0.713
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 100 epochs
+  Epoch 20/100  loss=1.3490
+  Epoch 40/100  loss=1.2301
+  Epoch 60/100  loss=1.1492
+  Epoch 80/100  loss=1.0839
+  Epoch 100/100  loss=1.0220
+DKL training done in 8.8s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs100/seed1  train_MAE=0.097 pool_MAE=0.716
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 150 epochs
+  Epoch 20/150  loss=1.3490
+  Epoch 40/150  loss=1.2302
+  Epoch 60/150  loss=1.1476
+  Epoch 80/150  loss=1.0852
+  Epoch 100/150  loss=1.0176
+  Epoch 120/150  loss=0.9529
+  Epoch 140/150  loss=0.8719
+DKL training done in 12.2s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs150/seed1  train_MAE=0.098 pool_MAE=0.718
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 200 epochs
+  Epoch 20/200  loss=1.3490
+  Epoch 40/200  loss=1.2301
+  Epoch 60/200  loss=1.1497
+  Epoch 80/200  loss=1.0850
+  Epoch 100/200  loss=1.0214
+  Epoch 120/200  loss=0.9507
+  Epoch 140/200  loss=0.8782
+  Epoch 160/200  loss=0.8204
+  Epoch 180/200  loss=0.7907
+  Epoch 200/200  loss=0.7275
+DKL training done in 15.6s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs200/seed1  train_MAE=0.094 pool_MAE=0.686
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 300 epochs
+  Epoch 20/300  loss=1.3490
+  Epoch 40/300  loss=1.2303
+  Epoch 60/300  loss=1.1523
+  Epoch 80/300  loss=1.1047
+  Epoch 100/300  loss=1.0228
+  Epoch 120/300  loss=0.9561
+  Epoch 140/300  loss=0.8850
+  Epoch 160/300  loss=0.8229
+  Epoch 180/300  loss=0.7740
+  Epoch 200/300  loss=0.7365
+  Epoch 220/300  loss=0.7026
+  Epoch 240/300  loss=0.6838
+  Epoch 260/300  loss=0.6850
+  Epoch 280/300  loss=0.6249
+  Epoch 300/300  loss=0.6231
+DKL training done in 22.6s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs300/seed1  train_MAE=0.093 pool_MAE=0.740
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 400 epochs
+  Epoch 20/400  loss=1.3490
+  Epoch 40/400  loss=1.2302
+  Epoch 60/400  loss=1.1474
+  Epoch 80/400  loss=1.0851
+  Epoch 100/400  loss=1.0158
+  Epoch 120/400  loss=0.9670
+  Epoch 140/400  loss=0.8844
+  Epoch 160/400  loss=0.8204
+  Epoch 180/400  loss=0.7745
+  Epoch 200/400  loss=0.7304
+  Epoch 220/400  loss=0.6994
+  Epoch 240/400  loss=0.6610
+  Epoch 260/400  loss=0.6579
+  Epoch 280/400  loss=0.6116
+  Epoch 300/400  loss=0.5987
+  Epoch 320/400  loss=0.6308
+  Epoch 340/400  loss=0.6658
+  Epoch 360/400  loss=0.6604
+  Epoch 380/400  loss=0.6122
+  Epoch 400/400  loss=0.6076
+DKL training done in 31.5s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs400/seed1  train_MAE=0.085 pool_MAE=0.706
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  std_gp/seed2  pool_MAE=0.745
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 25 epochs
+  Epoch 20/25  loss=1.3583
+DKL training done in 3.7s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs25/seed2  train_MAE=0.121 pool_MAE=0.834
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.3583
+  Epoch 40/50  loss=1.2345
+DKL training done in 5.4s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs50/seed2  train_MAE=0.114 pool_MAE=0.773
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 75 epochs
+  Epoch 20/75  loss=1.3583
+  Epoch 40/75  loss=1.2345
+  Epoch 60/75  loss=1.1483
+DKL training done in 7.0s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs75/seed2  train_MAE=0.099 pool_MAE=0.767
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 100 epochs
+  Epoch 20/100  loss=1.3583
+  Epoch 40/100  loss=1.2345
+  Epoch 60/100  loss=1.1475
+  Epoch 80/100  loss=1.0753
+  Epoch 100/100  loss=1.0068
+DKL training done in 8.7s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs100/seed2  train_MAE=0.098 pool_MAE=0.763
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 150 epochs
+  Epoch 20/150  loss=1.3583
+  Epoch 40/150  loss=1.2345
+  Epoch 60/150  loss=1.1485
+  Epoch 80/150  loss=1.0755
+  Epoch 100/150  loss=1.0081
+  Epoch 120/150  loss=0.9559
+  Epoch 140/150  loss=0.8859
+DKL training done in 12.0s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs150/seed2  train_MAE=0.097 pool_MAE=0.734
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 200 epochs
+  Epoch 20/200  loss=1.3583
+  Epoch 40/200  loss=1.2345
+  Epoch 60/200  loss=1.1485
+  Epoch 80/200  loss=1.0752
+  Epoch 100/200  loss=1.0080
+  Epoch 120/200  loss=0.9606
+  Epoch 140/200  loss=0.8883
+  Epoch 160/200  loss=0.8337
+  Epoch 180/200  loss=0.8027
+  Epoch 200/200  loss=0.7637
+DKL training done in 15.5s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs200/seed2  train_MAE=0.090 pool_MAE=0.746
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 300 epochs
+  Epoch 20/300  loss=1.3583
+  Epoch 40/300  loss=1.2345
+  Epoch 60/300  loss=1.1486
+  Epoch 80/300  loss=1.0750
+  Epoch 100/300  loss=1.0082
+  Epoch 120/300  loss=0.9617
+  Epoch 140/300  loss=0.8886
+  Epoch 160/300  loss=0.8311
+  Epoch 180/300  loss=0.7922
+  Epoch 200/300  loss=0.7671
+  Epoch 220/300  loss=0.7031
+  Epoch 240/300  loss=0.6884
+  Epoch 260/300  loss=0.6513
+  Epoch 280/300  loss=0.6124
+  Epoch 300/300  loss=0.5988
+DKL training done in 22.6s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs300/seed2  train_MAE=0.083 pool_MAE=0.728
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 400 epochs
+  Epoch 20/400  loss=1.3583
+  Epoch 40/400  loss=1.2345
+  Epoch 60/400  loss=1.1485
+  Epoch 80/400  loss=1.0752
+  Epoch 100/400  loss=1.0071
+  Epoch 120/400  loss=0.9650
+  Epoch 140/400  loss=0.8852
+  Epoch 160/400  loss=0.8335
+  Epoch 180/400  loss=0.9132
+  Epoch 200/400  loss=0.7743
+  Epoch 220/400  loss=0.7091
+  Epoch 240/400  loss=0.6766
+  Epoch 260/400  loss=0.6686
+  Epoch 280/400  loss=0.6218
+  Epoch 300/400  loss=0.5923
+  Epoch 320/400  loss=0.6452
+  Epoch 340/400  loss=0.6357
+  Epoch 360/400  loss=0.5610
+  Epoch 380/400  loss=0.6171
+  Epoch 400/400  loss=0.5701
+DKL training done in 31.2s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs400/seed2  train_MAE=0.070 pool_MAE=0.736
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  std_gp/seed3  pool_MAE=0.745
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 25 epochs
+  Epoch 20/25  loss=1.3499
+DKL training done in 3.7s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs25/seed3  train_MAE=0.108 pool_MAE=0.778
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.3498
+  Epoch 40/50  loss=1.2329
+DKL training done in 5.4s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs50/seed3  train_MAE=0.122 pool_MAE=0.757
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 75 epochs
+  Epoch 20/75  loss=1.3500
+  Epoch 40/75  loss=1.2338
+  Epoch 60/75  loss=1.1627
+DKL training done in 7.0s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs75/seed3  train_MAE=0.107 pool_MAE=0.752
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 100 epochs
+  Epoch 20/100  loss=1.3500
+  Epoch 40/100  loss=1.2340
+  Epoch 60/100  loss=1.1629
+  Epoch 80/100  loss=1.0958
+  Epoch 100/100  loss=1.0404
+DKL training done in 8.8s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs100/seed3  train_MAE=0.092 pool_MAE=0.779
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 150 epochs
+  Epoch 20/150  loss=1.3501
+  Epoch 40/150  loss=1.2336
+  Epoch 60/150  loss=1.1581
+  Epoch 80/150  loss=1.0921
+  Epoch 100/150  loss=1.0408
+  Epoch 120/150  loss=0.9765
+  Epoch 140/150  loss=0.9258
+DKL training done in 12.0s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs150/seed3  train_MAE=0.086 pool_MAE=0.730
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 200 epochs
+  Epoch 20/200  loss=1.3500
+  Epoch 40/200  loss=1.2338
+  Epoch 60/200  loss=1.1644
+  Epoch 80/200  loss=1.0984
+  Epoch 100/200  loss=1.0418
+  Epoch 120/200  loss=0.9822
+  Epoch 140/200  loss=0.9248
+  Epoch 160/200  loss=0.8655
+  Epoch 180/200  loss=0.8176
+  Epoch 200/200  loss=0.7723
+DKL training done in 15.5s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs200/seed3  train_MAE=0.082 pool_MAE=0.728
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 300 epochs
+  Epoch 20/300  loss=1.3499
+  Epoch 40/300  loss=1.2332
+  Epoch 60/300  loss=1.1577
+  Epoch 80/300  loss=1.0913
+  Epoch 100/300  loss=1.0378
+  Epoch 120/300  loss=0.9802
+  Epoch 140/300  loss=0.9094
+  Epoch 160/300  loss=0.8579
+  Epoch 180/300  loss=0.8109
+  Epoch 200/300  loss=0.7711
+  Epoch 220/300  loss=0.7120
+  Epoch 240/300  loss=0.6927
+  Epoch 260/300  loss=0.6649
+  Epoch 280/300  loss=0.6782
+  Epoch 300/300  loss=0.6735
+DKL training done in 22.7s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs300/seed3  train_MAE=0.083 pool_MAE=0.750
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 400 epochs
+  Epoch 20/400  loss=1.3499
+  Epoch 40/400  loss=1.2336
+  Epoch 60/400  loss=1.1588
+  Epoch 80/400  loss=1.0916
+  Epoch 100/400  loss=1.0400
+  Epoch 120/400  loss=0.9816
+  Epoch 140/400  loss=0.9191
+  Epoch 160/400  loss=0.8547
+  Epoch 180/400  loss=0.8133
+  Epoch 200/400  loss=0.7641
+  Epoch 220/400  loss=0.7106
+  Epoch 240/400  loss=0.6891
+  Epoch 260/400  loss=0.6828
+  Epoch 280/400  loss=0.6649
+  Epoch 300/400  loss=0.6814
+  Epoch 320/400  loss=0.7251
+  Epoch 340/400  loss=0.6169
+  Epoch 360/400  loss=0.6650
+  Epoch 380/400  loss=0.6877
+  Epoch 400/400  loss=0.6395
+DKL training done in 31.6s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs400/seed3  train_MAE=0.076 pool_MAE=0.747
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  std_gp/seed4  pool_MAE=0.745
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 25 epochs
+  Epoch 20/25  loss=1.3244
+DKL training done in 3.7s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs25/seed4  train_MAE=0.098 pool_MAE=0.767
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.3244
+  Epoch 40/50  loss=1.2199
+DKL training done in 5.5s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs50/seed4  train_MAE=0.090 pool_MAE=0.740
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 75 epochs
+  Epoch 20/75  loss=1.3245
+  Epoch 40/75  loss=1.2195
+  Epoch 60/75  loss=1.1435
+DKL training done in 7.1s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs75/seed4  train_MAE=0.087 pool_MAE=0.756
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 100 epochs
+  Epoch 20/100  loss=1.3245
+  Epoch 40/100  loss=1.2261
+  Epoch 60/100  loss=1.1365
+  Epoch 80/100  loss=1.0805
+  Epoch 100/100  loss=1.0177
+DKL training done in 8.7s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs100/seed4  train_MAE=0.089 pool_MAE=0.730
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 150 epochs
+  Epoch 20/150  loss=1.3244
+  Epoch 40/150  loss=1.2206
+  Epoch 60/150  loss=1.1360
+  Epoch 80/150  loss=1.0706
+  Epoch 100/150  loss=1.0052
+  Epoch 120/150  loss=0.9493
+  Epoch 140/150  loss=0.8785
+DKL training done in 12.1s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs150/seed4  train_MAE=0.082 pool_MAE=0.773
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 200 epochs
+  Epoch 20/200  loss=1.3244
+  Epoch 40/200  loss=1.2180
+  Epoch 60/200  loss=1.1511
+  Epoch 80/200  loss=1.0678
+  Epoch 100/200  loss=1.0026
+  Epoch 120/200  loss=0.9448
+  Epoch 140/200  loss=0.8866
+  Epoch 160/200  loss=0.8402
+  Epoch 180/200  loss=0.7774
+  Epoch 200/200  loss=0.7239
+DKL training done in 15.5s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs200/seed4  train_MAE=0.080 pool_MAE=0.764
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 300 epochs
+  Epoch 20/300  loss=1.3244
+  Epoch 40/300  loss=1.2183
+  Epoch 60/300  loss=1.1472
+  Epoch 80/300  loss=1.0667
+  Epoch 100/300  loss=1.0049
+  Epoch 120/300  loss=0.9493
+  Epoch 140/300  loss=0.8812
+  Epoch 160/300  loss=0.8320
+  Epoch 180/300  loss=0.7813
+  Epoch 200/300  loss=0.7308
+  Epoch 220/300  loss=0.6915
+  Epoch 240/300  loss=0.6441
+  Epoch 260/300  loss=0.6317
+  Epoch 280/300  loss=0.6527
+  Epoch 300/300  loss=0.6281
+DKL training done in 22.9s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs300/seed4  train_MAE=0.076 pool_MAE=0.744
+GP warmup: 50 epochs on initial embeddings
+Joint DKL training: 400 epochs
+  Epoch 20/400  loss=1.3244
+  Epoch 40/400  loss=1.2214
+  Epoch 60/400  loss=1.1353
+  Epoch 80/400  loss=1.0737
+  Epoch 100/400  loss=1.0083
+  Epoch 120/400  loss=0.9473
+  Epoch 140/400  loss=0.8888
+  Epoch 160/400  loss=0.8335
+  Epoch 180/400  loss=0.7885
+  Epoch 200/400  loss=0.7396
+  Epoch 220/400  loss=0.7061
+  Epoch 240/400  loss=0.6533
+  Epoch 260/400  loss=0.6100
+  Epoch 280/400  loss=0.6325
+  Epoch 300/400  loss=0.6111
+  Epoch 320/400  loss=0.6551
+  Epoch 340/400  loss=0.6021
+  Epoch 360/400  loss=0.6086
+  Epoch 380/400  loss=0.6265
+  Epoch 400/400  loss=0.5669
+DKL training done in 31.5s
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+/home/roy/software/anaconda3/lib/python3.13/site-packages/gpytorch/models/exact_gp.py:299: GPInputWarning: The input matches the stored training data. Did you forget to call model.train()?
+  warnings.warn(
+  dkl/epochs400/seed4  train_MAE=0.068 pool_MAE=0.763
+Saved → /home/roy/Desktop/DKL-BO/results/rebuild/epoch_sweep.csv  and  /home/roy/Desktop/DKL-BO/results/rebuild/plots/epoch_sweep_gap.png
+=== DONE ===

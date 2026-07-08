@@ -1,0 +1,5 @@
+metric,dkl_method,crossover_cycle,final_dkl,final_std_gp
+best_inwin_gap,dkl_frozen,,2.916705411464035,2.9570325314167416
+best_inwin_gap,dkl_finetune,,2.9496855236011865,2.9570325314167416
+cumul_top50,dkl_frozen,,7.433333333333334,8.333333333333334
+cumul_top50,dkl_finetune,37.0,11.633333333333333,8.333333333333334

@@ -134,7 +134,9 @@ class FeatureBOLoop:
             surrogate.eval_mode()
             mean, std = surrogate.predict(self._rows(pool_uids))
             scores = acq_fn(mean, std, beta=float(self.cfg.beta),
-                            best_f=best_internal, xi=xi)
+                            best_f=best_internal, xi=xi,
+                            window_lo=self.cfg.get("window_lo"),
+                            window_hi=self.cfg.get("window_hi"))
             predict_time = time.perf_counter() - t_pred
 
             # ── Select & label ────────────────────────────────────────

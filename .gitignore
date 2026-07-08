@@ -1,6 +1,9 @@
 # ── Large data files (too big for git) ──────────────────────────────────────
 data/raw/
 data/cache/
+# Nested per-study data caches (e.g. snumat_generalization/data/cache/)
+**/data/raw/
+**/data/cache/
 
 # ── Python ───────────────────────────────────────────────────────────────────
 venv/

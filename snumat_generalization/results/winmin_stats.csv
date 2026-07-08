@@ -1,0 +1,7 @@
+metric,method,n_seeds,method_mean,std_gp_mean,mean_diff,wilcoxon_p,win_rate
+best_inwin_gap,dkl_frozen,10,0.7272977,0.7359935000000001,-0.008695799999999965,0.546875,0.5
+best_inwin_gap,dkl_finetune,10,0.7179785000000001,0.7359935000000001,-0.01801499999999997,0.10546875,0.7
+best_inwin_gap,random,10,0.7880661,0.7359935000000001,0.05207259999999995,0.01953125,0.1
+cumul_top50,dkl_frozen,10,2.5,4.6,-2.1,0.0390625,0.1
+cumul_top50,dkl_finetune,10,6.0,4.6,1.4,0.375,0.7
+cumul_top50,random,10,1.2,4.6,-3.4,0.0234375,0.2

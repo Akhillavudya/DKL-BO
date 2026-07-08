@@ -1,0 +1,17 @@
+window,method,seed,final_in_window
+visible_0p7_3p0,std_gp,1,7
+visible_0p7_3p0,std_gp,0,7
+visible_0p7_3p0,random,0,4
+visible_0p7_3p0,random,1,7
+visible_0p7_3p0,dkl_finetune,1,6
+visible_0p7_3p0,dkl_finetune,0,7
+visible_0p7_3p0,dkl_frozen,0,6
+visible_0p7_3p0,dkl_frozen,1,7
+wide_3p0_4p5,dkl_frozen,1,4
+wide_3p0_4p5,dkl_frozen,0,4
+wide_3p0_4p5,dkl_finetune,0,0
+wide_3p0_4p5,dkl_finetune,1,5
+wide_3p0_4p5,random,1,1
+wide_3p0_4p5,random,0,1
+wide_3p0_4p5,std_gp,0,5
+wide_3p0_4p5,std_gp,1,7

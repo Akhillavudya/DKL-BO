@@ -215,7 +215,9 @@ class BOLoop:
             std_cal = std * self.std_scale
             # mean/std are in internal (signed) space; best_f is the internal incumbent.
             scores  = acq_fn(mean, std_cal, beta=float(self.cfg.beta),
-                             best_f=best_internal, xi=xi)
+                             best_f=best_internal, xi=xi,
+                             window_lo=self.cfg.get("window_lo"),
+                             window_hi=self.cfg.get("window_hi"))
             predict_time = time.perf_counter() - t_pred
 
             # ── Select & label ────────────────────────────────────────

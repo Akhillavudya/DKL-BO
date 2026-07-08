@@ -1,0 +1,3226 @@
+pool=3131 in-window[0.7,3.0]=1550 top50(lowest)<=0.827 | methods=['std_gp', 'dkl_frozen', 'dkl_finetune', 'random'] seeds=10 cycles=100 device=cuda
+FeatureBOLoop: 3131 materials × 42 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 4.584
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=4.584  top50=0  top10%=0
+  std_gp/seed0 → best_inwin=0.707 top50=11
+FeatureBOLoop: 3131 materials × 42 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 8.707
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.707  top50=0  top10%=0
+  std_gp/seed1 → best_inwin=0.725 top50=4
+FeatureBOLoop: 3131 materials × 42 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 8.198
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.198  top50=0  top10%=0
+  std_gp/seed2 → best_inwin=0.731 top50=7
+FeatureBOLoop: 3131 materials × 42 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 8.323
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.323  top50=0  top10%=0
+  std_gp/seed3 → best_inwin=0.710 top50=5
+FeatureBOLoop: 3131 materials × 42 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 8.379
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.379  top50=0  top10%=0
+  std_gp/seed4 → best_inwin=0.771 top50=2
+FeatureBOLoop: 3131 materials × 42 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 3.811
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.070  top50=1  top10%=8
+  std_gp/seed5 → best_inwin=0.742 top50=2
+FeatureBOLoop: 3131 materials × 42 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 5.106
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=5.106  top50=0  top10%=0
+  std_gp/seed6 → best_inwin=0.757 top50=1
+FeatureBOLoop: 3131 materials × 42 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 6.964
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=6.964  top50=0  top10%=0
+  std_gp/seed7 → best_inwin=0.729 top50=1
+FeatureBOLoop: 3131 materials × 42 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 4.929
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=4.929  top50=0  top10%=0
+  std_gp/seed8 → best_inwin=0.704 top50=10
+FeatureBOLoop: 3131 materials × 42 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 5.736
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=5.736  top50=0  top10%=2
+  std_gp/seed9 → best_inwin=0.784 top50=3
+FeatureBOLoop: 3131 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 4.584
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=4.584  top50=0  top10%=0
+  dkl_frozen/seed0 → best_inwin=0.731 top50=6
+FeatureBOLoop: 3131 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 8.707
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.707  top50=0  top10%=0
+  dkl_frozen/seed1 → best_inwin=0.707 top50=3
+FeatureBOLoop: 3131 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 8.198
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.198  top50=0  top10%=0
+  dkl_frozen/seed2 → best_inwin=0.731 top50=4
+FeatureBOLoop: 3131 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 8.323
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.323  top50=0  top10%=0
+  dkl_frozen/seed3 → best_inwin=0.719 top50=3
+FeatureBOLoop: 3131 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 8.379
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=8.379  top50=0  top10%=0
+  dkl_frozen/seed4 → best_inwin=0.757 top50=1
+FeatureBOLoop: 3131 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 3.811
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=4.199  top50=0  top10%=0
+  dkl_frozen/seed5 → best_inwin=0.742 top50=1
+FeatureBOLoop: 3131 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 5.106
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=5.106  top50=0  top10%=0
+  dkl_frozen/seed6 → best_inwin=0.704 top50=3
+FeatureBOLoop: 3131 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 6.964
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=6.964  top50=0  top10%=0
+  dkl_frozen/seed7 → best_inwin=0.725 top50=1
+FeatureBOLoop: 3131 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 4.929
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=4.929  top50=0  top10%=0
+  dkl_frozen/seed8 → best_inwin=0.731 top50=2
+FeatureBOLoop: 3131 materials × 32 descriptors  |  direction=max
+Init: 10 random labels  |  best (max) = 5.736
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+FeatureBOLoop done  |  best=5.736  top50=0  top10%=0
+  dkl_frozen/seed9 → best_inwin=0.725 top50=1
+BOLoop: 3131 materials  |  direction=max  |  top-50 internal threshold=7.50  top-10% internal threshold=4.43
+Init: 10 random labels  |  best (max) = 4.584
+Cycle   1: full DKL retrain  (10 labelled)
+GP warmup: 20 epochs on initial embeddings
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.9575
+  Epoch 40/50  loss=1.7041
+DKL training done in 1.0s
+  → SM-14686  gap=2.182 eV  best=4.584 eV  top50=0  top10%=0
+Cycle   2: GP refit  (11 labelled)
+  → SM-15948  gap=1.571 eV  best=4.584 eV  top50=0  top10%=0
+Cycle   3: GP refit  (12 labelled)
+  → SM-9345  gap=2.094 eV  best=4.584 eV  top50=0  top10%=0
+Cycle   4: GP refit  (13 labelled)
+  → SM-8551  gap=1.412 eV  best=4.584 eV  top50=0  top10%=0
+Cycle   5: GP refit  (14 labelled)
+  → SM-9257  gap=1.896 eV  best=4.584 eV  top50=0  top10%=0
+Cycle   6: full DKL retrain  (15 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.5358
+  Epoch 40/50  loss=0.3812
+DKL training done in 0.5s
+  → SM-9320  gap=2.948 eV  best=4.584 eV  top50=0  top10%=0
+Cycle   7: GP refit  (16 labelled)
+  → SM-5031  gap=0.694 eV  best=4.584 eV  top50=0  top10%=0
+Cycle   8: GP refit  (17 labelled)
+  → SM-837  gap=1.994 eV  best=4.584 eV  top50=0  top10%=0
+Cycle   9: GP refit  (18 labelled)
+  → SM-9094  gap=1.096 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  10: GP refit  (19 labelled)
+  → SM-8448  gap=0.838 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  11: full DKL retrain  (20 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.6764
+  Epoch 40/50  loss=-0.0803
+DKL training done in 0.4s
+  → SM-8341  gap=1.056 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  12: GP refit  (21 labelled)
+  → SM-8597  gap=0.892 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  13: GP refit  (22 labelled)
+  → SM-10629  gap=0.154 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  14: GP refit  (23 labelled)
+  → SM-16171  gap=0.940 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  15: GP refit  (24 labelled)
+  → SM-11317  gap=1.548 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  16: full DKL retrain  (25 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.1650
+  Epoch 40/50  loss=-0.4341
+DKL training done in 0.5s
+  → SM-17556  gap=0.673 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  17: GP refit  (26 labelled)
+  → SM-19478  gap=0.568 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  18: GP refit  (27 labelled)
+  → SM-17241  gap=0.331 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  19: GP refit  (28 labelled)
+  → SM-17138  gap=1.834 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  20: GP refit  (29 labelled)
+  → SM-17990  gap=0.627 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  21: full DKL retrain  (30 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.3170
+  Epoch 40/50  loss=-0.5373
+DKL training done in 0.5s
+  → SM-17296  gap=1.311 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  22: GP refit  (31 labelled)
+  → SM-10673  gap=0.417 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  23: GP refit  (32 labelled)
+  → SM-4336  gap=1.133 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  24: GP refit  (33 labelled)
+  → SM-18172  gap=1.312 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  25: GP refit  (34 labelled)
+  → SM-17118  gap=0.859 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  26: full DKL retrain  (35 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.2952
+  Epoch 40/50  loss=-0.4620
+DKL training done in 0.6s
+  → SM-17218  gap=2.133 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  27: GP refit  (36 labelled)
+  → SM-1431  gap=0.056 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  28: GP refit  (37 labelled)
+  → SM-10489  gap=0.053 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  29: GP refit  (38 labelled)
+  → SM-656  gap=1.106 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  30: GP refit  (39 labelled)
+  → SM-17227  gap=1.669 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  31: full DKL retrain  (40 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.1484
+  Epoch 40/50  loss=-0.0607
+DKL training done in 0.5s
+  → SM-8918  gap=1.236 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  32: GP refit  (41 labelled)
+  → SM-17536  gap=0.552 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  33: GP refit  (42 labelled)
+  → SM-20258  gap=1.208 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  34: GP refit  (43 labelled)
+  → SM-694  gap=1.110 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  35: GP refit  (44 labelled)
+  → SM-1655  gap=1.686 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  36: full DKL retrain  (45 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.3623
+  Epoch 40/50  loss=-0.5010
+DKL training done in 0.5s
+  → SM-13785  gap=0.789 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  37: GP refit  (46 labelled)
+  → SM-16084  gap=0.794 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  38: GP refit  (47 labelled)
+  → SM-11593  gap=2.568 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  39: GP refit  (48 labelled)
+  → SM-10474  gap=0.635 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  40: GP refit  (49 labelled)
+  → SM-13994  gap=1.475 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  41: full DKL retrain  (50 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.1949
+  Epoch 40/50  loss=-0.3751
+DKL training done in 0.4s
+  → SM-8534  gap=0.273 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  42: GP refit  (51 labelled)
+  → SM-1648  gap=0.649 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  43: GP refit  (52 labelled)
+  → SM-17242  gap=0.674 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  44: GP refit  (53 labelled)
+  → SM-17665  gap=0.178 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  45: GP refit  (54 labelled)
+  → SM-14507  gap=1.359 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  46: full DKL retrain  (55 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.1922
+  Epoch 40/50  loss=-0.3330
+DKL training done in 0.3s
+  → SM-8923  gap=0.409 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  47: GP refit  (56 labelled)
+  → SM-14632  gap=0.480 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  48: GP refit  (57 labelled)
+  → SM-17395  gap=0.057 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  49: GP refit  (58 labelled)
+  → SM-5584  gap=0.733 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  50: GP refit  (59 labelled)
+  → SM-4450  gap=0.681 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  51: full DKL retrain  (60 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.1961
+  Epoch 40/50  loss=-0.3500
+DKL training done in 1.2s
+  → SM-10646  gap=1.177 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  52: GP refit  (61 labelled)
+  → SM-6081  gap=0.588 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  53: GP refit  (62 labelled)
+  → SM-17626  gap=1.563 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  54: GP refit  (63 labelled)
+  → SM-20458  gap=1.719 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  55: GP refit  (64 labelled)
+  → SM-14300  gap=1.525 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  56: full DKL retrain  (65 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.4116
+  Epoch 40/50  loss=-0.5108
+DKL training done in 0.4s
+  → SM-17598  gap=3.193 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  57: GP refit  (66 labelled)
+  → SM-17599  gap=3.134 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  58: GP refit  (67 labelled)
+  → SM-17551  gap=1.434 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  59: GP refit  (68 labelled)
+  → SM-651  gap=1.892 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  60: GP refit  (69 labelled)
+  → SM-8920  gap=1.219 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  61: full DKL retrain  (70 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.0245
+  Epoch 40/50  loss=-0.0939
+DKL training done in 0.6s
+  → SM-17238  gap=1.497 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  62: GP refit  (71 labelled)
+  → SM-14091  gap=1.497 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  63: GP refit  (72 labelled)
+  → SM-4352  gap=0.719 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  64: GP refit  (73 labelled)
+  → SM-7457  gap=0.461 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  65: GP refit  (74 labelled)
+  → SM-5251  gap=1.172 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  66: full DKL retrain  (75 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.2912
+  Epoch 40/50  loss=-0.4036
+DKL training done in 0.4s
+  → SM-8011  gap=1.555 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  67: GP refit  (76 labelled)
+  → SM-10589  gap=2.077 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  68: GP refit  (77 labelled)
+  → SM-12151  gap=2.862 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  69: GP refit  (78 labelled)
+  → SM-19329  gap=3.475 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  70: GP refit  (79 labelled)
+  → SM-6402  gap=1.436 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  71: full DKL retrain  (80 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.1216
+  Epoch 40/50  loss=-0.0581
+DKL training done in 0.4s
+  → SM-4423  gap=1.045 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  72: GP refit  (81 labelled)
+  → SM-11436  gap=1.311 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  73: GP refit  (82 labelled)
+  → SM-14493  gap=0.611 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  74: GP refit  (83 labelled)
+  → SM-1683  gap=1.024 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  75: GP refit  (84 labelled)
+  → SM-16919  gap=0.680 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  76: full DKL retrain  (85 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.3484
+  Epoch 40/50  loss=-0.5796
+DKL training done in 0.4s
+  → SM-2685  gap=3.408 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  77: GP refit  (86 labelled)
+  → SM-13890  gap=2.222 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  78: GP refit  (87 labelled)
+  → SM-4288  gap=0.958 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  79: GP refit  (88 labelled)
+  → SM-4462  gap=1.302 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  80: GP refit  (89 labelled)
+  → SM-12734  gap=1.240 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  81: full DKL retrain  (90 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.1042
+  Epoch 40/50  loss=-0.0694
+DKL training done in 0.5s
+  → SM-14081  gap=0.291 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  82: GP refit  (91 labelled)
+  → SM-10485  gap=0.936 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  83: GP refit  (92 labelled)
+  → SM-10890  gap=1.289 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  84: GP refit  (93 labelled)
+  → SM-4292  gap=1.133 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  85: GP refit  (94 labelled)
+  → SM-1617  gap=1.111 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  86: full DKL retrain  (95 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.2978
+  Epoch 40/50  loss=-0.5153
+DKL training done in 0.4s
+  → SM-5277  gap=3.022 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  87: GP refit  (96 labelled)
+  → SM-17368  gap=2.687 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  88: GP refit  (97 labelled)
+  → SM-16027  gap=1.232 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  89: GP refit  (98 labelled)
+  → SM-17462  gap=3.340 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  90: GP refit  (99 labelled)
+  → SM-4349  gap=1.588 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  91: full DKL retrain  (100 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.2983
+  Epoch 40/50  loss=0.1056
+DKL training done in 0.6s
+  → SM-8471  gap=1.662 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  92: GP refit  (101 labelled)
+  → SM-15994  gap=2.229 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  93: GP refit  (102 labelled)
+  → SM-9287  gap=3.100 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  94: GP refit  (103 labelled)
+  → SM-6515  gap=0.263 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  95: GP refit  (104 labelled)
+  → SM-17295  gap=1.240 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  96: full DKL retrain  (105 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.1699
+  Epoch 40/50  loss=-0.0290
+DKL training done in 0.4s
+  → SM-17155  gap=0.731 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  97: GP refit  (106 labelled)
+  → SM-12472  gap=1.218 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  98: GP refit  (107 labelled)
+  → SM-17219  gap=1.555 eV  best=4.584 eV  top50=0  top10%=0
+Cycle  99: GP refit  (108 labelled)
+  → SM-20179  gap=2.247 eV  best=4.584 eV  top50=0  top10%=0
+Cycle 100: GP refit  (109 labelled)
+  → SM-9351  gap=1.030 eV  best=4.584 eV  top50=0  top10%=0
+  dkl_finetune/seed0 → best_inwin=0.719 top50=5
+BOLoop: 3131 materials  |  direction=max  |  top-50 internal threshold=7.50  top-10% internal threshold=4.43
+Init: 10 random labels  |  best (max) = 8.707
+Cycle   1: full DKL retrain  (10 labelled)
+GP warmup: 20 epochs on initial embeddings
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=3.0918
+  Epoch 40/50  loss=2.8111
+DKL training done in 0.4s
+  → SM-1556  gap=0.550 eV  best=8.707 eV  top50=0  top10%=0
+Cycle   2: GP refit  (11 labelled)
+  → SM-10653  gap=1.488 eV  best=8.707 eV  top50=0  top10%=0
+Cycle   3: GP refit  (12 labelled)
+  → SM-17221  gap=1.296 eV  best=8.707 eV  top50=0  top10%=0
+Cycle   4: GP refit  (13 labelled)
+  → SM-9092  gap=1.267 eV  best=8.707 eV  top50=0  top10%=0
+Cycle   5: GP refit  (14 labelled)
+  → SM-10589  gap=2.077 eV  best=8.707 eV  top50=0  top10%=0
+Cycle   6: full DKL retrain  (15 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.3631
+  Epoch 40/50  loss=1.2204
+DKL training done in 0.4s
+  → SM-10349  gap=2.064 eV  best=8.707 eV  top50=0  top10%=0
+Cycle   7: GP refit  (16 labelled)
+  → SM-16027  gap=1.232 eV  best=8.707 eV  top50=0  top10%=0
+Cycle   8: GP refit  (17 labelled)
+  → SM-1400  gap=0.601 eV  best=8.707 eV  top50=0  top10%=0
+Cycle   9: GP refit  (18 labelled)
+  → SM-16877  gap=2.592 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  10: GP refit  (19 labelled)
+  → SM-14094  gap=0.268 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  11: full DKL retrain  (20 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.7848
+  Epoch 40/50  loss=0.6015
+DKL training done in 0.5s
+  → SM-8803  gap=1.083 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  12: GP refit  (21 labelled)
+  → SM-14632  gap=0.480 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  13: GP refit  (22 labelled)
+  → SM-9037  gap=1.273 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  14: GP refit  (23 labelled)
+  → SM-14686  gap=2.182 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  15: GP refit  (24 labelled)
+  → SM-11326  gap=1.101 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  16: full DKL retrain  (25 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.1995
+  Epoch 40/50  loss=-0.2249
+DKL training done in 0.5s
+  → SM-8259  gap=0.282 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  17: GP refit  (26 labelled)
+  → SM-14291  gap=1.157 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  18: GP refit  (27 labelled)
+  → SM-1509  gap=0.986 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  19: GP refit  (28 labelled)
+  → SM-11202  gap=1.280 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  20: GP refit  (29 labelled)
+  → SM-17990  gap=0.627 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  21: full DKL retrain  (30 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.5015
+  Epoch 40/50  loss=-0.1259
+DKL training done in 0.5s
+  → SM-10696  gap=1.430 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  22: GP refit  (31 labelled)
+  → SM-8334  gap=1.077 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  23: GP refit  (32 labelled)
+  → SM-9561  gap=0.187 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  24: GP refit  (33 labelled)
+  → SM-4350  gap=0.593 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  25: GP refit  (34 labelled)
+  → SM-11317  gap=1.548 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  26: full DKL retrain  (35 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.2309
+  Epoch 40/50  loss=-0.4059
+DKL training done in 0.4s
+  → SM-12072  gap=0.820 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  27: GP refit  (36 labelled)
+  → SM-10027  gap=0.079 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  28: GP refit  (37 labelled)
+  → SM-17394  gap=0.225 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  29: GP refit  (38 labelled)
+  → SM-10629  gap=0.154 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  30: GP refit  (39 labelled)
+  → SM-8297  gap=0.754 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  31: full DKL retrain  (40 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.3113
+  Epoch 40/50  loss=-0.1678
+DKL training done in 0.4s
+  → SM-14300  gap=1.525 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  32: GP refit  (41 labelled)
+  → SM-12266  gap=1.316 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  33: GP refit  (42 labelled)
+  → SM-12177  gap=1.298 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  34: GP refit  (43 labelled)
+  → SM-1527  gap=0.233 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  35: GP refit  (44 labelled)
+  → SM-12185  gap=1.094 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  36: full DKL retrain  (45 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.2286
+  Epoch 40/50  loss=-0.4405
+DKL training done in 0.4s
+  → SM-12169  gap=1.237 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  37: GP refit  (46 labelled)
+  → SM-1514  gap=0.856 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  38: GP refit  (47 labelled)
+  → SM-16985  gap=0.237 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  39: GP refit  (48 labelled)
+  → SM-10647  gap=0.087 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  40: GP refit  (49 labelled)
+  → SM-18526  gap=1.491 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  41: full DKL retrain  (50 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.2106
+  Epoch 40/50  loss=-0.2229
+DKL training done in 0.4s
+  → SM-1481  gap=1.673 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  42: GP refit  (51 labelled)
+  → SM-1627  gap=1.242 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  43: GP refit  (52 labelled)
+  → SM-11545  gap=1.517 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  44: GP refit  (53 labelled)
+  → SM-10474  gap=0.635 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  45: GP refit  (54 labelled)
+  → SM-10393  gap=1.968 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  46: full DKL retrain  (55 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.3196
+  Epoch 40/50  loss=-0.5175
+DKL training done in 0.5s
+  → SM-17512  gap=1.144 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  47: GP refit  (56 labelled)
+  → SM-1576  gap=0.075 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  48: GP refit  (57 labelled)
+  → SM-11470  gap=1.766 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  49: GP refit  (58 labelled)
+  → SM-6311  gap=0.756 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  50: GP refit  (59 labelled)
+  → SM-11455  gap=1.148 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  51: full DKL retrain  (60 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.1553
+  Epoch 40/50  loss=-0.2898
+DKL training done in 0.5s
+  → SM-1502  gap=0.318 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  52: GP refit  (61 labelled)
+  → SM-17536  gap=0.552 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  53: GP refit  (62 labelled)
+  → SM-14540  gap=1.468 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  54: GP refit  (63 labelled)
+  → SM-4184  gap=2.834 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  55: GP refit  (64 labelled)
+  → SM-9093  gap=1.062 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  56: full DKL retrain  (65 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.0594
+  Epoch 40/50  loss=-0.2467
+DKL training done in 0.5s
+  → SM-16146  gap=1.843 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  57: GP refit  (66 labelled)
+  → SM-19478  gap=0.568 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  58: GP refit  (67 labelled)
+  → SM-10506  gap=1.692 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  59: GP refit  (68 labelled)
+  → SM-17219  gap=1.555 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  60: GP refit  (69 labelled)
+  → SM-6081  gap=0.588 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  61: full DKL retrain  (70 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.0450
+  Epoch 40/50  loss=-0.2411
+DKL training done in 0.4s
+  → SM-15971  gap=1.823 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  62: GP refit  (71 labelled)
+  → SM-5329  gap=0.638 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  63: GP refit  (72 labelled)
+  → SM-1617  gap=1.111 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  64: GP refit  (73 labelled)
+  → SM-8017  gap=1.133 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  65: GP refit  (74 labelled)
+  → SM-14619  gap=1.000 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  66: full DKL retrain  (75 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.4574
+  Epoch 40/50  loss=-0.6416
+DKL training done in 0.5s
+  → SM-6616  gap=0.572 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  67: GP refit  (76 labelled)
+  → SM-1418  gap=1.876 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  68: GP refit  (77 labelled)
+  → SM-4426  gap=0.612 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  69: GP refit  (78 labelled)
+  → SM-14979  gap=0.909 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  70: GP refit  (79 labelled)
+  → SM-16089  gap=0.796 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  71: full DKL retrain  (80 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.4700
+  Epoch 40/50  loss=-0.6504
+DKL training done in 0.5s
+  → SM-7092  gap=0.749 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  72: GP refit  (81 labelled)
+  → SM-18769  gap=1.330 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  73: GP refit  (82 labelled)
+  → SM-11431  gap=0.445 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  74: GP refit  (83 labelled)
+  → SM-8941  gap=1.269 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  75: GP refit  (84 labelled)
+  → SM-9543  gap=0.988 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  76: full DKL retrain  (85 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.8289
+  Epoch 40/50  loss=-1.0402
+DKL training done in 0.4s
+  → SM-9321  gap=0.943 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  77: GP refit  (86 labelled)
+  → SM-14610  gap=0.696 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  78: GP refit  (87 labelled)
+  → SM-14091  gap=1.497 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  79: GP refit  (88 labelled)
+  → SM-16535  gap=0.658 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  80: GP refit  (89 labelled)
+  → SM-4288  gap=0.958 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  81: full DKL retrain  (90 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-1.1006
+  Epoch 40/50  loss=-1.3015
+DKL training done in 0.6s
+  → SM-1357  gap=2.915 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  82: GP refit  (91 labelled)
+  → SM-17535  gap=1.302 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  83: GP refit  (92 labelled)
+  → SM-4438  gap=0.534 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  84: GP refit  (93 labelled)
+  → SM-16540  gap=0.582 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  85: GP refit  (94 labelled)
+  → SM-5780  gap=1.377 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  86: full DKL retrain  (95 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.8187
+  Epoch 40/50  loss=-0.9750
+DKL training done in 0.5s
+  → SM-4132  gap=0.605 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  87: GP refit  (96 labelled)
+  → SM-1551  gap=0.158 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  88: GP refit  (97 labelled)
+  → SM-4302  gap=1.806 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  89: GP refit  (98 labelled)
+  → SM-1015  gap=1.289 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  90: GP refit  (99 labelled)
+  → SM-15968  gap=0.831 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  91: full DKL retrain  (100 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.7168
+  Epoch 40/50  loss=-0.8607
+DKL training done in 0.5s
+  → SM-8069  gap=0.985 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  92: GP refit  (101 labelled)
+  → SM-17579  gap=1.518 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  93: GP refit  (102 labelled)
+  → SM-12070  gap=1.121 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  94: GP refit  (103 labelled)
+  → SM-11767  gap=2.296 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  95: GP refit  (104 labelled)
+  → SM-12893  gap=1.710 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  96: full DKL retrain  (105 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.5598
+  Epoch 40/50  loss=-0.8085
+DKL training done in 0.4s
+  → SM-1563  gap=0.181 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  97: GP refit  (106 labelled)
+  → SM-8918  gap=1.236 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  98: GP refit  (107 labelled)
+  → SM-16930  gap=1.306 eV  best=8.707 eV  top50=0  top10%=0
+Cycle  99: GP refit  (108 labelled)
+  → SM-11259  gap=1.605 eV  best=8.707 eV  top50=0  top10%=0
+Cycle 100: GP refit  (109 labelled)
+  → SM-8685  gap=0.885 eV  best=8.707 eV  top50=0  top10%=0
+  dkl_finetune/seed1 → best_inwin=0.749 top50=5
+BOLoop: 3131 materials  |  direction=max  |  top-50 internal threshold=7.50  top-10% internal threshold=4.43
+Init: 10 random labels  |  best (max) = 8.198
+Cycle   1: full DKL retrain  (10 labelled)
+GP warmup: 20 epochs on initial embeddings
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=3.0091
+  Epoch 40/50  loss=2.6298
+DKL training done in 0.5s
+  → SM-10524  gap=2.182 eV  best=8.198 eV  top50=0  top10%=0
+Cycle   2: GP refit  (11 labelled)
+  → SM-16133  gap=1.898 eV  best=8.198 eV  top50=0  top10%=0
+Cycle   3: GP refit  (12 labelled)
+  → SM-8958  gap=2.083 eV  best=8.198 eV  top50=0  top10%=0
+Cycle   4: GP refit  (13 labelled)
+  → SM-8457  gap=2.526 eV  best=8.198 eV  top50=0  top10%=0
+Cycle   5: GP refit  (14 labelled)
+  → SM-8962  gap=2.230 eV  best=8.198 eV  top50=0  top10%=0
+Cycle   6: full DKL retrain  (15 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.1651
+  Epoch 40/50  loss=1.0505
+DKL training done in 0.4s
+  → SM-17228  gap=1.796 eV  best=8.198 eV  top50=0  top10%=0
+Cycle   7: GP refit  (16 labelled)
+  → SM-9006  gap=3.193 eV  best=8.198 eV  top50=0  top10%=0
+Cycle   8: GP refit  (17 labelled)
+  → SM-14507  gap=1.359 eV  best=8.198 eV  top50=0  top10%=0
+Cycle   9: GP refit  (18 labelled)
+  → SM-16841  gap=1.299 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  10: GP refit  (19 labelled)
+  → SM-4428  gap=0.507 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  11: full DKL retrain  (20 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.7208
+  Epoch 40/50  loss=0.5197
+DKL training done in 0.5s
+  → SM-7767  gap=1.094 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  12: GP refit  (21 labelled)
+  → SM-9116  gap=0.873 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  13: GP refit  (22 labelled)
+  → SM-14969  gap=0.315 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  14: GP refit  (23 labelled)
+  → SM-11038  gap=1.504 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  15: GP refit  (24 labelled)
+  → SM-428  gap=2.382 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  16: full DKL retrain  (25 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.3171
+  Epoch 40/50  loss=0.0890
+DKL training done in 0.5s
+  → SM-12639  gap=1.120 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  17: GP refit  (26 labelled)
+  → SM-18032  gap=3.002 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  18: GP refit  (27 labelled)
+  → SM-17229  gap=1.470 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  19: GP refit  (28 labelled)
+  → SM-17994  gap=1.708 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  20: GP refit  (29 labelled)
+  → SM-17118  gap=0.859 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  21: full DKL retrain  (30 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.3868
+  Epoch 40/50  loss=0.1728
+DKL training done in 0.5s
+  → SM-17296  gap=1.311 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  22: GP refit  (31 labelled)
+  → SM-705  gap=2.461 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  23: GP refit  (32 labelled)
+  → SM-6741  gap=0.118 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  24: GP refit  (33 labelled)
+  → SM-9351  gap=1.030 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  25: GP refit  (34 labelled)
+  → SM-18172  gap=1.312 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  26: full DKL retrain  (35 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.2327
+  Epoch 40/50  loss=0.0566
+DKL training done in 0.4s
+  → SM-18267  gap=0.848 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  27: GP refit  (36 labelled)
+  → SM-5440  gap=0.155 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  28: GP refit  (37 labelled)
+  → SM-19517  gap=1.192 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  29: GP refit  (38 labelled)
+  → SM-8679  gap=1.716 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  30: GP refit  (39 labelled)
+  → SM-8258  gap=0.261 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  31: full DKL retrain  (40 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.0698
+  Epoch 40/50  loss=-0.2328
+DKL training done in 0.4s
+  → SM-17155  gap=0.731 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  32: GP refit  (41 labelled)
+  → SM-17263  gap=1.010 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  33: GP refit  (42 labelled)
+  → SM-14583  gap=1.423 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  34: GP refit  (43 labelled)
+  → SM-14076  gap=1.850 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  35: GP refit  (44 labelled)
+  → SM-13347  gap=1.988 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  36: full DKL retrain  (45 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.1177
+  Epoch 40/50  loss=-0.2696
+DKL training done in 0.5s
+  → SM-11034  gap=1.042 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  37: GP refit  (46 labelled)
+  → SM-14753  gap=0.041 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  38: GP refit  (47 labelled)
+  → SM-4434  gap=0.879 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  39: GP refit  (48 labelled)
+  → SM-16228  gap=0.698 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  40: GP refit  (49 labelled)
+  → SM-1643  gap=0.798 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  41: full DKL retrain  (50 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.2025
+  Epoch 40/50  loss=-0.2948
+DKL training done in 0.6s
+  → SM-6237  gap=0.454 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  42: GP refit  (51 labelled)
+  → SM-10880  gap=1.258 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  43: GP refit  (52 labelled)
+  → SM-10171  gap=0.639 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  44: GP refit  (53 labelled)
+  → SM-1316  gap=0.323 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  45: GP refit  (54 labelled)
+  → SM-1622  gap=0.350 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  46: full DKL retrain  (55 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.2411
+  Epoch 40/50  loss=-0.4058
+DKL training done in 0.6s
+  → SM-1652  gap=1.253 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  47: GP refit  (56 labelled)
+  → SM-12140  gap=1.221 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  48: GP refit  (57 labelled)
+  → SM-4335  gap=1.083 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  49: GP refit  (58 labelled)
+  → SM-16957  gap=3.420 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  50: GP refit  (59 labelled)
+  → SM-14889  gap=0.139 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  51: full DKL retrain  (60 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.1435
+  Epoch 40/50  loss=-0.2257
+DKL training done in 0.5s
+  → SM-13631  gap=1.219 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  52: GP refit  (61 labelled)
+  → SM-9983  gap=0.305 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  53: GP refit  (62 labelled)
+  → SM-210  gap=1.908 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  54: GP refit  (63 labelled)
+  → SM-13632  gap=1.250 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  55: GP refit  (64 labelled)
+  → SM-11483  gap=3.941 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  56: full DKL retrain  (65 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.0301
+  Epoch 40/50  loss=-0.1673
+DKL training done in 0.4s
+  → SM-12472  gap=1.218 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  57: GP refit  (66 labelled)
+  → SM-6970  gap=0.423 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  58: GP refit  (67 labelled)
+  → SM-9130  gap=0.726 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  59: GP refit  (68 labelled)
+  → SM-9131  gap=0.727 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  60: GP refit  (69 labelled)
+  → SM-1655  gap=1.686 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  61: full DKL retrain  (70 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.3042
+  Epoch 40/50  loss=-0.4234
+DKL training done in 0.4s
+  → SM-480  gap=0.707 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  62: GP refit  (71 labelled)
+  → SM-9957  gap=3.577 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  63: GP refit  (72 labelled)
+  → SM-17303  gap=0.343 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  64: GP refit  (73 labelled)
+  → SM-14647  gap=2.642 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  65: GP refit  (74 labelled)
+  → SM-12336  gap=0.981 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  66: full DKL retrain  (75 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.2712
+  Epoch 40/50  loss=-0.0192
+DKL training done in 0.6s
+  → SM-14748  gap=1.148 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  67: GP refit  (76 labelled)
+  → SM-10387  gap=1.621 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  68: GP refit  (77 labelled)
+  → SM-14094  gap=0.268 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  69: GP refit  (78 labelled)
+  → SM-16080  gap=0.744 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  70: GP refit  (79 labelled)
+  → SM-10612  gap=2.253 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  71: full DKL retrain  (80 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.0878
+  Epoch 40/50  loss=-0.1425
+DKL training done in 0.4s
+  → SM-1661  gap=0.080 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  72: GP refit  (81 labelled)
+  → SM-14091  gap=1.497 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  73: GP refit  (82 labelled)
+  → SM-4337  gap=1.661 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  74: GP refit  (83 labelled)
+  → SM-7441  gap=0.953 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  75: GP refit  (84 labelled)
+  → SM-3949  gap=3.932 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  76: full DKL retrain  (85 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.2515
+  Epoch 40/50  loss=-0.0583
+DKL training done in 0.5s
+  → SM-8920  gap=1.219 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  77: GP refit  (86 labelled)
+  → SM-6894  gap=0.725 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  78: GP refit  (87 labelled)
+  → SM-17265  gap=0.586 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  79: GP refit  (88 labelled)
+  → SM-12967  gap=1.516 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  80: GP refit  (89 labelled)
+  → SM-5584  gap=0.733 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  81: full DKL retrain  (90 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.0437
+  Epoch 40/50  loss=-0.3245
+DKL training done in 0.5s
+  → SM-1648  gap=0.649 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  82: GP refit  (91 labelled)
+  → SM-4448  gap=0.736 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  83: GP refit  (92 labelled)
+  → SM-4401  gap=0.725 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  84: GP refit  (93 labelled)
+  → SM-4435  gap=0.924 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  85: GP refit  (94 labelled)
+  → SM-4421  gap=0.700 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  86: full DKL retrain  (95 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.2824
+  Epoch 40/50  loss=-0.5166
+DKL training done in 0.4s
+  → SM-6906  gap=0.442 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  87: GP refit  (96 labelled)
+  → SM-5439  gap=0.416 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  88: GP refit  (97 labelled)
+  → SM-17256  gap=1.126 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  89: GP refit  (98 labelled)
+  → SM-17800  gap=2.777 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  90: GP refit  (99 labelled)
+  → SM-10195  gap=2.324 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  91: full DKL retrain  (100 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.1191
+  Epoch 40/50  loss=-0.3207
+DKL training done in 0.4s
+  → SM-1607  gap=1.186 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  92: GP refit  (101 labelled)
+  → SM-15622  gap=0.925 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  93: GP refit  (102 labelled)
+  → SM-15983  gap=1.165 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  94: GP refit  (103 labelled)
+  → SM-802  gap=1.036 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  95: GP refit  (104 labelled)
+  → SM-20313  gap=0.189 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  96: full DKL retrain  (105 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.5334
+  Epoch 40/50  loss=-0.6808
+DKL training done in 0.5s
+  → SM-18999  gap=2.745 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  97: GP refit  (106 labelled)
+  → SM-8025  gap=2.788 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  98: GP refit  (107 labelled)
+  → SM-4450  gap=0.681 eV  best=8.198 eV  top50=0  top10%=0
+Cycle  99: GP refit  (108 labelled)
+  → SM-4423  gap=1.045 eV  best=8.198 eV  top50=0  top10%=0
+Cycle 100: GP refit  (109 labelled)
+  → SM-17705  gap=1.906 eV  best=8.198 eV  top50=0  top10%=0
+  dkl_finetune/seed2 → best_inwin=0.707 top50=10
+BOLoop: 3131 materials  |  direction=max  |  top-50 internal threshold=7.50  top-10% internal threshold=4.43
+Init: 10 random labels  |  best (max) = 8.323
+Cycle   1: full DKL retrain  (10 labelled)
+GP warmup: 20 epochs on initial embeddings
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=2.8854
+  Epoch 40/50  loss=2.6452
+DKL training done in 0.5s
+  → SM-10291  gap=1.139 eV  best=8.323 eV  top50=0  top10%=0
+Cycle   2: GP refit  (11 labelled)
+  → SM-7999  gap=1.683 eV  best=8.323 eV  top50=0  top10%=0
+Cycle   3: GP refit  (12 labelled)
+  → SM-12236  gap=1.823 eV  best=8.323 eV  top50=0  top10%=0
+Cycle   4: GP refit  (13 labelled)
+  → SM-10771  gap=1.558 eV  best=8.323 eV  top50=0  top10%=0
+Cycle   5: GP refit  (14 labelled)
+  → SM-17513  gap=0.573 eV  best=8.323 eV  top50=0  top10%=0
+Cycle   6: full DKL retrain  (15 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.2230
+  Epoch 40/50  loss=1.0924
+DKL training done in 0.5s
+  → SM-8334  gap=1.077 eV  best=8.323 eV  top50=0  top10%=0
+Cycle   7: GP refit  (16 labelled)
+  → SM-11414  gap=2.085 eV  best=8.323 eV  top50=0  top10%=0
+Cycle   8: GP refit  (17 labelled)
+  → SM-10387  gap=1.621 eV  best=8.323 eV  top50=0  top10%=0
+Cycle   9: GP refit  (18 labelled)
+  → SM-11506  gap=1.398 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  10: GP refit  (19 labelled)
+  → SM-1565  gap=1.213 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  11: full DKL retrain  (20 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.3196
+  Epoch 40/50  loss=0.0211
+DKL training done in 0.4s
+  → SM-17979  gap=1.768 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  12: GP refit  (21 labelled)
+  → SM-799  gap=1.440 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  13: GP refit  (22 labelled)
+  → SM-16027  gap=1.232 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  14: GP refit  (23 labelled)
+  → SM-8522  gap=0.141 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  15: GP refit  (24 labelled)
+  → SM-17510  gap=1.528 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  16: full DKL retrain  (25 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.1854
+  Epoch 40/50  loss=-0.3770
+DKL training done in 0.4s
+  → SM-2793  gap=3.082 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  17: GP refit  (26 labelled)
+  → SM-17247  gap=1.058 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  18: GP refit  (27 labelled)
+  → SM-10756  gap=2.444 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  19: GP refit  (28 labelled)
+  → SM-12152  gap=2.085 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  20: GP refit  (29 labelled)
+  → SM-15769  gap=0.135 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  21: full DKL retrain  (30 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.5957
+  Epoch 40/50  loss=0.2727
+DKL training done in 0.4s
+  → SM-17557  gap=0.465 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  22: GP refit  (31 labelled)
+  → SM-17297  gap=1.531 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  23: GP refit  (32 labelled)
+  → SM-11443  gap=1.904 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  24: GP refit  (33 labelled)
+  → SM-14081  gap=0.291 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  25: GP refit  (34 labelled)
+  → SM-17535  gap=1.302 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  26: full DKL retrain  (35 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.3464
+  Epoch 40/50  loss=0.0880
+DKL training done in 0.5s
+  → SM-14300  gap=1.525 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  27: GP refit  (36 labelled)
+  → SM-1527  gap=0.233 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  28: GP refit  (37 labelled)
+  → SM-286  gap=2.339 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  29: GP refit  (38 labelled)
+  → SM-14094  gap=0.268 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  30: GP refit  (39 labelled)
+  → SM-9561  gap=0.187 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  31: full DKL retrain  (40 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.3511
+  Epoch 40/50  loss=0.1177
+DKL training done in 0.5s
+  → SM-8534  gap=0.273 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  32: GP refit  (41 labelled)
+  → SM-17600  gap=3.183 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  33: GP refit  (42 labelled)
+  → SM-17993  gap=1.366 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  34: GP refit  (43 labelled)
+  → SM-8920  gap=1.219 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  35: GP refit  (44 labelled)
+  → SM-11455  gap=1.148 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  36: full DKL retrain  (45 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.3006
+  Epoch 40/50  loss=0.1454
+DKL training done in 0.6s
+  → SM-10620  gap=2.029 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  37: GP refit  (46 labelled)
+  → SM-9559  gap=0.382 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  38: GP refit  (47 labelled)
+  → SM-17505  gap=1.121 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  39: GP refit  (48 labelled)
+  → SM-4288  gap=0.958 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  40: GP refit  (49 labelled)
+  → SM-10969  gap=2.083 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  41: full DKL retrain  (50 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.0170
+  Epoch 40/50  loss=-0.1338
+DKL training done in 0.5s
+  → SM-13788  gap=1.784 eV  best=8.323 eV  top50=0  top10%=0
+Cycle  42: GP refit  (51 labelled)
+  → SM-491  gap=4.456 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  43: GP refit  (52 labelled)
+  → SM-17556  gap=0.673 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  44: GP refit  (53 labelled)
+  → SM-9094  gap=1.096 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  45: GP refit  (54 labelled)
+  → SM-8012  gap=1.143 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  46: full DKL retrain  (55 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.3852
+  Epoch 40/50  loss=0.2683
+DKL training done in 0.4s
+  → SM-16663  gap=2.302 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  47: GP refit  (56 labelled)
+  → SM-4349  gap=1.588 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  48: GP refit  (57 labelled)
+  → SM-8573  gap=0.710 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  49: GP refit  (58 labelled)
+  → SM-20130  gap=2.256 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  50: GP refit  (59 labelled)
+  → SM-5283  gap=3.948 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  51: full DKL retrain  (60 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.4497
+  Epoch 40/50  loss=0.3377
+DKL training done in 0.4s
+  → SM-19641  gap=1.828 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  52: GP refit  (61 labelled)
+  → SM-18760  gap=1.910 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  53: GP refit  (62 labelled)
+  → SM-16552  gap=1.599 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  54: GP refit  (63 labelled)
+  → SM-15696  gap=2.368 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  55: GP refit  (64 labelled)
+  → SM-17209  gap=1.660 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  56: full DKL retrain  (65 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.3063
+  Epoch 40/50  loss=0.1358
+DKL training done in 0.5s
+  → SM-12199  gap=2.082 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  57: GP refit  (66 labelled)
+  → SM-480  gap=0.707 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  58: GP refit  (67 labelled)
+  → SM-10653  gap=1.488 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  59: GP refit  (68 labelled)
+  → SM-10611  gap=3.502 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  60: GP refit  (69 labelled)
+  → SM-8001  gap=0.505 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  61: full DKL retrain  (70 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.4444
+  Epoch 40/50  loss=0.2618
+DKL training done in 0.5s
+  → SM-16088  gap=1.321 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  62: GP refit  (71 labelled)
+  → SM-8017  gap=1.133 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  63: GP refit  (72 labelled)
+  → SM-12800  gap=2.369 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  64: GP refit  (73 labelled)
+  → SM-1648  gap=0.649 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  65: GP refit  (74 labelled)
+  → SM-4331  gap=1.230 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  66: full DKL retrain  (75 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.0886
+  Epoch 40/50  loss=-0.0967
+DKL training done in 0.4s
+  → SM-16800  gap=1.073 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  67: GP refit  (76 labelled)
+  → SM-12072  gap=0.820 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  68: GP refit  (77 labelled)
+  → SM-8258  gap=0.261 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  69: GP refit  (78 labelled)
+  → SM-9287  gap=3.100 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  70: GP refit  (79 labelled)
+  → SM-16146  gap=1.843 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  71: full DKL retrain  (80 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.1546
+  Epoch 40/50  loss=0.0035
+DKL training done in 0.5s
+  → SM-1622  gap=0.350 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  72: GP refit  (81 labelled)
+  → SM-10393  gap=1.968 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  73: GP refit  (82 labelled)
+  → SM-1303  gap=0.504 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  74: GP refit  (83 labelled)
+  → SM-4123  gap=3.849 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  75: GP refit  (84 labelled)
+  → SM-19125  gap=2.011 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  76: full DKL retrain  (85 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.1915
+  Epoch 40/50  loss=-0.0039
+DKL training done in 0.4s
+  → SM-10507  gap=1.122 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  77: GP refit  (86 labelled)
+  → SM-4343  gap=2.065 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  78: GP refit  (87 labelled)
+  → SM-10855  gap=1.552 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  79: GP refit  (88 labelled)
+  → SM-12185  gap=1.094 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  80: GP refit  (89 labelled)
+  → SM-12169  gap=1.237 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  81: full DKL retrain  (90 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.0723
+  Epoch 40/50  loss=-0.2546
+DKL training done in 0.4s
+  → SM-17512  gap=1.144 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  82: GP refit  (91 labelled)
+  → SM-10262  gap=2.577 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  83: GP refit  (92 labelled)
+  → SM-17258  gap=1.535 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  84: GP refit  (93 labelled)
+  → SM-11545  gap=1.517 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  85: GP refit  (94 labelled)
+  → SM-3016  gap=0.340 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  86: full DKL retrain  (95 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.1001
+  Epoch 40/50  loss=-0.0627
+DKL training done in 0.5s
+  → SM-4335  gap=1.083 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  87: GP refit  (96 labelled)
+  → SM-4027  gap=3.387 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  88: GP refit  (97 labelled)
+  → SM-11047  gap=3.087 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  89: GP refit  (98 labelled)
+  → SM-2685  gap=3.408 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  90: GP refit  (99 labelled)
+  → SM-1606  gap=1.381 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  91: full DKL retrain  (100 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.2999
+  Epoch 40/50  loss=0.1052
+DKL training done in 0.6s
+  → SM-5584  gap=0.733 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  92: GP refit  (101 labelled)
+  → SM-1576  gap=0.075 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  93: GP refit  (102 labelled)
+  → SM-11258  gap=2.286 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  94: GP refit  (103 labelled)
+  → SM-17095  gap=0.757 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  95: GP refit  (104 labelled)
+  → SM-18422  gap=1.626 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  96: full DKL retrain  (105 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.0472
+  Epoch 40/50  loss=-0.2120
+DKL training done in 0.6s
+  → SM-12070  gap=1.121 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  97: GP refit  (106 labelled)
+  → SM-17267  gap=1.160 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  98: GP refit  (107 labelled)
+  → SM-17086  gap=0.685 eV  best=8.323 eV  top50=0  top10%=1
+Cycle  99: GP refit  (108 labelled)
+  → SM-12240  gap=1.614 eV  best=8.323 eV  top50=0  top10%=1
+Cycle 100: GP refit  (109 labelled)
+  → SM-17238  gap=1.497 eV  best=8.323 eV  top50=0  top10%=1
+  dkl_finetune/seed3 → best_inwin=0.707 top50=5
+BOLoop: 3131 materials  |  direction=max  |  top-50 internal threshold=7.50  top-10% internal threshold=4.43
+Init: 10 random labels  |  best (max) = 8.379
+Cycle   1: full DKL retrain  (10 labelled)
+GP warmup: 20 epochs on initial embeddings
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=3.3359
+  Epoch 40/50  loss=2.6615
+DKL training done in 0.5s
+  → SM-10846  gap=1.368 eV  best=8.379 eV  top50=0  top10%=0
+Cycle   2: GP refit  (11 labelled)
+  → SM-10847  gap=1.377 eV  best=8.379 eV  top50=0  top10%=0
+Cycle   3: GP refit  (12 labelled)
+  → SM-10851  gap=0.554 eV  best=8.379 eV  top50=0  top10%=0
+Cycle   4: GP refit  (13 labelled)
+  → SM-17076  gap=2.090 eV  best=8.379 eV  top50=0  top10%=0
+Cycle   5: GP refit  (14 labelled)
+  → SM-8258  gap=0.261 eV  best=8.379 eV  top50=0  top10%=0
+Cycle   6: full DKL retrain  (15 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.3750
+  Epoch 40/50  loss=1.2966
+DKL training done in 0.5s
+  → SM-13092  gap=0.907 eV  best=8.379 eV  top50=0  top10%=0
+Cycle   7: GP refit  (16 labelled)
+  → SM-17088  gap=0.954 eV  best=8.379 eV  top50=0  top10%=0
+Cycle   8: GP refit  (17 labelled)
+  → SM-1015  gap=1.289 eV  best=8.379 eV  top50=0  top10%=0
+Cycle   9: GP refit  (18 labelled)
+  → SM-8473  gap=2.650 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  10: GP refit  (19 labelled)
+  → SM-591  gap=1.878 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  11: full DKL retrain  (20 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.9894
+  Epoch 40/50  loss=0.8575
+DKL training done in 0.5s
+  → SM-17077  gap=2.206 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  12: GP refit  (21 labelled)
+  → SM-17029  gap=1.434 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  13: GP refit  (22 labelled)
+  → SM-399  gap=2.460 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  14: GP refit  (23 labelled)
+  → SM-10718  gap=2.313 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  15: GP refit  (24 labelled)
+  → SM-10693  gap=2.327 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  16: full DKL retrain  (25 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.9099
+  Epoch 40/50  loss=0.6865
+DKL training done in 0.5s
+  → SM-16957  gap=3.420 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  17: GP refit  (26 labelled)
+  → SM-17069  gap=1.947 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  18: GP refit  (27 labelled)
+  → SM-9086  gap=1.537 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  19: GP refit  (28 labelled)
+  → SM-4845  gap=2.394 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  20: GP refit  (29 labelled)
+  → SM-17800  gap=2.777 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  21: full DKL retrain  (30 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.7625
+  Epoch 40/50  loss=0.5554
+DKL training done in 0.5s
+  → SM-10784  gap=2.501 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  22: GP refit  (31 labelled)
+  → SM-11258  gap=2.286 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  23: GP refit  (32 labelled)
+  → SM-8920  gap=1.219 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  24: GP refit  (33 labelled)
+  → SM-16027  gap=1.232 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  25: GP refit  (34 labelled)
+  → SM-18187  gap=1.688 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  26: full DKL retrain  (35 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.5500
+  Epoch 40/50  loss=0.3710
+DKL training done in 0.6s
+  → SM-3500  gap=1.187 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  27: GP refit  (36 labelled)
+  → SM-1607  gap=1.186 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  28: GP refit  (37 labelled)
+  → SM-17022  gap=2.249 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  29: GP refit  (38 labelled)
+  → SM-8529  gap=1.680 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  30: GP refit  (39 labelled)
+  → SM-9982  gap=1.675 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  31: full DKL retrain  (40 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.1305
+  Epoch 40/50  loss=-0.0697
+DKL training done in 0.6s
+  → SM-14081  gap=0.291 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  32: GP refit  (41 labelled)
+  → SM-17263  gap=1.010 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  33: GP refit  (42 labelled)
+  → SM-14094  gap=0.268 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  34: GP refit  (43 labelled)
+  → SM-17258  gap=1.535 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  35: GP refit  (44 labelled)
+  → SM-10798  gap=1.281 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  36: full DKL retrain  (45 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.0218
+  Epoch 40/50  loss=-0.2966
+DKL training done in 0.4s
+  → SM-9140  gap=1.924 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  37: GP refit  (46 labelled)
+  → SM-16985  gap=0.237 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  38: GP refit  (47 labelled)
+  → SM-17256  gap=1.126 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  39: GP refit  (48 labelled)
+  → SM-266  gap=1.330 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  40: GP refit  (49 labelled)
+  → SM-7254  gap=0.725 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  41: full DKL retrain  (50 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.0904
+  Epoch 40/50  loss=-0.2524
+DKL training done in 0.4s
+  → SM-5499  gap=1.152 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  42: GP refit  (51 labelled)
+  → SM-4401  gap=0.725 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  43: GP refit  (52 labelled)
+  → SM-17055  gap=0.819 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  44: GP refit  (53 labelled)
+  → SM-1643  gap=0.798 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  45: GP refit  (54 labelled)
+  → SM-1576  gap=0.075 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  46: full DKL retrain  (55 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.2664
+  Epoch 40/50  loss=-0.4569
+DKL training done in 0.5s
+  → SM-9118  gap=2.096 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  47: GP refit  (56 labelled)
+  → SM-10397  gap=0.228 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  48: GP refit  (57 labelled)
+  → SM-10672  gap=0.219 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  49: GP refit  (58 labelled)
+  → SM-9161  gap=1.685 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  50: GP refit  (59 labelled)
+  → SM-17705  gap=1.906 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  51: full DKL retrain  (60 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.0675
+  Epoch 40/50  loss=-0.0848
+DKL training done in 0.5s
+  → SM-17556  gap=0.673 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  52: GP refit  (61 labelled)
+  → SM-5272  gap=1.791 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  53: GP refit  (62 labelled)
+  → SM-10653  gap=1.488 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  54: GP refit  (63 labelled)
+  → SM-1011  gap=2.331 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  55: GP refit  (64 labelled)
+  → SM-1556  gap=0.550 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  56: full DKL retrain  (65 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.0757
+  Epoch 40/50  loss=-0.0718
+DKL training done in 0.6s
+  → SM-9094  gap=1.096 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  57: GP refit  (66 labelled)
+  → SM-10404  gap=2.305 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  58: GP refit  (67 labelled)
+  → SM-10306  gap=2.379 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  59: GP refit  (68 labelled)
+  → SM-10305  gap=2.392 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  60: GP refit  (69 labelled)
+  → SM-7767  gap=1.094 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  61: full DKL retrain  (70 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.0992
+  Epoch 40/50  loss=-0.0507
+DKL training done in 0.4s
+  → SM-17313  gap=3.055 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  62: GP refit  (71 labelled)
+  → SM-17512  gap=1.144 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  63: GP refit  (72 labelled)
+  → SM-20258  gap=1.208 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  64: GP refit  (73 labelled)
+  → SM-5440  gap=0.155 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  65: GP refit  (74 labelled)
+  → SM-9144  gap=2.472 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  66: full DKL retrain  (75 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.3496
+  Epoch 40/50  loss=0.2026
+DKL training done in 0.4s
+  → SM-17557  gap=0.465 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  67: GP refit  (76 labelled)
+  → SM-8960  gap=2.678 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  68: GP refit  (77 labelled)
+  → SM-105  gap=0.138 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  69: GP refit  (78 labelled)
+  → SM-6311  gap=0.756 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  70: GP refit  (79 labelled)
+  → SM-17810  gap=2.749 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  71: full DKL retrain  (80 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.2724
+  Epoch 40/50  loss=0.2934
+DKL training done in 0.3s
+  → SM-1303  gap=0.504 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  72: GP refit  (81 labelled)
+  → SM-16130  gap=0.871 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  73: GP refit  (82 labelled)
+  → SM-8242  gap=0.648 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  74: GP refit  (83 labelled)
+  → SM-6232  gap=0.164 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  75: GP refit  (84 labelled)
+  → SM-6239  gap=0.740 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  76: full DKL retrain  (85 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.0777
+  Epoch 40/50  loss=-0.0568
+DKL training done in 0.5s
+  → SM-1753  gap=0.022 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  77: GP refit  (86 labelled)
+  → SM-19517  gap=1.192 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  78: GP refit  (87 labelled)
+  → SM-10673  gap=0.417 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  79: GP refit  (88 labelled)
+  → SM-8597  gap=0.892 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  80: GP refit  (89 labelled)
+  → SM-9923  gap=1.022 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  81: full DKL retrain  (90 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.1095
+  Epoch 40/50  loss=-0.0389
+DKL training done in 0.4s
+  → SM-4446  gap=0.430 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  82: GP refit  (91 labelled)
+  → SM-8448  gap=0.838 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  83: GP refit  (92 labelled)
+  → SM-10629  gap=0.154 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  84: GP refit  (93 labelled)
+  → SM-10631  gap=0.655 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  85: GP refit  (94 labelled)
+  → SM-10630  gap=0.908 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  86: full DKL retrain  (95 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.0977
+  Epoch 40/50  loss=-0.2203
+DKL training done in 0.6s
+  → SM-11545  gap=1.517 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  87: GP refit  (96 labelled)
+  → SM-1400  gap=0.601 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  88: GP refit  (97 labelled)
+  → SM-8341  gap=1.056 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  89: GP refit  (98 labelled)
+  → SM-6449  gap=1.144 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  90: GP refit  (99 labelled)
+  → SM-1419  gap=1.519 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  91: full DKL retrain  (100 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.1028
+  Epoch 40/50  loss=-0.2282
+DKL training done in 0.5s
+  → SM-14397  gap=0.073 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  92: GP refit  (101 labelled)
+  → SM-12639  gap=1.120 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  93: GP refit  (102 labelled)
+  → SM-19478  gap=0.568 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  94: GP refit  (103 labelled)
+  → SM-16604  gap=2.441 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  95: GP refit  (104 labelled)
+  → SM-3942  gap=4.286 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  96: full DKL retrain  (105 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.1955
+  Epoch 40/50  loss=0.0009
+DKL training done in 0.5s
+  → SM-10706  gap=1.068 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  97: GP refit  (106 labelled)
+  → SM-4291  gap=0.683 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  98: GP refit  (107 labelled)
+  → SM-17014  gap=2.256 eV  best=8.379 eV  top50=0  top10%=0
+Cycle  99: GP refit  (108 labelled)
+  → SM-4288  gap=0.958 eV  best=8.379 eV  top50=0  top10%=0
+Cycle 100: GP refit  (109 labelled)
+  → SM-17155  gap=0.731 eV  best=8.379 eV  top50=0  top10%=0
+  dkl_finetune/seed4 → best_inwin=0.725 top50=7
+BOLoop: 3131 materials  |  direction=max  |  top-50 internal threshold=7.50  top-10% internal threshold=4.43
+Init: 10 random labels  |  best (max) = 3.811
+Cycle   1: full DKL retrain  (10 labelled)
+GP warmup: 20 epochs on initial embeddings
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.6021
+  Epoch 40/50  loss=1.3165
+DKL training done in 0.3s
+  → SM-598  gap=0.868 eV  best=3.811 eV  top50=0  top10%=0
+Cycle   2: GP refit  (11 labelled)
+  → SM-14107  gap=2.987 eV  best=3.811 eV  top50=0  top10%=0
+Cycle   3: GP refit  (12 labelled)
+  → SM-14639  gap=2.501 eV  best=3.811 eV  top50=0  top10%=0
+Cycle   4: GP refit  (13 labelled)
+  → SM-11826  gap=1.570 eV  best=3.811 eV  top50=0  top10%=0
+Cycle   5: GP refit  (14 labelled)
+  → SM-13184  gap=3.271 eV  best=3.811 eV  top50=0  top10%=0
+Cycle   6: full DKL retrain  (15 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.9723
+  Epoch 40/50  loss=0.8112
+DKL training done in 0.4s
+  → SM-18784  gap=2.416 eV  best=3.811 eV  top50=0  top10%=0
+Cycle   7: GP refit  (16 labelled)
+  → SM-12827  gap=2.620 eV  best=3.811 eV  top50=0  top10%=0
+Cycle   8: GP refit  (17 labelled)
+  → SM-15483  gap=4.969 eV  best=4.969 eV  top50=0  top10%=1
+Cycle   9: GP refit  (18 labelled)
+  → SM-7515  gap=4.071 eV  best=4.969 eV  top50=0  top10%=1
+Cycle  10: GP refit  (19 labelled)
+  → SM-14429  gap=1.640 eV  best=4.969 eV  top50=0  top10%=1
+Cycle  11: full DKL retrain  (20 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.1871
+  Epoch 40/50  loss=0.8137
+DKL training done in 0.5s
+  → SM-3063  gap=2.825 eV  best=4.969 eV  top50=0  top10%=1
+Cycle  12: GP refit  (21 labelled)
+  → SM-610  gap=1.462 eV  best=4.969 eV  top50=0  top10%=1
+Cycle  13: GP refit  (22 labelled)
+  → SM-17709  gap=1.936 eV  best=4.969 eV  top50=0  top10%=1
+Cycle  14: GP refit  (23 labelled)
+  → SM-13864  gap=2.843 eV  best=4.969 eV  top50=0  top10%=1
+Cycle  15: GP refit  (24 labelled)
+  → SM-8000  gap=0.928 eV  best=4.969 eV  top50=0  top10%=1
+Cycle  16: full DKL retrain  (25 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.0339
+  Epoch 40/50  loss=0.6867
+DKL training done in 0.6s
+  → SM-2624  gap=4.453 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  17: GP refit  (26 labelled)
+  → SM-11506  gap=1.398 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  18: GP refit  (27 labelled)
+  → SM-12591  gap=2.171 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  19: GP refit  (28 labelled)
+  → SM-15435  gap=2.153 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  20: GP refit  (29 labelled)
+  → SM-10969  gap=2.083 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  21: full DKL retrain  (30 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.8863
+  Epoch 40/50  loss=0.7547
+DKL training done in 0.6s
+  → SM-16799  gap=1.907 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  22: GP refit  (31 labelled)
+  → SM-7092  gap=0.749 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  23: GP refit  (32 labelled)
+  → SM-1734  gap=0.156 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  24: GP refit  (33 labelled)
+  → SM-11415  gap=2.493 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  25: GP refit  (34 labelled)
+  → SM-13579  gap=1.013 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  26: full DKL retrain  (35 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.6283
+  Epoch 40/50  loss=0.5137
+DKL training done in 0.4s
+  → SM-20354  gap=0.907 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  27: GP refit  (36 labelled)
+  → SM-4417  gap=0.541 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  28: GP refit  (37 labelled)
+  → SM-9133  gap=0.990 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  29: GP refit  (38 labelled)
+  → SM-15059  gap=1.588 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  30: GP refit  (39 labelled)
+  → SM-14930  gap=0.072 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  31: full DKL retrain  (40 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.2853
+  Epoch 40/50  loss=0.0455
+DKL training done in 0.3s
+  → SM-12490  gap=2.915 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  32: GP refit  (41 labelled)
+  → SM-8011  gap=1.555 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  33: GP refit  (42 labelled)
+  → SM-16640  gap=2.238 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  34: GP refit  (43 labelled)
+  → SM-396  gap=1.211 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  35: GP refit  (44 labelled)
+  → SM-14619  gap=1.000 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  36: full DKL retrain  (45 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.7393
+  Epoch 40/50  loss=0.1415
+DKL training done in 0.4s
+  → SM-12953  gap=2.785 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  37: GP refit  (46 labelled)
+  → SM-12432  gap=2.438 eV  best=4.969 eV  top50=0  top10%=2
+Cycle  38: GP refit  (47 labelled)
+  → SM-491  gap=4.456 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  39: GP refit  (48 labelled)
+  → SM-17724  gap=3.209 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  40: GP refit  (49 labelled)
+  → SM-14979  gap=0.909 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  41: full DKL retrain  (50 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.0729
+  Epoch 40/50  loss=0.4474
+DKL training done in 0.5s
+  → SM-10603  gap=1.883 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  42: GP refit  (51 labelled)
+  → SM-17510  gap=1.528 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  43: GP refit  (52 labelled)
+  → SM-18309  gap=2.353 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  44: GP refit  (53 labelled)
+  → SM-18198  gap=1.911 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  45: GP refit  (54 labelled)
+  → SM-7258  gap=1.091 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  46: full DKL retrain  (55 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.5058
+  Epoch 40/50  loss=0.3079
+DKL training done in 0.6s
+  → SM-10195  gap=2.324 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  47: GP refit  (56 labelled)
+  → SM-6894  gap=0.725 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  48: GP refit  (57 labelled)
+  → SM-15908  gap=1.398 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  49: GP refit  (58 labelled)
+  → SM-1998  gap=3.012 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  50: GP refit  (59 labelled)
+  → SM-18369  gap=3.804 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  51: full DKL retrain  (60 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.4896
+  Epoch 40/50  loss=0.3038
+DKL training done in 0.5s
+  → SM-10681  gap=2.588 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  52: GP refit  (61 labelled)
+  → SM-17993  gap=1.366 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  53: GP refit  (62 labelled)
+  → SM-18233  gap=3.842 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  54: GP refit  (63 labelled)
+  → SM-461  gap=0.272 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  55: GP refit  (64 labelled)
+  → SM-10967  gap=2.271 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  56: full DKL retrain  (65 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.4739
+  Epoch 40/50  loss=0.2366
+DKL training done in 0.5s
+  → SM-14075  gap=1.864 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  57: GP refit  (66 labelled)
+  → SM-4426  gap=0.612 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  58: GP refit  (67 labelled)
+  → SM-8583  gap=0.811 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  59: GP refit  (68 labelled)
+  → SM-10165  gap=2.239 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  60: GP refit  (69 labelled)
+  → SM-11189  gap=1.967 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  61: full DKL retrain  (70 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.1695
+  Epoch 40/50  loss=0.0005
+DKL training done in 0.4s
+  → SM-6344  gap=2.265 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  62: GP refit  (71 labelled)
+  → SM-8744  gap=2.952 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  63: GP refit  (72 labelled)
+  → SM-15290  gap=1.234 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  64: GP refit  (73 labelled)
+  → SM-20258  gap=1.208 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  65: GP refit  (74 labelled)
+  → SM-19012  gap=2.586 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  66: full DKL retrain  (75 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.2556
+  Epoch 40/50  loss=0.0319
+DKL training done in 0.4s
+  → SM-15780  gap=3.396 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  67: GP refit  (76 labelled)
+  → SM-17806  gap=3.372 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  68: GP refit  (77 labelled)
+  → SM-7941  gap=0.566 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  69: GP refit  (78 labelled)
+  → SM-14834  gap=1.847 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  70: GP refit  (79 labelled)
+  → SM-18574  gap=1.621 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  71: full DKL retrain  (80 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.1547
+  Epoch 40/50  loss=-0.1612
+DKL training done in 0.5s
+  → SM-5314  gap=3.773 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  72: GP refit  (81 labelled)
+  → SM-1550  gap=1.753 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  73: GP refit  (82 labelled)
+  → SM-12022  gap=2.896 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  74: GP refit  (83 labelled)
+  → SM-12118  gap=2.524 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  75: GP refit  (84 labelled)
+  → SM-9079  gap=1.751 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  76: full DKL retrain  (85 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.0769
+  Epoch 40/50  loss=-0.2389
+DKL training done in 0.6s
+  → SM-4962  gap=3.261 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  77: GP refit  (86 labelled)
+  → SM-11547  gap=1.914 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  78: GP refit  (87 labelled)
+  → SM-16761  gap=1.152 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  79: GP refit  (88 labelled)
+  → SM-14090  gap=1.742 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  80: GP refit  (89 labelled)
+  → SM-11916  gap=4.085 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  81: full DKL retrain  (90 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.0808
+  Epoch 40/50  loss=-0.1910
+DKL training done in 0.5s
+  → SM-10640  gap=0.035 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  82: GP refit  (91 labelled)
+  → SM-13631  gap=1.219 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  83: GP refit  (92 labelled)
+  → SM-10743  gap=2.089 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  84: GP refit  (93 labelled)
+  → SM-17515  gap=1.309 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  85: GP refit  (94 labelled)
+  → SM-14753  gap=0.041 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  86: full DKL retrain  (95 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.1033
+  Epoch 40/50  loss=-0.2890
+DKL training done in 0.7s
+  → SM-20112  gap=2.638 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  87: GP refit  (96 labelled)
+  → SM-8682  gap=1.118 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  88: GP refit  (97 labelled)
+  → SM-480  gap=0.707 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  89: GP refit  (98 labelled)
+  → SM-16228  gap=0.698 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  90: GP refit  (99 labelled)
+  → SM-8503  gap=2.448 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  91: full DKL retrain  (100 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.1308
+  Epoch 40/50  loss=-0.3053
+DKL training done in 0.5s
+  → SM-10694  gap=2.065 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  92: GP refit  (101 labelled)
+  → SM-13303  gap=0.660 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  93: GP refit  (102 labelled)
+  → SM-20179  gap=2.247 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  94: GP refit  (103 labelled)
+  → SM-10693  gap=2.327 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  95: GP refit  (104 labelled)
+  → SM-13744  gap=1.585 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  96: full DKL retrain  (105 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.0060
+  Epoch 40/50  loss=-0.3995
+DKL training done in 0.5s
+  → SM-12534  gap=3.217 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  97: GP refit  (106 labelled)
+  → SM-8520  gap=1.404 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  98: GP refit  (107 labelled)
+  → SM-595  gap=2.519 eV  best=4.969 eV  top50=0  top10%=3
+Cycle  99: GP refit  (108 labelled)
+  → SM-320  gap=1.796 eV  best=4.969 eV  top50=0  top10%=3
+Cycle 100: GP refit  (109 labelled)
+  → SM-14529  gap=0.568 eV  best=4.969 eV  top50=0  top10%=3
+  dkl_finetune/seed5 → best_inwin=0.707 top50=4
+BOLoop: 3131 materials  |  direction=max  |  top-50 internal threshold=7.50  top-10% internal threshold=4.43
+Init: 10 random labels  |  best (max) = 5.106
+Cycle   1: full DKL retrain  (10 labelled)
+GP warmup: 20 epochs on initial embeddings
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.8200
+  Epoch 40/50  loss=1.7214
+DKL training done in 0.6s
+  → SM-10846  gap=1.368 eV  best=5.106 eV  top50=0  top10%=0
+Cycle   2: GP refit  (11 labelled)
+  → SM-2417  gap=3.123 eV  best=5.106 eV  top50=0  top10%=0
+Cycle   3: GP refit  (12 labelled)
+  → SM-1153  gap=0.856 eV  best=5.106 eV  top50=0  top10%=0
+Cycle   4: GP refit  (13 labelled)
+  → SM-19098  gap=1.777 eV  best=5.106 eV  top50=0  top10%=0
+Cycle   5: GP refit  (14 labelled)
+  → SM-18187  gap=1.688 eV  best=5.106 eV  top50=0  top10%=0
+Cycle   6: full DKL retrain  (15 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.3116
+  Epoch 40/50  loss=1.2523
+DKL training done in 0.5s
+  → SM-17060  gap=2.470 eV  best=5.106 eV  top50=0  top10%=0
+Cycle   7: GP refit  (16 labelled)
+  → SM-17086  gap=0.685 eV  best=5.106 eV  top50=0  top10%=0
+Cycle   8: GP refit  (17 labelled)
+  → SM-17007  gap=2.052 eV  best=5.106 eV  top50=0  top10%=0
+Cycle   9: GP refit  (18 labelled)
+  → SM-17065  gap=0.892 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  10: GP refit  (19 labelled)
+  → SM-9772  gap=2.074 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  11: full DKL retrain  (20 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.0437
+  Epoch 40/50  loss=0.9033
+DKL training done in 0.5s
+  → SM-4895  gap=2.544 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  12: GP refit  (21 labelled)
+  → SM-11386  gap=3.052 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  13: GP refit  (22 labelled)
+  → SM-11372  gap=2.269 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  14: GP refit  (23 labelled)
+  → SM-435  gap=0.246 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  15: GP refit  (24 labelled)
+  → SM-9691  gap=3.648 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  16: full DKL retrain  (25 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.9833
+  Epoch 40/50  loss=0.8190
+DKL training done in 0.4s
+  → SM-13092  gap=0.907 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  17: GP refit  (26 labelled)
+  → SM-13599  gap=1.005 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  18: GP refit  (27 labelled)
+  → SM-10851  gap=0.554 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  19: GP refit  (28 labelled)
+  → SM-17078  gap=1.312 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  20: GP refit  (29 labelled)
+  → SM-3942  gap=4.286 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  21: full DKL retrain  (30 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.3673
+  Epoch 40/50  loss=0.3405
+DKL training done in 0.5s
+  → SM-10847  gap=1.377 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  22: GP refit  (31 labelled)
+  → SM-4562  gap=1.196 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  23: GP refit  (32 labelled)
+  → SM-11178  gap=0.934 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  24: GP refit  (33 labelled)
+  → SM-3055  gap=2.191 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  25: GP refit  (34 labelled)
+  → SM-9322  gap=2.094 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  26: full DKL retrain  (35 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.3635
+  Epoch 40/50  loss=-0.1523
+DKL training done in 0.5s
+  → SM-10691  gap=2.235 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  27: GP refit  (36 labelled)
+  → SM-17014  gap=2.256 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  28: GP refit  (37 labelled)
+  → SM-656  gap=1.106 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  29: GP refit  (38 labelled)
+  → SM-10839  gap=1.405 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  30: GP refit  (39 labelled)
+  → SM-10838  gap=1.645 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  31: full DKL retrain  (40 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.5381
+  Epoch 40/50  loss=0.0569
+DKL training done in 0.5s
+  → SM-712  gap=0.647 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  32: GP refit  (41 labelled)
+  → SM-791  gap=0.748 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  33: GP refit  (42 labelled)
+  → SM-13726  gap=1.405 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  34: GP refit  (43 labelled)
+  → SM-17303  gap=0.343 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  35: GP refit  (44 labelled)
+  → SM-17029  gap=1.434 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  36: full DKL retrain  (45 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.0088
+  Epoch 40/50  loss=-0.2225
+DKL training done in 0.5s
+  → SM-11212  gap=1.626 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  37: GP refit  (46 labelled)
+  → SM-10890  gap=1.289 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  38: GP refit  (47 labelled)
+  → SM-4132  gap=0.605 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  39: GP refit  (48 labelled)
+  → SM-5584  gap=0.733 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  40: GP refit  (49 labelled)
+  → SM-6741  gap=0.118 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  41: full DKL retrain  (50 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.3174
+  Epoch 40/50  loss=-0.5026
+DKL training done in 0.5s
+  → SM-4444  gap=1.211 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  42: GP refit  (51 labelled)
+  → SM-645  gap=1.354 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  43: GP refit  (52 labelled)
+  → SM-9923  gap=1.022 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  44: GP refit  (53 labelled)
+  → SM-19747  gap=2.657 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  45: GP refit  (54 labelled)
+  → SM-4426  gap=0.612 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  46: full DKL retrain  (55 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.3001
+  Epoch 40/50  loss=-0.5605
+DKL training done in 0.3s
+  → SM-4438  gap=0.534 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  47: GP refit  (56 labelled)
+  → SM-8901  gap=1.522 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  48: GP refit  (57 labelled)
+  → SM-4434  gap=0.879 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  49: GP refit  (58 labelled)
+  → SM-7092  gap=0.749 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  50: GP refit  (59 labelled)
+  → SM-12603  gap=2.416 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  51: full DKL retrain  (60 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.4205
+  Epoch 40/50  loss=-0.6863
+DKL training done in 0.5s
+  → SM-1643  gap=0.798 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  52: GP refit  (61 labelled)
+  → SM-1734  gap=0.156 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  53: GP refit  (62 labelled)
+  → SM-12639  gap=1.120 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  54: GP refit  (63 labelled)
+  → SM-11038  gap=1.504 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  55: GP refit  (64 labelled)
+  → SM-4435  gap=0.924 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  56: full DKL retrain  (65 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.0160
+  Epoch 40/50  loss=-0.6185
+DKL training done in 0.4s
+  → SM-17810  gap=2.749 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  57: GP refit  (66 labelled)
+  → SM-14979  gap=0.909 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  58: GP refit  (67 labelled)
+  → SM-17310  gap=0.868 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  59: GP refit  (68 labelled)
+  → SM-9983  gap=0.305 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  60: GP refit  (69 labelled)
+  → SM-10816  gap=1.646 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  61: full DKL retrain  (70 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.0027
+  Epoch 40/50  loss=-0.2270
+DKL training done in 0.6s
+  → SM-9351  gap=1.030 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  62: GP refit  (71 labelled)
+  → SM-5846  gap=2.518 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  63: GP refit  (72 labelled)
+  → SM-10463  gap=0.408 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  64: GP refit  (73 labelled)
+  → SM-17155  gap=0.731 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  65: GP refit  (74 labelled)
+  → SM-802  gap=1.036 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  66: full DKL retrain  (75 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.0421
+  Epoch 40/50  loss=-0.2395
+DKL training done in 0.4s
+  → SM-3500  gap=1.187 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  67: GP refit  (76 labelled)
+  → SM-17296  gap=1.311 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  68: GP refit  (77 labelled)
+  → SM-210  gap=1.908 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  69: GP refit  (78 labelled)
+  → SM-8960  gap=2.678 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  70: GP refit  (79 labelled)
+  → SM-16877  gap=2.592 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  71: full DKL retrain  (80 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.1480
+  Epoch 40/50  loss=-0.3248
+DKL training done in 0.6s
+  → SM-708  gap=1.105 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  72: GP refit  (81 labelled)
+  → SM-14493  gap=0.611 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  73: GP refit  (82 labelled)
+  → SM-1514  gap=0.856 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  74: GP refit  (83 labelled)
+  → SM-10672  gap=0.219 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  75: GP refit  (84 labelled)
+  → SM-4267  gap=2.308 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  76: full DKL retrain  (85 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.5335
+  Epoch 40/50  loss=-0.7288
+DKL training done in 0.4s
+  → SM-5252  gap=1.201 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  77: GP refit  (86 labelled)
+  → SM-16146  gap=1.843 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  78: GP refit  (87 labelled)
+  → SM-19478  gap=0.568 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  79: GP refit  (88 labelled)
+  → SM-17295  gap=1.240 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  80: GP refit  (89 labelled)
+  → SM-1642  gap=0.640 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  81: full DKL retrain  (90 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.5619
+  Epoch 40/50  loss=-0.7938
+DKL training done in 0.5s
+  → SM-1015  gap=1.289 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  82: GP refit  (91 labelled)
+  → SM-1431  gap=0.056 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  83: GP refit  (92 labelled)
+  → SM-12083  gap=2.285 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  84: GP refit  (93 labelled)
+  → SM-10696  gap=1.430 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  85: GP refit  (94 labelled)
+  → SM-19517  gap=1.192 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  86: full DKL retrain  (95 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.5006
+  Epoch 40/50  loss=-0.7259
+DKL training done in 0.5s
+  → SM-17118  gap=0.859 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  87: GP refit  (96 labelled)
+  → SM-17536  gap=0.552 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  88: GP refit  (97 labelled)
+  → SM-16762  gap=1.137 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  89: GP refit  (98 labelled)
+  → SM-6970  gap=0.423 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  90: GP refit  (99 labelled)
+  → SM-8265  gap=0.622 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  91: full DKL retrain  (100 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.8304
+  Epoch 40/50  loss=-1.1400
+DKL training done in 0.6s
+  → SM-17022  gap=2.249 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  92: GP refit  (101 labelled)
+  → SM-4428  gap=0.507 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  93: GP refit  (102 labelled)
+  → SM-14437  gap=3.503 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  94: GP refit  (103 labelled)
+  → SM-17395  gap=0.057 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  95: GP refit  (104 labelled)
+  → SM-8920  gap=1.219 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  96: full DKL retrain  (105 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.3835
+  Epoch 40/50  loss=-0.6486
+DKL training done in 0.5s
+  → SM-1605  gap=1.697 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  97: GP refit  (106 labelled)
+  → SM-1606  gap=1.381 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  98: GP refit  (107 labelled)
+  → SM-1595  gap=1.474 eV  best=5.106 eV  top50=0  top10%=0
+Cycle  99: GP refit  (108 labelled)
+  → SM-10692  gap=2.348 eV  best=5.106 eV  top50=0  top10%=0
+Cycle 100: GP refit  (109 labelled)
+  → SM-1622  gap=0.350 eV  best=5.106 eV  top50=0  top10%=0
+  dkl_finetune/seed6 → best_inwin=0.731 top50=5
+BOLoop: 3131 materials  |  direction=max  |  top-50 internal threshold=7.50  top-10% internal threshold=4.43
+Init: 10 random labels  |  best (max) = 6.964
+Cycle   1: full DKL retrain  (10 labelled)
+GP warmup: 20 epochs on initial embeddings
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=2.3768
+  Epoch 40/50  loss=2.1513
+DKL training done in 0.5s
+  → SM-16762  gap=1.137 eV  best=6.964 eV  top50=0  top10%=0
+Cycle   2: GP refit  (11 labelled)
+  → SM-17180  gap=1.016 eV  best=6.964 eV  top50=0  top10%=0
+Cycle   3: GP refit  (12 labelled)
+  → SM-529  gap=2.783 eV  best=6.964 eV  top50=0  top10%=0
+Cycle   4: GP refit  (13 labelled)
+  → SM-16761  gap=1.152 eV  best=6.964 eV  top50=0  top10%=0
+Cycle   5: GP refit  (14 labelled)
+  → SM-14075  gap=1.864 eV  best=6.964 eV  top50=0  top10%=0
+Cycle   6: full DKL retrain  (15 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.0205
+  Epoch 40/50  loss=0.9030
+DKL training done in 0.4s
+  → SM-20354  gap=0.907 eV  best=6.964 eV  top50=0  top10%=0
+Cycle   7: GP refit  (16 labelled)
+  → SM-10463  gap=0.408 eV  best=6.964 eV  top50=0  top10%=0
+Cycle   8: GP refit  (17 labelled)
+  → SM-17492  gap=1.131 eV  best=6.964 eV  top50=0  top10%=0
+Cycle   9: GP refit  (18 labelled)
+  → SM-473  gap=2.537 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  10: GP refit  (19 labelled)
+  → SM-7767  gap=1.094 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  11: full DKL retrain  (20 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.8217
+  Epoch 40/50  loss=0.6213
+DKL training done in 0.5s
+  → SM-14764  gap=0.452 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  12: GP refit  (21 labelled)
+  → SM-9116  gap=0.873 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  13: GP refit  (22 labelled)
+  → SM-9322  gap=2.094 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  14: GP refit  (23 labelled)
+  → SM-5216  gap=1.161 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  15: GP refit  (24 labelled)
+  → SM-11212  gap=1.626 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  16: full DKL retrain  (25 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.4965
+  Epoch 40/50  loss=0.3363
+DKL training done in 0.5s
+  → SM-14529  gap=0.568 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  17: GP refit  (26 labelled)
+  → SM-15769  gap=0.135 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  18: GP refit  (27 labelled)
+  → SM-677  gap=2.070 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  19: GP refit  (28 labelled)
+  → SM-20316  gap=1.189 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  20: GP refit  (29 labelled)
+  → SM-701  gap=1.733 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  21: full DKL retrain  (30 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.3424
+  Epoch 40/50  loss=0.1642
+DKL training done in 0.4s
+  → SM-20318  gap=1.098 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  22: GP refit  (31 labelled)
+  → SM-11011  gap=1.232 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  23: GP refit  (32 labelled)
+  → SM-17219  gap=1.555 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  24: GP refit  (33 labelled)
+  → SM-1605  gap=1.697 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  25: GP refit  (34 labelled)
+  → SM-9981  gap=2.057 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  26: full DKL retrain  (35 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.0830
+  Epoch 40/50  loss=-0.1464
+DKL training done in 0.5s
+  → SM-12734  gap=1.240 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  27: GP refit  (36 labelled)
+  → SM-12479  gap=1.389 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  28: GP refit  (37 labelled)
+  → SM-1734  gap=0.156 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  29: GP refit  (38 labelled)
+  → SM-14748  gap=1.148 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  30: GP refit  (39 labelled)
+  → SM-19478  gap=0.568 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  31: full DKL retrain  (40 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.0360
+  Epoch 40/50  loss=-0.1893
+DKL training done in 0.5s
+  → SM-8259  gap=0.282 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  32: GP refit  (41 labelled)
+  → SM-12352  gap=1.528 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  33: GP refit  (42 labelled)
+  → SM-18103  gap=1.898 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  34: GP refit  (43 labelled)
+  → SM-12154  gap=1.927 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  35: GP refit  (44 labelled)
+  → SM-7752  gap=0.790 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  36: full DKL retrain  (45 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.0237
+  Epoch 40/50  loss=-0.1314
+DKL training done in 0.4s
+  → SM-10646  gap=1.177 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  37: GP refit  (46 labelled)
+  → SM-4291  gap=0.683 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  38: GP refit  (47 labelled)
+  → SM-11003  gap=1.398 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  39: GP refit  (48 labelled)
+  → SM-17665  gap=0.178 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  40: GP refit  (49 labelled)
+  → SM-10855  gap=1.552 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  41: full DKL retrain  (50 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.2372
+  Epoch 40/50  loss=-0.4073
+DKL training done in 0.4s
+  → SM-16059  gap=1.557 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  42: GP refit  (51 labelled)
+  → SM-13994  gap=1.475 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  43: GP refit  (52 labelled)
+  → SM-9094  gap=1.096 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  44: GP refit  (53 labelled)
+  → SM-17265  gap=0.586 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  45: GP refit  (54 labelled)
+  → SM-8341  gap=1.056 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  46: full DKL retrain  (55 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.3051
+  Epoch 40/50  loss=-0.4758
+DKL training done in 0.4s
+  → SM-4446  gap=0.430 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  47: GP refit  (56 labelled)
+  → SM-11202  gap=1.280 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  48: GP refit  (57 labelled)
+  → SM-18777  gap=0.274 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  49: GP refit  (58 labelled)
+  → SM-11750  gap=0.815 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  50: GP refit  (59 labelled)
+  → SM-17118  gap=0.859 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  51: full DKL retrain  (60 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.5826
+  Epoch 40/50  loss=-0.7094
+DKL training done in 0.5s
+  → SM-4343  gap=2.065 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  52: GP refit  (61 labelled)
+  → SM-6239  gap=0.740 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  53: GP refit  (62 labelled)
+  → SM-435  gap=0.246 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  54: GP refit  (63 labelled)
+  → SM-10354  gap=0.894 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  55: GP refit  (64 labelled)
+  → SM-13631  gap=1.219 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  56: full DKL retrain  (65 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.3642
+  Epoch 40/50  loss=-0.5224
+DKL training done in 0.6s
+  → SM-8806  gap=0.790 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  57: GP refit  (66 labelled)
+  → SM-4337  gap=1.661 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  58: GP refit  (67 labelled)
+  → SM-17069  gap=1.947 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  59: GP refit  (68 labelled)
+  → SM-10784  gap=2.501 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  60: GP refit  (69 labelled)
+  → SM-17088  gap=0.954 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  61: full DKL retrain  (70 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.1615
+  Epoch 40/50  loss=-0.3441
+DKL training done in 0.5s
+  → SM-8597  gap=0.892 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  62: GP refit  (71 labelled)
+  → SM-14979  gap=0.909 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  63: GP refit  (72 labelled)
+  → SM-20258  gap=1.208 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  64: GP refit  (73 labelled)
+  → SM-1419  gap=1.519 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  65: GP refit  (74 labelled)
+  → SM-7941  gap=0.566 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  66: full DKL retrain  (75 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.5725
+  Epoch 40/50  loss=-0.7759
+DKL training done in 0.4s
+  → SM-13632  gap=1.250 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  67: GP refit  (76 labelled)
+  → SM-10673  gap=0.417 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  68: GP refit  (77 labelled)
+  → SM-10483  gap=1.377 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  69: GP refit  (78 labelled)
+  → SM-1648  gap=0.649 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  70: GP refit  (79 labelled)
+  → SM-1015  gap=1.289 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  71: full DKL retrain  (80 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.4867
+  Epoch 40/50  loss=-0.6840
+DKL training done in 0.4s
+  → SM-3111  gap=0.857 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  72: GP refit  (81 labelled)
+  → SM-10696  gap=1.430 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  73: GP refit  (82 labelled)
+  → SM-105  gap=0.138 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  74: GP refit  (83 labelled)
+  → SM-1690  gap=0.022 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  75: GP refit  (84 labelled)
+  → SM-14428  gap=0.790 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  76: full DKL retrain  (85 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.3735
+  Epoch 40/50  loss=-0.5888
+DKL training done in 0.5s
+  → SM-11730  gap=0.928 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  77: GP refit  (86 labelled)
+  → SM-16497  gap=2.761 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  78: GP refit  (87 labelled)
+  → SM-15823  gap=1.399 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  79: GP refit  (88 labelled)
+  → SM-17557  gap=0.465 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  80: GP refit  (89 labelled)
+  → SM-3068  gap=0.818 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  81: full DKL retrain  (90 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.1218
+  Epoch 40/50  loss=-0.2915
+DKL training done in 0.5s
+  → SM-396  gap=1.211 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  82: GP refit  (91 labelled)
+  → SM-4418  gap=0.581 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  83: GP refit  (92 labelled)
+  → SM-17599  gap=3.134 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  84: GP refit  (93 labelled)
+  → SM-14619  gap=1.000 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  85: GP refit  (94 labelled)
+  → SM-4417  gap=0.541 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  86: full DKL retrain  (95 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.2398
+  Epoch 40/50  loss=-0.4207
+DKL training done in 0.6s
+  → SM-16540  gap=0.582 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  87: GP refit  (96 labelled)
+  → SM-1655  gap=1.686 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  88: GP refit  (97 labelled)
+  → SM-6237  gap=0.454 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  89: GP refit  (98 labelled)
+  → SM-8448  gap=0.838 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  90: GP refit  (99 labelled)
+  → SM-10589  gap=2.077 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  91: full DKL retrain  (100 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.3643
+  Epoch 40/50  loss=-0.5238
+DKL training done in 0.5s
+  → SM-4352  gap=0.719 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  92: GP refit  (101 labelled)
+  → SM-17295  gap=1.240 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  93: GP refit  (102 labelled)
+  → SM-4292  gap=1.133 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  94: GP refit  (103 labelled)
+  → SM-16535  gap=0.658 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  95: GP refit  (104 labelled)
+  → SM-17065  gap=0.892 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  96: full DKL retrain  (105 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.6679
+  Epoch 40/50  loss=-0.8724
+DKL training done in 0.5s
+  → SM-8685  gap=0.885 eV  best=6.964 eV  top50=0  top10%=0
+Cycle  97: GP refit  (106 labelled)
+  → SM-5002  gap=20.302 eV  best=20.302 eV  top50=1  top10%=1
+Cycle  98: GP refit  (107 labelled)
+  → SM-6741  gap=0.118 eV  best=20.302 eV  top50=1  top10%=1
+Cycle  99: GP refit  (108 labelled)
+  → SM-14645  gap=0.802 eV  best=20.302 eV  top50=1  top10%=1
+Cycle 100: GP refit  (109 labelled)
+  → SM-10630  gap=0.908 eV  best=20.302 eV  top50=1  top10%=1
+  dkl_finetune/seed7 → best_inwin=0.719 top50=8
+BOLoop: 3131 materials  |  direction=max  |  top-50 internal threshold=7.50  top-10% internal threshold=4.43
+Init: 10 random labels  |  best (max) = 4.929
+Cycle   1: full DKL retrain  (10 labelled)
+GP warmup: 20 epochs on initial embeddings
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.9549
+  Epoch 40/50  loss=1.7233
+DKL training done in 0.4s
+  → SM-18172  gap=1.312 eV  best=4.929 eV  top50=0  top10%=0
+Cycle   2: GP refit  (11 labelled)
+  → SM-11038  gap=1.504 eV  best=4.929 eV  top50=0  top10%=0
+Cycle   3: GP refit  (12 labelled)
+  → SM-9277  gap=0.584 eV  best=4.929 eV  top50=0  top10%=0
+Cycle   4: GP refit  (13 labelled)
+  → SM-16080  gap=0.744 eV  best=4.929 eV  top50=0  top10%=0
+Cycle   5: GP refit  (14 labelled)
+  → SM-5440  gap=0.155 eV  best=4.929 eV  top50=0  top10%=0
+Cycle   6: full DKL retrain  (15 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.8312
+  Epoch 40/50  loss=0.6769
+DKL training done in 0.5s
+  → SM-17118  gap=0.859 eV  best=4.929 eV  top50=0  top10%=0
+Cycle   7: GP refit  (16 labelled)
+  → SM-18389  gap=0.863 eV  best=4.929 eV  top50=0  top10%=0
+Cycle   8: GP refit  (17 labelled)
+  → SM-15980  gap=1.193 eV  best=4.929 eV  top50=0  top10%=0
+Cycle   9: GP refit  (18 labelled)
+  → SM-4336  gap=1.133 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  10: GP refit  (19 labelled)
+  → SM-1690  gap=0.022 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  11: full DKL retrain  (20 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.3639
+  Epoch 40/50  loss=0.1660
+DKL training done in 0.5s
+  → SM-17999  gap=0.878 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  12: GP refit  (21 labelled)
+  → SM-10631  gap=0.655 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  13: GP refit  (22 labelled)
+  → SM-16183  gap=1.693 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  14: GP refit  (23 labelled)
+  → SM-10629  gap=0.154 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  15: GP refit  (24 labelled)
+  → SM-17228  gap=1.796 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  16: full DKL retrain  (25 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.3515
+  Epoch 40/50  loss=0.1097
+DKL training done in 0.4s
+  → SM-9741  gap=3.004 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  17: GP refit  (26 labelled)
+  → SM-14753  gap=0.041 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  18: GP refit  (27 labelled)
+  → SM-12140  gap=1.221 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  19: GP refit  (28 labelled)
+  → SM-1418  gap=1.876 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  20: GP refit  (29 labelled)
+  → SM-14619  gap=1.000 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  21: full DKL retrain  (30 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.4508
+  Epoch 40/50  loss=0.3089
+DKL training done in 0.4s
+  → SM-5584  gap=0.733 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  22: GP refit  (31 labelled)
+  → SM-14969  gap=0.315 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  23: GP refit  (32 labelled)
+  → SM-13632  gap=1.250 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  24: GP refit  (33 labelled)
+  → SM-9543  gap=0.988 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  25: GP refit  (34 labelled)
+  → SM-12107  gap=1.678 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  26: full DKL retrain  (35 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.2644
+  Epoch 40/50  loss=-0.4109
+DKL training done in 0.5s
+  → SM-10620  gap=2.029 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  27: GP refit  (36 labelled)
+  → SM-656  gap=1.106 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  28: GP refit  (37 labelled)
+  → SM-16151  gap=1.389 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  29: GP refit  (38 labelled)
+  → SM-4353  gap=1.408 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  30: GP refit  (39 labelled)
+  → SM-9161  gap=1.685 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  31: full DKL retrain  (40 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.1991
+  Epoch 40/50  loss=-0.3190
+DKL training done in 0.5s
+  → SM-20258  gap=1.208 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  32: GP refit  (41 labelled)
+  → SM-9923  gap=1.022 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  33: GP refit  (42 labelled)
+  → SM-1652  gap=1.253 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  34: GP refit  (43 labelled)
+  → SM-18194  gap=0.497 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  35: GP refit  (44 labelled)
+  → SM-14397  gap=0.073 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  36: full DKL retrain  (45 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.6181
+  Epoch 40/50  loss=-0.7934
+DKL training done in 0.4s
+  → SM-14529  gap=0.568 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  37: GP refit  (46 labelled)
+  → SM-16919  gap=0.680 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  38: GP refit  (47 labelled)
+  → SM-14916  gap=0.394 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  39: GP refit  (48 labelled)
+  → SM-11178  gap=0.934 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  40: GP refit  (49 labelled)
+  → SM-654  gap=1.960 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  41: full DKL retrain  (50 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.6625
+  Epoch 40/50  loss=-0.8684
+DKL training done in 0.5s
+  → SM-1655  gap=1.686 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  42: GP refit  (51 labelled)
+  → SM-799  gap=1.440 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  43: GP refit  (52 labelled)
+  → SM-15538  gap=0.606 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  44: GP refit  (53 labelled)
+  → SM-1502  gap=0.318 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  45: GP refit  (54 labelled)
+  → SM-7178  gap=0.579 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  46: full DKL retrain  (55 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.4116
+  Epoch 40/50  loss=-0.5781
+DKL training done in 0.5s
+  → SM-4845  gap=2.394 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  47: GP refit  (56 labelled)
+  → SM-18270  gap=3.015 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  48: GP refit  (57 labelled)
+  → SM-20187  gap=1.277 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  49: GP refit  (58 labelled)
+  → SM-6081  gap=0.588 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  50: GP refit  (59 labelled)
+  → SM-19478  gap=0.568 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  51: full DKL retrain  (60 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.0748
+  Epoch 40/50  loss=-0.1158
+DKL training done in 0.4s
+  → SM-10855  gap=1.552 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  52: GP refit  (61 labelled)
+  → SM-1431  gap=0.056 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  53: GP refit  (62 labelled)
+  → SM-15994  gap=2.229 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  54: GP refit  (63 labelled)
+  → SM-16799  gap=1.907 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  55: GP refit  (64 labelled)
+  → SM-15948  gap=1.571 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  56: full DKL retrain  (65 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.1986
+  Epoch 40/50  loss=-0.3759
+DKL training done in 0.4s
+  → SM-18447  gap=1.764 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  57: GP refit  (66 labelled)
+  → SM-14405  gap=0.960 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  58: GP refit  (67 labelled)
+  → SM-11034  gap=1.042 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  59: GP refit  (68 labelled)
+  → SM-8597  gap=0.892 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  60: GP refit  (69 labelled)
+  → SM-16706  gap=1.584 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  61: full DKL retrain  (70 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.5370
+  Epoch 40/50  loss=-0.7204
+DKL training done in 0.5s
+  → SM-10171  gap=0.639 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  62: GP refit  (71 labelled)
+  → SM-7941  gap=0.566 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  63: GP refit  (72 labelled)
+  → SM-9094  gap=1.096 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  64: GP refit  (73 labelled)
+  → SM-7542  gap=1.543 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  65: GP refit  (74 labelled)
+  → SM-10673  gap=0.417 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  66: full DKL retrain  (75 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.9584
+  Epoch 40/50  loss=-1.1615
+DKL training done in 0.6s
+  → SM-14979  gap=0.909 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  67: GP refit  (76 labelled)
+  → SM-17393  gap=0.289 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  68: GP refit  (77 labelled)
+  → SM-8583  gap=0.811 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  69: GP refit  (78 labelled)
+  → SM-10646  gap=1.177 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  70: GP refit  (79 labelled)
+  → SM-14748  gap=1.148 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  71: full DKL retrain  (80 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.8868
+  Epoch 40/50  loss=-1.2760
+DKL training done in 0.5s
+  → SM-7935  gap=1.394 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  72: GP refit  (81 labelled)
+  → SM-4424  gap=1.221 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  73: GP refit  (82 labelled)
+  → SM-8448  gap=0.838 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  74: GP refit  (83 labelled)
+  → SM-11202  gap=1.280 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  75: GP refit  (84 labelled)
+  → SM-14090  gap=1.742 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  76: full DKL retrain  (85 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.8728
+  Epoch 40/50  loss=-1.0795
+DKL training done in 0.6s
+  → SM-9133  gap=0.990 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  77: GP refit  (86 labelled)
+  → SM-836  gap=1.763 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  78: GP refit  (87 labelled)
+  → SM-17456  gap=1.453 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  79: GP refit  (88 labelled)
+  → SM-705  gap=2.461 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  80: GP refit  (89 labelled)
+  → SM-4430  gap=1.240 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  81: full DKL retrain  (90 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.8021
+  Epoch 40/50  loss=-1.0042
+DKL training done in 0.6s
+  → SM-17515  gap=1.309 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  82: GP refit  (91 labelled)
+  → SM-16180  gap=2.661 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  83: GP refit  (92 labelled)
+  → SM-7832  gap=2.821 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  84: GP refit  (93 labelled)
+  → SM-16130  gap=0.871 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  85: GP refit  (94 labelled)
+  → SM-13785  gap=0.789 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  86: full DKL retrain  (95 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.3414
+  Epoch 40/50  loss=-0.5456
+DKL training done in 0.4s
+  → SM-10195  gap=2.324 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  87: GP refit  (96 labelled)
+  → SM-8242  gap=0.648 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  88: GP refit  (97 labelled)
+  → SM-8573  gap=0.710 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  89: GP refit  (98 labelled)
+  → SM-16059  gap=1.557 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  90: GP refit  (99 labelled)
+  → SM-14004  gap=0.459 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  91: full DKL retrain  (100 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.3547
+  Epoch 40/50  loss=-0.5263
+DKL training done in 0.4s
+  → SM-16985  gap=0.237 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  92: GP refit  (101 labelled)
+  → SM-8258  gap=0.261 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  93: GP refit  (102 labelled)
+  → SM-17229  gap=1.470 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  94: GP refit  (103 labelled)
+  → SM-13750  gap=2.117 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  95: GP refit  (104 labelled)
+  → SM-14091  gap=1.497 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  96: full DKL retrain  (105 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.4533
+  Epoch 40/50  loss=-0.6448
+DKL training done in 1.0s
+  → SM-12639  gap=1.120 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  97: GP refit  (106 labelled)
+  → SM-645  gap=1.354 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  98: GP refit  (107 labelled)
+  → SM-14323  gap=2.376 eV  best=4.929 eV  top50=0  top10%=0
+Cycle  99: GP refit  (108 labelled)
+  → SM-797  gap=2.420 eV  best=4.929 eV  top50=0  top10%=0
+Cycle 100: GP refit  (109 labelled)
+  → SM-17303  gap=0.343 eV  best=4.929 eV  top50=0  top10%=0
+  dkl_finetune/seed8 → best_inwin=0.710 top50=5
+BOLoop: 3131 materials  |  direction=max  |  top-50 internal threshold=7.50  top-10% internal threshold=4.43
+Init: 10 random labels  |  best (max) = 5.736
+Cycle   1: full DKL retrain  (10 labelled)
+GP warmup: 20 epochs on initial embeddings
+/home/roy/software/anaconda3/lib/python3.13/site-packages/torch/_compile.py:32: UserWarning: optimizer contains a parameter group with duplicate parameters; in future, this will cause an error; see github.com/pytorch/pytorch/issues/40967 for more information
+  return disable_fn(*args, **kwargs)
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.9910
+  Epoch 40/50  loss=1.8269
+DKL training done in 0.4s
+  → SM-17368  gap=2.687 eV  best=5.736 eV  top50=0  top10%=0
+Cycle   2: GP refit  (11 labelled)
+  → SM-17367  gap=3.435 eV  best=5.736 eV  top50=0  top10%=0
+Cycle   3: GP refit  (12 labelled)
+  → SM-17462  gap=3.340 eV  best=5.736 eV  top50=0  top10%=0
+Cycle   4: GP refit  (13 labelled)
+  → SM-17369  gap=3.441 eV  best=5.736 eV  top50=0  top10%=0
+Cycle   5: GP refit  (14 labelled)
+  → SM-4352  gap=0.719 eV  best=5.736 eV  top50=0  top10%=0
+Cycle   6: full DKL retrain  (15 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.5242
+  Epoch 40/50  loss=1.4926
+DKL training done in 1.4s
+  → SM-4426  gap=0.612 eV  best=5.736 eV  top50=0  top10%=0
+Cycle   7: GP refit  (16 labelled)
+  → SM-12734  gap=1.240 eV  best=5.736 eV  top50=0  top10%=0
+Cycle   8: GP refit  (17 labelled)
+  → SM-17993  gap=1.366 eV  best=5.736 eV  top50=0  top10%=0
+Cycle   9: GP refit  (18 labelled)
+  → SM-11431  gap=0.445 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  10: GP refit  (19 labelled)
+  → SM-4954  gap=2.451 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  11: full DKL retrain  (20 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.3011
+  Epoch 40/50  loss=1.2225
+DKL training done in 0.4s
+  → SM-14753  gap=0.041 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  12: GP refit  (21 labelled)
+  → SM-10855  gap=1.552 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  13: GP refit  (22 labelled)
+  → SM-17265  gap=0.586 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  14: GP refit  (23 labelled)
+  → SM-14428  gap=0.790 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  15: GP refit  (24 labelled)
+  → SM-17139  gap=1.957 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  16: full DKL retrain  (25 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=1.0121
+  Epoch 40/50  loss=1.1509
+DKL training done in 0.4s
+  → SM-10171  gap=0.639 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  17: GP refit  (26 labelled)
+  → SM-4343  gap=2.065 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  18: GP refit  (27 labelled)
+  → SM-7448  gap=0.566 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  19: GP refit  (28 labelled)
+  → SM-4416  gap=1.311 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  20: GP refit  (29 labelled)
+  → SM-9927  gap=1.615 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  21: full DKL retrain  (30 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.7066
+  Epoch 40/50  loss=0.5059
+DKL training done in 0.4s
+  → SM-11413  gap=2.511 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  22: GP refit  (31 labelled)
+  → SM-12199  gap=2.082 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  23: GP refit  (32 labelled)
+  → SM-12177  gap=1.298 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  24: GP refit  (33 labelled)
+  → SM-18447  gap=1.764 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  25: GP refit  (34 labelled)
+  → SM-14372  gap=2.218 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  26: full DKL retrain  (35 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.5565
+  Epoch 40/50  loss=0.3468
+DKL training done in 0.4s
+  → SM-7767  gap=1.094 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  27: GP refit  (36 labelled)
+  → SM-11470  gap=1.766 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  28: GP refit  (37 labelled)
+  → SM-10924  gap=1.672 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  29: GP refit  (38 labelled)
+  → SM-17535  gap=1.302 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  30: GP refit  (39 labelled)
+  → SM-435  gap=0.246 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  31: full DKL retrain  (40 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.4721
+  Epoch 40/50  loss=0.1107
+DKL training done in 0.6s
+  → SM-12243  gap=1.119 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  32: GP refit  (41 labelled)
+  → SM-17221  gap=1.296 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  33: GP refit  (42 labelled)
+  → SM-12207  gap=2.037 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  34: GP refit  (43 labelled)
+  → SM-17088  gap=0.954 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  35: GP refit  (44 labelled)
+  → SM-10485  gap=0.936 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  36: full DKL retrain  (45 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.2301
+  Epoch 40/50  loss=-0.1003
+DKL training done in 0.6s
+  → SM-9286  gap=3.149 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  37: GP refit  (46 labelled)
+  → SM-14969  gap=0.315 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  38: GP refit  (47 labelled)
+  → SM-18187  gap=1.688 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  39: GP refit  (48 labelled)
+  → SM-8258  gap=0.261 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  40: GP refit  (49 labelled)
+  → SM-11034  gap=1.042 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  41: full DKL retrain  (50 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.4107
+  Epoch 40/50  loss=0.1982
+DKL training done in 0.4s
+  → SM-11762  gap=2.374 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  42: GP refit  (51 labelled)
+  → SM-580  gap=3.264 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  43: GP refit  (52 labelled)
+  → SM-16027  gap=1.232 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  44: GP refit  (53 labelled)
+  → SM-1565  gap=1.213 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  45: GP refit  (54 labelled)
+  → SM-701  gap=1.733 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  46: full DKL retrain  (55 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.4299
+  Epoch 40/50  loss=0.2281
+DKL training done in 0.5s
+  → SM-375  gap=3.016 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  47: GP refit  (56 labelled)
+  → SM-11443  gap=1.904 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  48: GP refit  (57 labelled)
+  → SM-480  gap=0.707 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  49: GP refit  (58 labelled)
+  → SM-1617  gap=1.111 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  50: GP refit  (59 labelled)
+  → SM-9144  gap=2.472 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  51: full DKL retrain  (60 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.3518
+  Epoch 40/50  loss=0.1662
+DKL training done in 0.4s
+  → SM-10816  gap=1.646 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  52: GP refit  (61 labelled)
+  → SM-10653  gap=1.488 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  53: GP refit  (62 labelled)
+  → SM-8920  gap=1.219 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  54: GP refit  (63 labelled)
+  → SM-15769  gap=0.135 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  55: GP refit  (64 labelled)
+  → SM-7863  gap=1.482 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  56: full DKL retrain  (65 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.0179
+  Epoch 40/50  loss=-0.1594
+DKL training done in 0.5s
+  → SM-8178  gap=1.604 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  57: GP refit  (66 labelled)
+  → SM-1605  gap=1.697 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  58: GP refit  (67 labelled)
+  → SM-14076  gap=1.850 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  59: GP refit  (68 labelled)
+  → SM-17010  gap=1.282 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  60: GP refit  (69 labelled)
+  → SM-4260  gap=3.298 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  61: full DKL retrain  (70 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.0464
+  Epoch 40/50  loss=-0.1166
+DKL training done in 0.6s
+  → SM-14095  gap=2.261 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  62: GP refit  (71 labelled)
+  → SM-9116  gap=0.873 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  63: GP refit  (72 labelled)
+  → SM-10654  gap=0.834 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  64: GP refit  (73 labelled)
+  → SM-8334  gap=1.077 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  65: GP refit  (74 labelled)
+  → SM-17119  gap=2.484 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  66: full DKL retrain  (75 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.1052
+  Epoch 40/50  loss=-0.0711
+DKL training done in 0.5s
+  → SM-16089  gap=0.796 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  67: GP refit  (76 labelled)
+  → SM-12361  gap=0.586 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  68: GP refit  (77 labelled)
+  → SM-18194  gap=0.497 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  69: GP refit  (78 labelled)
+  → SM-16834  gap=1.923 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  70: GP refit  (79 labelled)
+  → SM-712  gap=0.647 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  71: full DKL retrain  (80 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.2189
+  Epoch 40/50  loss=-0.3685
+DKL training done in 0.5s
+  → SM-19012  gap=2.586 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  72: GP refit  (81 labelled)
+  → SM-14291  gap=1.157 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  73: GP refit  (82 labelled)
+  → SM-16228  gap=0.698 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  74: GP refit  (83 labelled)
+  → SM-17557  gap=0.465 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  75: GP refit  (84 labelled)
+  → SM-3053  gap=2.667 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  76: full DKL retrain  (85 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=0.0156
+  Epoch 40/50  loss=-0.1540
+DKL training done in 0.6s
+  → SM-17078  gap=1.312 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  77: GP refit  (86 labelled)
+  → SM-16080  gap=0.744 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  78: GP refit  (87 labelled)
+  → SM-8448  gap=0.838 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  79: GP refit  (88 labelled)
+  → SM-17118  gap=0.859 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  80: GP refit  (89 labelled)
+  → SM-10985  gap=1.785 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  81: full DKL retrain  (90 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.3424
+  Epoch 40/50  loss=-0.5202
+DKL training done in 0.4s
+  → SM-16945  gap=1.862 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  82: GP refit  (91 labelled)
+  → SM-17310  gap=0.868 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  83: GP refit  (92 labelled)
+  → SM-10693  gap=2.327 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  84: GP refit  (93 labelled)
+  → SM-14406  gap=1.499 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  85: GP refit  (94 labelled)
+  → SM-15980  gap=1.193 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  86: full DKL retrain  (95 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.3011
+  Epoch 40/50  loss=-0.4881
+DKL training done in 0.4s
+  → SM-13092  gap=0.907 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  87: GP refit  (96 labelled)
+  → SM-4184  gap=2.834 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  88: GP refit  (97 labelled)
+  → SM-17515  gap=1.309 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  89: GP refit  (98 labelled)
+  → SM-4421  gap=0.700 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  90: GP refit  (99 labelled)
+  → SM-14091  gap=1.497 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  91: full DKL retrain  (100 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.1366
+  Epoch 40/50  loss=-0.3520
+DKL training done in 0.4s
+  → SM-636  gap=1.426 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  92: GP refit  (101 labelled)
+  → SM-6051  gap=1.777 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  93: GP refit  (102 labelled)
+  → SM-6311  gap=0.756 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  94: GP refit  (103 labelled)
+  → SM-17556  gap=0.673 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  95: GP refit  (104 labelled)
+  → SM-17180  gap=1.016 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  96: full DKL retrain  (105 labelled)
+GP warmup: 20 epochs on initial embeddings
+Joint DKL training: 50 epochs
+  Epoch 20/50  loss=-0.5348
+  Epoch 40/50  loss=-0.7578
+DKL training done in 0.5s
+  → SM-11317  gap=1.548 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  97: GP refit  (106 labelled)
+  → SM-14979  gap=0.909 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  98: GP refit  (107 labelled)
+  → SM-17303  gap=0.343 eV  best=5.736 eV  top50=0  top10%=0
+Cycle  99: GP refit  (108 labelled)
+  → SM-12140  gap=1.221 eV  best=5.736 eV  top50=0  top10%=0
+Cycle 100: GP refit  (109 labelled)
+  → SM-4349  gap=1.588 eV  best=5.736 eV  top50=0  top10%=0
+  dkl_finetune/seed9 → best_inwin=0.707 top50=6
+RandomBaseline: 10 init labels  |  best gap = 4.584 eV
+RandomBaseline done  |  best=9.232 eV  top50=2  top10%=13
+  random/seed0 → best_inwin=0.942 top50=0
+RandomBaseline: 10 init labels  |  best gap = 8.707 eV
+RandomBaseline done  |  best=14.425 eV  top50=2  top10%=11
+  random/seed1 → best_inwin=0.819 top50=1
+RandomBaseline: 10 init labels  |  best gap = 8.198 eV
+RandomBaseline done  |  best=8.707 eV  top50=1  top10%=5
+  random/seed2 → best_inwin=0.807 top50=1
+RandomBaseline: 10 init labels  |  best gap = 8.323 eV
+RandomBaseline done  |  best=8.323 eV  top50=0  top10%=7
+  random/seed3 → best_inwin=0.726 top50=1
+RandomBaseline: 10 init labels  |  best gap = 8.379 eV
+RandomBaseline done  |  best=10.044 eV  top50=2  top10%=13
+  random/seed4 → best_inwin=0.789 top50=1
+RandomBaseline: 10 init labels  |  best gap = 3.811 eV
+RandomBaseline done  |  best=9.310 eV  top50=4  top10%=17
+  random/seed5 → best_inwin=0.789 top50=1
+RandomBaseline: 10 init labels  |  best gap = 5.106 eV
+RandomBaseline done  |  best=8.573 eV  top50=1  top10%=7
+  random/seed6 → best_inwin=0.725 top50=2
+RandomBaseline: 10 init labels  |  best gap = 6.964 eV
+RandomBaseline done  |  best=9.069 eV  top50=3  top10%=14
+  random/seed7 → best_inwin=0.776 top50=2
+RandomBaseline: 10 init labels  |  best gap = 4.929 eV
+RandomBaseline done  |  best=9.023 eV  top50=2  top10%=9
+  random/seed8 → best_inwin=0.717 top50=2
+RandomBaseline: 10 init labels  |  best gap = 5.736 eV
+RandomBaseline done  |  best=15.528 eV  top50=2  top10%=10
+  random/seed9 → best_inwin=0.790 top50=1
+runs written=40 skipped=0. Summarizing…
+
+================================================================
+SNUMAT WINDOW-MIN SEARCH (0.7–3.0 eV) — finals (mean over seeds), ★=p<0.05 vs Std-GP
+================================================================
+
+  best_inwin_gap  (lower is better)
+    Standard GP                  0.74
+    DKL (frozen)                 0.73    p=0.547 (-0.01 vs Std-GP)
+    DKL (fine-tuned, live)       0.72    p=0.105 (-0.02 vs Std-GP)
+    Random                       0.79  ★ p=0.020 (+0.05 vs Std-GP)
+
+  cumul_top50  (higher is better)
+    Standard GP                  4.60
+    DKL (frozen)                 2.50  ★ p=0.039 (-2.10 vs Std-GP)
+    DKL (fine-tuned, live)       6.00    p=0.375 (+1.40 vs Std-GP)
+    Random                       1.20  ★ p=0.023 (-3.40 vs Std-GP)
+
+  Crossover cycle (DKL mean overtakes & stays better than Std-GP):
+    DKL (frozen)             on best_inwin_gap   → cycle 97
+    DKL (fine-tuned, live)   on best_inwin_gap   → cycle 32
+    DKL (frozen)             on cumul_top50      → never
+    DKL (fine-tuned, live)   on cumul_top50      → cycle 39
+
+Saved → winmin_summary.csv, winmin_stats.csv, winmin_crossover.csv, plots/winmin_*.png

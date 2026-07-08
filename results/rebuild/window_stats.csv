@@ -1,0 +1,7 @@
+window,method,n_seeds,method_mean,std_gp_mean,mean_diff,wilcoxon_p,win_rate
+visible_0p7_3p0,dkl_frozen,2,6.5,7.0,-0.5,1.0,0.0
+visible_0p7_3p0,dkl_finetune,2,6.5,7.0,-0.5,1.0,0.0
+visible_0p7_3p0,random,2,5.5,7.0,-1.5,1.0,0.0
+wide_3p0_4p5,dkl_frozen,2,4.0,6.0,-2.0,0.5,0.0
+wide_3p0_4p5,dkl_finetune,2,2.5,6.0,-3.5,0.5,0.0
+wide_3p0_4p5,random,2,1.0,6.0,-5.0,0.5,0.0

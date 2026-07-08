@@ -1,0 +1,11 @@
+task,method,best,top50,top10pct
+gap_max,dkl_cold_live,19.137,8.5,23.7
+gap_max,dkl_finetune,20.244,9.3,25.3
+gap_max,dkl_frozen,20.302,20.5,44.5
+gap_max,random,10.223,1.9,10.6
+gap_max,std_gp,14.937,17.0,39.0
+gap_min,dkl_cold_live,0.025,8.9,48.6
+gap_min,dkl_finetune,0.027,9.5,53.1
+gap_min,dkl_frozen,0.02,11.0,44.7
+gap_min,random,0.113,1.8,10.7
+gap_min,std_gp,0.028,9.9,52.0

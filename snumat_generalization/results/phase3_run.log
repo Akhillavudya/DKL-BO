@@ -1,0 +1,24 @@
+Pool=3131 | seeds=10 cycles=100 init=10 | acquisition=EI
+  [gap_max] done
+  [gap_min] done
+Runs written=60 skipped=0. Summarizing…
+
+================================================================
+SNUMAT PHASE 3 — BO contest (mean over seeds). best = best value found
+================================================================
+
+  gap_max
+    method   |     best   top50  top10%
+    ------------------------------------
+    std_gp   |   14.937    17.0    39.0
+    dkl      |   20.302    20.5    44.5
+    random   |   10.223     1.9    10.6
+
+  gap_min
+    method   |     best   top50  top10%
+    ------------------------------------
+    std_gp   |    0.028     9.9    52.0
+    dkl      |    0.020    11.0    44.7
+    random   |    0.113     1.8    10.7
+
+Saved → /home/roy/Desktop/DKL-BO/snumat_generalization/results/bo_summary.csv
